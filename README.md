@@ -67,7 +67,7 @@ Large model files are not stored in Git. [MODEL_ZOO.md](MODEL_ZOO.md) distinguis
 - final paper-supporting checkpoints trained in this study and hosted on Hugging Face;
 - analyses based on authors' released outputs rather than a local model execution.
 
-Only checkpoints needed to reproduce a reported result are planned for upload. Datasets, optimizer states, caches, and redundant intermediate epochs are excluded.
+The selected study-trained checkpoints are available from the [companion Hugging Face repository](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints). Datasets, optimizer states, caches, and redundant intermediate epochs are excluded; the Hub bundle includes an artifact manifest and SHA-256 checksums.
 
 ## Comparison Rules
 

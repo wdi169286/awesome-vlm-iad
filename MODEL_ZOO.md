@@ -8,7 +8,8 @@ This page records the exact model source used by the paper companion. It is an a
 | --- | --- |
 | Official release | Use the upstream authors' checkpoint |
 | Trained in this study | Final checkpoint produced by the controlled study |
-| Pending upload | Admitted result; Hugging Face upload/link is not yet frozen |
+| Hosted artifact | Final study checkpoint is available from the companion Hugging Face repository |
+| Aggregate only | The retained run supports the aggregate, but no portable standalone checkpoint is published |
 | Pending final gate | Experiment or checkpoint selection is still being validated |
 | Excluded after final gate | Execution completed, but the registered intervention-to-endpoint gate failed |
 | Released-output analysis | Analysis uses authors' prediction records, not a local checkpoint |
@@ -16,15 +17,15 @@ This page records the exact model source used by the paper companion. It is an a
 
 ## Checkpoints Trained in This Study
 
-Only final paper-supporting checkpoints will be uploaded. Optimizer states, redundant intermediate epochs, datasets, and caches are intentionally omitted.
+Only final paper-supporting checkpoints are uploaded. Optimizer states, redundant intermediate epochs, datasets, and caches are intentionally omitted. The complete bundle, manifest, and checksums are hosted at [DiHugoWang/awesome-vlm-iad-checkpoints](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints).
 
-| Method | Study | Training unit | Planned artifact | Status | Link |
+| Method | Study | Training unit | Published artifact | Status | Link |
 | --- | --- | --- | --- | --- | --- |
-| Bayes-PFL | E2 | seeds 333/444/555; 30 epochs | three final checkpoints and compact configs | Pending upload | -- |
-| PromptAD | E3 | three independent runs; K=4 | three final checkpoints and configs | Pending upload | -- |
-| IIPAD | E3 | seed 4; K=1; 20 epochs | final checkpoint and config | Pending upload | -- |
-| BTP-3DAD | E4 | three independently trained checkpoints | three selected checkpoints and configs | Pending upload | -- |
-| PointAD | E4 | three-checkpoint RGB-identity $\times$ correspondence factorial | three final checkpoints and compact configs | Pending upload | -- |
+| Bayes-PFL | E2 | seeds 333/444/555; 30 epochs on each dataset | six selected MVTec AD/VisA checkpoints | Hosted artifact | [files](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/Bayes-PFL) |
+| PromptAD | E3 | three independent runs; K=4 | compact aggregate documentation; retained runs do not expose portable standalone final weights | Aggregate only | [E3 protocol](experiments/E3_reference_validity/README.md) |
+| IIPAD | E3 | seed 4; K=1; 20 epochs | epoch-19 checkpoint | Hosted artifact | [files](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/IIPAD) |
+| BTP-3DAD | E4 | three independently trained checkpoints | seed-0/1/2 selected checkpoints | Hosted artifact | [files](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/BTP-3DAD) |
+| PointAD | E4 | three-checkpoint RGB-identity $\times$ correspondence factorial | carrot/cookie/dowel epoch-15 checkpoints | Hosted artifact | [files](https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/PointAD) |
 | GS-CLIP | E4 boundary | carrot/cookie/dowel; stage 1 and stage 2 | no upload planned because the registered endpoint-path gate failed | Excluded after final gate | -- |
 
 ## Official or Fixed Checkpoints Used
@@ -51,6 +52,6 @@ Exact upstream URLs and immutable revisions will be filled after link verificati
 
 ## Hugging Face Layout
 
-The intended single repository contains a root README and manifest, followed by one directory for each paper-supporting trained method: Bayes-PFL, PromptAD, IIPAD, BTP-3DAD, and PointAD. GS-CLIP's compact audit record is retained with the results, but its checkpoints are not selected for upload because its registered endpoint-path gate failed.
+The published repository contains a root model card, `artifact_manifest.json`, and `SHA256SUMS`, followed by directories for Bayes-PFL, IIPAD, BTP-3DAD, and PointAD. It also includes the compact final PointAD and GS-CLIP E4 audit records. PromptAD is represented by compact aggregates in this GitHub companion rather than by a potentially misleading standalone weight. GS-CLIP checkpoints are not published because its registered endpoint-path gate failed.
 
-Each method directory should contain the final weight file(s), the minimal evaluation configuration, and a short model card recording dataset protocol, training seed, source commit, and the paper table supported by the artifact.
+Each method directory contains the selected final weight file(s) and a short model card recording the supported study. File sizes and immutable SHA-256 digests are recorded in the Hub manifest.

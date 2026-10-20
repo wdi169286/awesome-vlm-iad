@@ -1,37 +1,38 @@
 # Checkpoint and released-output registry for the paper companion.
-# Empty URLs are intentional until uploads and upstream links are frozen.
+# Empty official-source URLs are intentional until upstream links are frozen.
 
 study_trained:
   - method: Bayes-PFL
     study: E2
-    units: [seed-333, seed-444, seed-555]
+    units: [mvtec-seed-333, mvtec-seed-444, mvtec-seed-555, visa-seed-333, visa-seed-444, visa-seed-555]
     training: "30 epochs"
-    status: pending-upload
-    url: ""
+    status: hosted-artifact
+    url: "https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/Bayes-PFL"
   - method: PromptAD
     study: E3
     units: [run-1, run-2, run-3]
     training: "K=4; three independent runs"
-    status: pending-upload
-    url: ""
+    status: aggregate-only
+    url: "https://github.com/wdi169286/awesome-vlm-iad/tree/main/experiments/E3_reference_validity"
+    note: "Retained runs support the aggregate but do not expose portable standalone final weights."
   - method: IIPAD
     study: E3
     units: [seed-4]
     training: "K=1; 20 epochs"
-    status: pending-upload
-    url: ""
+    status: hosted-artifact
+    url: "https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/IIPAD"
   - method: BTP-3DAD
     study: E4
-    units: [checkpoint-1, checkpoint-2, checkpoint-3]
+    units: [seed-0, seed-1, seed-2]
     training: "three independent checkpoints"
-    status: pending-upload
-    url: ""
+    status: hosted-artifact
+    url: "https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/BTP-3DAD"
   - method: PointAD
     study: E4
-    units: [checkpoint-1, checkpoint-2, checkpoint-3]
+    units: [carrot-epoch-15, cookie-epoch-15, dowel-epoch-15]
     training: "complete RGB-identity x correspondence factorial"
-    status: pending-upload
-    url: ""
+    status: hosted-artifact
+    url: "https://huggingface.co/DiHugoWang/awesome-vlm-iad-checkpoints/tree/main/PointAD"
   - method: GS-CLIP
     study: E4-boundary
     units: [carrot, cookie, dowel]
