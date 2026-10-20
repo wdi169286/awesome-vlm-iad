@@ -41,3 +41,7 @@ GS-CLIP,depth_rebind,rendered,rendered,4.356455233593219e-09,-1.1207542316941058
 GS-CLIP,depth_rebind,rendered_aupro,aupro,-1.902099451306029e-07,-4.7209406598489493e-07,6.081945714817179e-09,excluded_from_E4_numeric_conclusion
 GS-CLIP,depth_rebind,fused,fused,1.3508348308245967e-09,-4.8935833343009435e-09,6.822945312438358e-09,excluded_from_E4_numeric_conclusion
 GS-CLIP,depth_rebind,fused_aupro,aupro,-1.4607890419584245e-07,-4.418171145062831e-07,-1.1301811505350509e-09,excluded_from_E4_numeric_conclusion
+GS-CLIP,depth_identity_rebind,point_path,image_auroc,0.0004791035102079725,-0.000025361911322468345,0.0012198741109050735,admitted_as_image_level_depth_identity_stress
+GS-CLIP,depth_identity_rebind,point_path,image_ap,0.0001524991023890719,-0.00023253594395335607,0.000629957768194182,admitted_as_image_level_depth_identity_stress
+GS-CLIP,depth_identity_rebind,fused,image_auroc,0.00012552311652090178,-0.0004125942455976086,0.0009015633093494175,admitted_as_image_level_depth_identity_stress
+GS-CLIP,depth_identity_rebind,fused,image_ap,0.00001933661229379808,-0.0002777569870533964,0.000359022056377192,admitted_as_image_level_depth_identity_stress

@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "estimand": "depth-identity-rebinding minus clean on GS-CLIP image-level outputs",
+  "scope": "three train-class checkpoints by nine held-out categories by three mappings",
+  "bootstrap": "20,000 draws: checkpoint, held-out category, then mapping identity",
+  "targets": {
+    "point_image_auroc": {
+      "effect": 0.0004791035102079725,
+      "ci95_low": -2.5361911322468345e-05,
+      "ci95_high": 0.0012198741109050735,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    },
+    "point_image_ap": {
+      "effect": 0.0001524991023890719,
+      "ci95_low": -0.00023253594395335607,
+      "ci95_high": 0.000629957768194182,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    },
+    "fused_image_auroc": {
+      "effect": 0.00012552311652090178,
+      "ci95_low": -0.0004125942455976086,
+      "ci95_high": 0.0009015633093494175,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    },
+    "fused_image_ap": {
+      "effect": 1.933661229379808e-05,
+      "ci95_low": -0.0002777569870533964,
+      "ci95_high": 0.000359022056377192,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    }
+  },
+  "negative_controls": {
+    "rgb_image_auroc": {
+      "effect": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    },
+    "rgb_image_ap": {
+      "effect": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 0.0
+    },
+    "point_pixel_auroc": {
+      "effect": -3.886741503404901e-09,
+      "ci95_low": -9.849481048492579e-09,
+      "ci95_high": 1.5377808432330216e-09,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 5.421972337771308e-08
+    },
+    "point_aupro": {
+      "effect": 3.201915012817231e-07,
+      "ci95_low": -1.8412246884324943e-07,
+      "ci95_high": 1.063333829236388e-06,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 7.639055547625784e-06
+    },
+    "rgb_pixel_auroc": {
+      "effect": 4.356455233593219e-09,
+      "ci95_low": -1.065427198948052e-08,
+      "ci95_high": 1.7310844363379082e-08,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 1.330220380513225e-07
+    },
+    "rgb_aupro": {
+      "effect": -1.902099451306029e-07,
+      "ci95_low": -4.715260030399261e-07,
+      "ci95_high": 8.511137739356436e-09,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 3.0241440811540343e-06
+    },
+    "fused_pixel_auroc": {
+      "effect": 1.3508348308245967e-09,
+      "ci95_low": -4.8787398028900714e-09,
+      "ci95_high": 6.898948592136966e-09,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 6.311741063136367e-08
+    },
+    "fused_aupro": {
+      "effect": -1.4607890419584245e-07,
+      "ci95_low": -4.4132084170318406e-07,
+      "ci95_high": -4.775559222247556e-10,
+      "n_checkpoint_category_mapping_cells": 81,
+      "max_abs_inverse_delta": 2.22038158037563e-06
+    }
+  },
+  "gates": {
+    "complete_21_of_21_units": true,
+    "metric_keys_paired": true,
+    "1197_records_each_mapping": true,
+    "no_fixed_points": true,
+    "multiset_preserved": true,
+    "metadata_inverse_recovery": true,
+    "registered_image_endpoint_consumes_rebound_depth": true,
+    "rgb_image_score_exactly_fixed": true,
+    "localization_controls_within_1e-5": true,
+    "inverse_recovery_within_1e-5": true
+  },
+  "admission": "admitted_as_image_level_depth_identity_stress"
+}
