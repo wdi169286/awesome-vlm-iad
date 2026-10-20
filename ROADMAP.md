@@ -15,7 +15,7 @@ The repository is maintained as a lightweight research resource. Priority is giv
 - PointAD is admitted as an implementation-scoped E4 factorial and its aggregate is public under `results/E4/`.
 - GS-CLIP is retained as a completed endpoint-path boundary audit under `results/E4/`; no numerical E4 effect is claimed.
 - The selected study-trained checkpoint bundle is published on Hugging Face; links are frozen in `MODEL_ZOO.md` and `data/checkpoints.yml`.
-- Add compact E1--E3 aggregate records and plotting inputs without mirroring raw predictions.
+- Maintain the compact E1--E3 intervention ledger and E4 final audits without mirroring raw predictions.
 - Add the final paper citation and table/figure index.
 
 ## Ongoing Maintenance
