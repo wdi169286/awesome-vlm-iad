@@ -1,31 +1,31 @@
 ---
 name: Paper submission
-about: Suggest a paper or dataset for the list
+about: Suggest a paper, dataset, or correction
 title: "[Paper] "
 labels: paper
 assignees: ""
 ---
 
-## Paper
+## Record
 
 - Title:
 - Year:
 - Venue or source:
 - Paper link:
-- Code link:
+- Official code/project link:
 
-## Taxonomy Role
+## Evidence Dependencies
 
-Choose one:
+Choose all that apply:
 
-- [ ] semantic-prior
-- [ ] cross-modal-local-evidence
-- [ ] scarce-sample-calibration
-- [ ] auxiliary-foundation-prior
-- [ ] reasoning-level-inspection
+- [ ] state-interface-semantics
+- [ ] spatial-identity
+- [ ] target-reference-validity
+- [ ] auxiliary-evidence
+- [ ] grounded-composition
 - [ ] benchmark-or-dataset
 - [ ] future-reference
 
-## Protocol Note
+## Protocol and Provenance
 
-Describe the evidence setting, datasets, and metrics.
+Describe the evidence setting, datasets, metrics, and source of any displayed value.

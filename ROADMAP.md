@@ -1,25 +1,26 @@
 # Roadmap
 
-This repository starts as a taxonomy-aware companion list for the survey. The next steps should make it easier to maintain and reuse.
+The repository is maintained as a lightweight research resource. Priority is given to useful records and reproducible artifacts rather than repository infrastructure.
 
-## Near Term
+## Current Revision
 
-- Fill verified paper URLs and official code URLs in `data/papers.yml`.
-- Add a compact "recent updates" section to `README.md` after each batch update.
-- Add venue tags and official arXiv IDs where available.
-- Mark papers with code, no code, or unofficial implementation.
-- Verify watchlist datasets from community resources before promoting them to core benchmark tables.
+- Align the repository with the paper's five non-exclusive evidence questions.
+- Separate source-reported evidence from controlled E1--E4 results.
+- Verify paper, code, dataset, official-weight, and released-output links.
+- Maintain a checkpoint registry without storing weights in Git.
+- Prepare compact manuscript-to-artifact and result records.
 
-## Medium Term
+## Current Artifact Freeze
 
-- Generate `papers.md` from `data/papers.yml` to avoid manual drift.
-- Add a timeline figure for VLM-grounded IAD methods.
-- Add a taxonomy tree figure matching the companion survey.
-- Add result tables only when dataset, metric, protocol, and source table are all clear.
-- Add dataset filters for RGB, RGB-D, 3D, X-ray, visual-text, MLLM reasoning, and multi-sensor inspection.
+- PointAD is admitted as an implementation-scoped E4 factorial and its aggregate is public under `results/E4/`.
+- GS-CLIP is retained as a completed endpoint-path boundary audit under `results/E4/`; no numerical E4 effect is claimed.
+- The selected study-trained checkpoint bundle is prepared for Hugging Face; freeze its links in `MODEL_ZOO.md` and `data/checkpoints.yml` after the host accepts the upload.
+- Add compact E1--E3 aggregate records and plotting inputs without mirroring raw predictions.
+- Add the final paper citation and table/figure index.
 
-## Long Term
+## Ongoing Maintenance
 
-- Build a small static website from the YAML catalogue.
-- Add filters for evidence role, protocol, dataset, modality, and code availability.
-- Maintain a changelog for newly added papers and corrected protocol notes.
+- Add newly published VLM-IAD papers with explicit protocol and numerical provenance.
+- Correct broken upstream links and method metadata.
+- Expand dataset and metric notes when new modalities or evaluation settings appear.
+- Keep large checkpoints, datasets, caches, and raw outputs outside Git.

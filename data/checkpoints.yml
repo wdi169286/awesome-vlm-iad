@@ -1,0 +1,96 @@
+# Checkpoint and released-output registry for the paper companion.
+# Empty URLs are intentional until uploads and upstream links are frozen.
+
+study_trained:
+  - method: Bayes-PFL
+    study: E2
+    units: [seed-333, seed-444, seed-555]
+    training: "30 epochs"
+    status: pending-upload
+    url: ""
+  - method: PromptAD
+    study: E3
+    units: [run-1, run-2, run-3]
+    training: "K=4; three independent runs"
+    status: pending-upload
+    url: ""
+  - method: IIPAD
+    study: E3
+    units: [seed-4]
+    training: "K=1; 20 epochs"
+    status: pending-upload
+    url: ""
+  - method: BTP-3DAD
+    study: E4
+    units: [checkpoint-1, checkpoint-2, checkpoint-3]
+    training: "three independent checkpoints"
+    status: pending-upload
+    url: ""
+  - method: PointAD
+    study: E4
+    units: [checkpoint-1, checkpoint-2, checkpoint-3]
+    training: "complete RGB-identity x correspondence factorial"
+    status: pending-upload
+    url: ""
+  - method: GS-CLIP
+    study: E4-boundary
+    units: [carrot, cookie, dowel]
+    training: "stage 1 and stage 2"
+    status: excluded-endpoint-path-gate
+    url: ""
+
+official_or_fixed:
+  - method: WinCLIP/WinCLIP+
+    study: [E1, E2, E3]
+    source: pretrained OpenAI CLIP
+    status: upstream-link-pending-verification
+    url: ""
+  - method: APRIL-GAN/VAND
+    study: [E1, E2]
+    source: authors' released checkpoint
+    status: upstream-link-pending-verification
+    url: ""
+  - method: AnomalyCLIP
+    study: [E1, E2]
+    source: authors' released checkpoints
+    status: upstream-link-pending-verification
+    url: ""
+  - method: AdaCLIP
+    study: [E1]
+    source: authors' released checkpoint
+    status: upstream-link-pending-verification
+    url: ""
+  - method: FiLo
+    study: [E1, E2]
+    source: authors' released checkpoint
+    status: upstream-link-pending-verification
+    url: ""
+  - method: InCTRL
+    study: [E3]
+    source: authors' released checkpoint
+    status: upstream-link-pending-verification
+    url: ""
+  - method: SAA+
+    study: [E4]
+    source: released pretrained components
+    status: upstream-link-pending-verification
+    url: ""
+  - method: AnomalyR1
+    study: [E4]
+    source: released 3B checkpoints
+    status: upstream-link-pending-verification
+    url: ""
+  - method: AD-Copilot
+    study: [E4]
+    source: released 7B checkpoints
+    status: upstream-link-pending-verification
+    url: ""
+
+released_outputs:
+  - method: AnomalyClaw
+    study: E4
+    source: authors' released per-record outputs
+    local_execution: false
+    note: "No local 27B rerun"
+    status: source-link-pending-verification
+    url: ""

@@ -1,0 +1,473 @@
+{
+  "admission": "admitted_to_E4_as_implementation_scoped_factorial",
+  "aggregation": "equal-weight mean of three run-level macro effects; hierarchical run-and-category bootstrap is descriptive because n_runs=3",
+  "effects": {
+    "correspondence_permute": {
+      "fusion": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": 0.006999457547670679,
+          "ci95_low_hierarchical": -0.07313191448943664,
+          "effect": -0.03330519332024494,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.039992329112864294,
+            "cookie": -0.05928850587597259,
+            "dowel": -0.0006347449718979344
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.002158249053148348,
+          "ci95_low_hierarchical": -0.04769024753860182,
+          "effect": -0.019757389217567017,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.041528648673134425,
+            "cookie": -0.010880463355318941,
+            "dowel": -0.006863055624247679
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": -0.01228533057289888,
+          "ci95_low_hierarchical": -0.06499349696722057,
+          "effect": -0.038070524085748146,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.056350103842056826,
+            "cookie": -0.0404880112412387,
+            "dowel": -0.017373457173948906
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": 0.000551911875591441,
+          "ci95_low_hierarchical": -0.03581020693502501,
+          "effect": -0.0167930018101921,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.016639703856604602,
+            "cookie": -0.030676067383523502,
+            "dowel": -0.003063234190448195
+          }
+        }
+      },
+      "point": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": -0.29618628001135905,
+          "ci95_low_hierarchical": -0.5546908869291455,
+          "effect": -0.42895986937061376,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.47768339578298374,
+            "cookie": -0.4594661207125131,
+            "dowel": -0.34973009161634433
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.031130742739151857,
+          "ci95_low_hierarchical": -0.017612402145840745,
+          "effect": 0.004263304575040393,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0045511322138379546,
+            "cookie": 0.01385862929533198,
+            "dowel": -0.005619847784048757
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": -0.0847964500206632,
+          "ci95_low_hierarchical": -0.21685020214296283,
+          "effect": -0.1470666024720853,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.18245267133155307,
+            "cookie": -0.15889941172548203,
+            "dowel": -0.09984772435922078
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": -0.16502951773744484,
+          "ci95_low_hierarchical": -0.3030266019422292,
+          "effect": -0.2398144049713432,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.2567091742220722,
+            "cookie": -0.27350801118748613,
+            "dowel": -0.18922602950447132
+          }
+        }
+      },
+      "rgb": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        }
+      }
+    },
+    "interaction_did": {
+      "fusion": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": -0.09287277413603441,
+          "ci95_low_hierarchical": -0.24047742439820616,
+          "effect": -0.1640054239713191,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.17915477824632117,
+            "cookie": -0.2030382071992978,
+            "dowel": -0.10982328646833833
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.02031208637432078,
+          "ci95_low_hierarchical": -0.0014626949491692266,
+          "effect": 0.008175341375011918,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.01984748843576969,
+            "cookie": 0.0024581878895070983,
+            "dowel": 0.002220347799758968
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": 0.00011035377290606924,
+          "ci95_low_hierarchical": -0.03684750430131072,
+          "effect": -0.017687719555892753,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.013662162729548948,
+            "cookie": -0.02770359704468557,
+            "dowel": -0.011697398893443742
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": -0.03473950504723279,
+          "ci95_low_hierarchical": -0.09707328270054004,
+          "effect": -0.0660685990363468,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.07327756166811718,
+            "cookie": -0.08512510023682396,
+            "dowel": -0.039803135204099296
+          }
+        }
+      },
+      "point": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": -1.644774851296528e-17,
+          "effect": -4.11193712824132e-18,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": -1.2335811384723961e-17
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": -2.569960705150825e-19,
+          "effect": -6.424901762877063e-20,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": -1.927470528863119e-19,
+            "dowel": 0.0
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        }
+      },
+      "rgb": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        }
+      }
+    },
+    "rgb_swap": {
+      "fusion": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": -0.08986231599695033,
+          "ci95_low_hierarchical": -0.15952069029572444,
+          "effect": -0.12378872056184582,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.11444456968503768,
+            "cookie": -0.1228374028198526,
+            "dowel": -0.13408418918064718
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.007905843347556096,
+          "ci95_low_hierarchical": -0.01823716952995722,
+          "effect": -0.003943068820332474,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.015934363700280167,
+            "cookie": -0.0009922998979537843,
+            "dowel": 0.005097457137236527
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": -0.17813347287237286,
+          "ci95_low_hierarchical": -0.2639448632442858,
+          "effect": -0.21936971585539278,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.23792937928967436,
+            "cookie": -0.23255724195755445,
+            "dowel": -0.1876225263189495
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": -0.028843840924493724,
+          "ci95_low_hierarchical": -0.05731467289078765,
+          "effect": -0.04262490761710588,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.0382704309420335,
+            "cookie": -0.04107446338898873,
+            "dowel": -0.04852982852029538
+          }
+        }
+      },
+      "point": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        }
+      },
+      "rgb": {
+        "aupro_0_30": {
+          "ci95_high_hierarchical": -0.27444417818889894,
+          "ci95_low_hierarchical": -0.38996366177605957,
+          "effect": -0.3324612507967961,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.3277814841974025,
+            "cookie": -0.3679532759617803,
+            "dowel": -0.3016489922312056
+          }
+        },
+        "image_auroc": {
+          "ci95_high_hierarchical": 0.0,
+          "ci95_low_hierarchical": 0.0,
+          "effect": 0.0,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": 0.0,
+            "cookie": 0.0,
+            "dowel": 0.0
+          }
+        },
+        "pixel_ap": {
+          "ci95_high_hierarchical": -0.1936583466299068,
+          "ci95_low_hierarchical": -0.305314469753396,
+          "effect": -0.24752233648868405,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.2624596148760141,
+            "cookie": -0.2697781689683115,
+            "dowel": -0.2103292256217265
+          }
+        },
+        "pixel_auroc": {
+          "ci95_high_hierarchical": -0.09379542171309833,
+          "ci95_low_hierarchical": -0.1578571123795057,
+          "effect": -0.12299372192634055,
+          "interpretation": "descriptive hierarchical interval; three train-class runs are not three method families",
+          "n_train_class_runs": 3,
+          "run_effects": {
+            "carrot": -0.11923252139470773,
+            "cookie": -0.146718289193196,
+            "dowel": -0.10303035519111793
+          }
+        }
+      }
+    }
+  },
+  "estimand": "metric(treatment)-metric(full), computed within held-out category and train-class run",
+  "gates": {
+    "all_27_train_category_controls_passed": true,
+    "complete_2x2_cells": true,
+    "correspondence_inverse_exact": true,
+    "point_branch_fixed_under_rgb_swap": true,
+    "rgb_branch_fixed_under_correspondence_permutation": true,
+    "suite_complete": true,
+    "three_train_class_runs": true
+  },
+  "schema": 1
+}

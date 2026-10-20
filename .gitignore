@@ -1,5 +1,7 @@
 .DS_Store
 Thumbs.db
+
+# LaTeX and Python build artifacts
 *.aux
 *.log
 *.out
@@ -8,3 +10,23 @@ Thumbs.db
 __pycache__/
 .venv/
 node_modules/
+
+# Local environments and credentials
+.env
+.env.*
+server.md
+
+# Large experiment artifacts belong on their upstream host or Hugging Face
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npz
+*.npy
+/checkpoints/
+/outputs/
+/runs/
+/wandb/
+/.cache/
+/external_data/
+/datasets_raw/

@@ -1,0 +1,76 @@
+{
+  "admission": "excluded_from_E4_numeric_conclusion",
+  "admission_reason": "The released test2 localization path computes depth patch features but forms point and fused localization maps from rendered-image patch features; therefore depth-path rebinding does not manipulate the registered AUPRO or Point-AUROC endpoint.",
+  "bootstrap": "10,000 draws; train-class run, then category, then mapping identity",
+  "effects": {
+    "fused": {
+      "ci95_high": 6.822945312438358e-09,
+      "ci95_low": -4.8935833343009435e-09,
+      "effect": 1.3508348308245967e-09,
+      "max_abs_inverse_delta": 6.311741063136367e-08,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    },
+    "fused_aupro": {
+      "ci95_high": -1.1301811505350509e-09,
+      "ci95_low": -4.418171145062831e-07,
+      "effect": -1.4607890419584245e-07,
+      "max_abs_inverse_delta": 2.22038158037563e-06,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    },
+    "point": {
+      "ci95_high": 1.3918521672655248e-09,
+      "ci95_low": -9.936973886638512e-09,
+      "effect": -3.886741503404901e-09,
+      "max_abs_inverse_delta": 5.421972337771308e-08,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    },
+    "point_aupro": {
+      "ci95_high": 1.0937193308583172e-06,
+      "ci95_low": -1.8230259293358298e-07,
+      "effect": 3.201915012817231e-07,
+      "max_abs_inverse_delta": 7.639055547625784e-06,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    },
+    "rendered": {
+      "ci95_high": 1.7472708257752023e-08,
+      "ci95_low": -1.1207542316941058e-08,
+      "effect": 4.356455233593219e-09,
+      "max_abs_inverse_delta": 1.330220380513225e-07,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    },
+    "rendered_aupro": {
+      "ci95_high": 6.081945714817179e-09,
+      "ci95_low": -4.7209406598489493e-07,
+      "effect": -1.902099451306029e-07,
+      "max_abs_inverse_delta": 3.0241440811540343e-06,
+      "n_mapping_seeds": 3,
+      "n_paired_cells": 81,
+      "n_train_class_runs": 3
+    }
+  },
+  "estimand": "depth_rebind-minus-clean within train-class checkpoint, held-out category, and mapping seed",
+  "gates": {
+    "1197_records_each_mapping": true,
+    "complete_21_of_21_units": true,
+    "metadata_inverse_recovery": true,
+    "metric_keys_paired": true,
+    "multiset_preserved": true,
+    "no_fixed_points": true,
+    "numeric_inverse_recovery_at_1e-5": true,
+    "registered_localization_endpoint_consumes_rebound_depth": false,
+    "rendered_negative_control_at_1e-5": true
+  },
+  "max_abs_numeric_inverse_delta": 7.639055547625784e-06,
+  "max_abs_rendered_control_delta": 3.226571919201504e-06,
+  "schema": 1
+}

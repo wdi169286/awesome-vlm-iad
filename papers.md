@@ -1,6 +1,6 @@
-# Papers by Taxonomy
+# Papers by Evidence Dependency
 
-This page groups representative work by the evidence role used in the survey. A method may appear relevant to more than one role, but it is listed under the role that best describes its main contribution.
+This page groups representative work by its dominant evidence operation for readability. The groups are not mutually exclusive: machine-readable records may assign a paper to several evidence dependencies.
 
 ## Foundation Models and Dense Readout Precursors
 
@@ -14,7 +14,7 @@ This page groups representative work by the evidence role used in the survey. A 
 | 2023 | DINOv2: Learning Robust Visual Features Without Supervision | arXiv | Self-supervised visual prior for multimodal fusion |
 | 2024 | Grounding DINO: Marrying DINO With Grounded Pre-training for Open-Set Object Detection | ECCV | Open-set grounding prior relevant to defect localization |
 
-## Semantic Prior Construction
+## State-Interface Semantics
 
 | Year | Paper | Venue or source | Protocol cue |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ This page groups representative work by the evidence role used in the survey. A 
 | 2025 | Bayesian Prompt Flow Learning for Zero-Shot Anomaly Detection | CVPR | prompt uncertainty and sampling |
 | 2026 | PromptMoE: Generalizable Zero-Shot Anomaly Detection via Visually-Guided Prompt Mixtures | AAAI | mixture-based semantic prompting |
 
-## Cross-Modal Local Evidence
+## Feature-to-Coordinate Identity
 
 | Year | Paper | Venue or source | Protocol cue |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ This page groups representative work by the evidence role used in the survey. A 
 | 2025 | DHR-CLIP: Dynamic High-Resolution Object-Agnostic Prompt Learning for Zero-Shot Anomaly Segmentation | ICAIIC | high-resolution localization |
 | 2026 | S2SWCLIP: Semantic-Optimized Prompts With Spatial-Wavelet Synergy for Zero-Shot Anomaly Detection | Scientific Reports | local semantics with wavelet evidence |
 
-## Scarce-Sample Calibration
+## Target-Reference Validity
 
 | Year | Paper | Venue or source | Protocol cue |
 | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ This page groups representative work by the evidence role used in the survey. A 
 | 2026 | Bidirectional Multimodal Prompt Learning With Scale-Aware Training for Few-Shot Multi-Class Anomaly Detection | CVPR | few-shot prompt learning |
 | 2026 | AnomalySD: One-for-All Few-Shot Anomaly Detection via Pre-trained Diffusion Models | CVIU | diffusion-assisted calibration |
 
-## Auxiliary Foundation-Prior Coupling
+## Auxiliary Evidence
 
 | Year | Paper | Venue or source | Protocol cue |
 | --- | --- | --- | --- |
@@ -71,7 +71,7 @@ This page groups representative work by the evidence role used in the survey. A 
 | 2026 | SAM-IAD: Injecting Specific Knowledge Into SAM for Industrial Anomaly Detection | Knowledge-Based Systems | SAM with industrial knowledge |
 | 2026 | GS-CLIP: Zero-Shot 3D Anomaly Detection by Geometry-Aware Prompt and Synergistic View Representation Learning | CVPR | geometry-aware prompt and view learning |
 
-## Reasoning-Level Inspection
+## Grounded Composition and Inspection Reasoning
 
 | Year | Paper | Venue or source | Protocol cue |
 | --- | --- | --- | --- |
