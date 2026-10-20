@@ -1,5 +1,7 @@
 # Machine-readable seed catalogue.
-# Evidence dependencies are non-exclusive; links are filled as they are verified.
+# Evidence dependencies are non-exclusive. `official` means an author- or
+# project-maintained implementation. Community reproductions are named and
+# labelled separately; an empty URL means that no verified link is recorded.
 
 - key: jeong2023winclip
   title: "WinCLIP: Zero-/Few-Shot Anomaly Classification and Segmentation"
@@ -7,8 +9,10 @@
   evidence_dependencies: [spatial-identity]
   setting: zero-shot/few-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
+  paper_url: "https://arxiv.org/abs/2303.14814"
   code_url: ""
+  code_status: no-verified-official-code
+  community_code_url: "https://github.com/zqhang/Accurate-WinCLIP-pytorch"
 
 - key: zhou2023anomalyclip
   title: "AnomalyCLIP: Object-Agnostic Prompt Learning for Zero-Shot Anomaly Detection"
@@ -16,8 +20,9 @@
   evidence_dependencies: [state-interface-semantics, spatial-identity]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2310.18961"
+  code_url: "https://github.com/zqhang/AnomalyCLIP"
+  code_status: official
 
 - key: chen2024clip
   title: "CLIP-AD: A Language-Guided Staged Dual-Path Model for Zero-Shot Anomaly Detection"
@@ -25,8 +30,9 @@
   evidence_dependencies: [spatial-identity]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2311.00453"
+  code_url: "https://github.com/xuhai-chen/CLIP-AD"
+  code_status: official
 
 - key: li2024promptad
   title: "PromptAD: Learning Prompts With Only Normal Samples for Few-Shot Anomaly Detection"
@@ -34,8 +40,9 @@
   evidence_dependencies: [target-reference-validity]
   setting: few-normal-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://openaccess.thecvf.com/content/CVPR2024/html/Li_PromptAD_Learning_Prompts_with_only_Normal_Samples_for_Few-Shot_Anomaly_CVPR_2024_paper.html"
+  code_url: "https://github.com/FuNz-0/PromptAD"
+  code_status: official
 
 - key: cao2024adaclip
   title: "AdaCLIP: Adapting CLIP With Hybrid Learnable Prompts for Zero-Shot Anomaly Detection"
@@ -43,8 +50,9 @@
   evidence_dependencies: [state-interface-semantics, spatial-identity]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2407.15795"
+  code_url: "https://github.com/caoyunkang/AdaCLIP"
+  code_status: official
 
 - key: li2024musc
   title: "MuSc: Zero-Shot Industrial Anomaly Classification and Segmentation With Mutual Scoring of the Unlabeled Images"
@@ -52,8 +60,9 @@
   evidence_dependencies: [target-reference-validity]
   setting: context-enhanced zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2401.16753"
+  code_url: "https://github.com/xrli-U/MuSc"
+  code_status: official
 
 - key: zhou2024pointad
   title: "PointAD: Comprehending 3D Anomalies From Points and Pixels for Zero-Shot 3D Anomaly Detection"
@@ -61,8 +70,9 @@
   evidence_dependencies: [auxiliary-evidence, spatial-identity]
   setting: zero-shot 3D
   datasets: [MVTec 3D-AD]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2410.00320"
+  code_url: "https://github.com/zqhang/PointAD"
+  code_status: official
 
 - key: gu2024anomalygpt
   title: "AnomalyGPT: Detecting Industrial Anomalies Using Large Vision-Language Models"
@@ -70,8 +80,9 @@
   evidence_dependencies: [grounded-composition]
   setting: LVLM reasoning
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2308.15366"
+  code_url: "https://github.com/CASIA-LMC-Lab/AnomalyGPT"
+  code_status: official
 
 - key: qu2025bayesian
   title: "Bayesian Prompt Flow Learning for Zero-Shot Anomaly Detection"
@@ -79,8 +90,9 @@
   evidence_dependencies: [state-interface-semantics, spatial-identity]
   setting: zero-shot with prompt sampling
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2503.10080"
+  code_url: "https://github.com/xiaozhen228/Bayes-PFL"
+  code_status: official
 
 - key: gong2025fe
   title: "FE-CLIP: Frequency Enhanced CLIP Model for Zero-Shot Anomaly Detection and Segmentation"
@@ -88,8 +100,9 @@
   evidence_dependencies: [auxiliary-evidence, spatial-identity]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
+  paper_url: "https://openaccess.thecvf.com/content/ICCV2025/html/Gong_FE-CLIP_Frequency_Enhanced_CLIP_Model_for_Zero-Shot_Anomaly_Detection_and_ICCV_2025_paper.html"
   code_url: ""
+  code_status: no-verified-public-code
 
 - key: he2025rareclip
   title: "RareCLIP: Rarity-Aware Online Zero-Shot Industrial Anomaly Detection"
@@ -97,8 +110,9 @@
   evidence_dependencies: [target-reference-validity]
   setting: online zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://openaccess.thecvf.com/content/ICCV2025/html/He_RareCLIP_Rarity-aware_Online_Zero-shot_Industrial_Anomaly_Detection_ICCV_2025_paper.html"
+  code_url: "https://github.com/hjf02/RareCLIP"
+  code_status: official
 
 - key: jiang2025mmad
   title: "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection"
@@ -106,8 +120,9 @@
   evidence_dependencies: [benchmark-or-dataset, grounded-composition]
   setting: MLLM reasoning benchmark
   datasets: [MMAD]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://arxiv.org/abs/2410.09453"
+  code_url: "https://github.com/jam-cc/MMAD"
+  code_status: official-code-and-data
 
 - key: zhang2026s2swclip
   title: "S2SWCLIP: Semantic-Optimized Prompts With Spatial-Wavelet Synergy for Zero-Shot Anomaly Detection"
@@ -115,8 +130,9 @@
   evidence_dependencies: [state-interface-semantics, auxiliary-evidence, spatial-identity]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
-  code_url: ""
+  paper_url: "https://www.nature.com/articles/s41598-026-43044-3"
+  code_url: "https://github.com/Huanzh111/S2SW"
+  code_status: official
 
 - key: shao2026promptmoe
   title: "PromptMoE: Generalizable Zero-Shot Anomaly Detection via Visually-Guided Prompt Mixtures"
@@ -124,8 +140,9 @@
   evidence_dependencies: [state-interface-semantics]
   setting: zero-shot
   datasets: [MVTec AD, VisA]
-  paper_url: ""
+  paper_url: "https://arxiv.org/abs/2511.18116"
   code_url: ""
+  code_status: no-verified-public-code
 
 - key: tan2026indusagent
   title: "IndusAgent: Reinforcing Open-Vocabulary Industrial Anomaly Detection With Agentic Tools"
@@ -133,5 +150,6 @@
   evidence_dependencies: [grounded-composition]
   setting: agentic reasoning
   datasets: []
-  paper_url: ""
+  paper_url: "https://arxiv.org/abs/2605.20682"
   code_url: ""
+  code_status: no-verified-public-code

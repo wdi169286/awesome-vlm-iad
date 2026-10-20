@@ -11,6 +11,12 @@ __pycache__/
 .venv/
 node_modules/
 
+# The manuscript remains private until acceptance
+sn-article.tex
+old-paper.tex
+/manuscript/
+/paper/manuscript/
+
 # Local environments and credentials
 .env
 .env.*

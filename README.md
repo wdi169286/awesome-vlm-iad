@@ -8,6 +8,8 @@ A curated research hub and paper companion for vision-language and multimodal fo
 
 The repository connects three kinds of evidence that are often scattered across papers: the literature landscape, protocol-aware source-reported results, and controlled experiments that test whether particular evidence paths are decision-active.
 
+> **Manuscript status.** This public repository does not contain the submitted manuscript or review material. Until the paper is accepted, it releases only the literature index, compact evidence records, selected analysis code, and approved result artifacts.
+
 ## Start Here
 
 | Resource | What it provides |

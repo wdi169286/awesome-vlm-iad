@@ -2,6 +2,30 @@
 
 This page groups representative work by its dominant evidence operation for readability. The groups are not mutually exclusive: machine-readable records may assign a paper to several evidence dependencies.
 
+## Quick Paper and Code Index
+
+Links marked **official** point to repositories maintained by the authors or the project. A community reproduction is shown only when no verified official implementation was found, and is labelled explicitly. “Not verified” means this catalogue does not currently claim that a public author-maintained implementation exists.
+
+| Year | Method | Paper | Implementation |
+| --- | --- | --- | --- |
+| 2023 | WinCLIP | [paper](https://arxiv.org/abs/2303.14814) | [community reproduction](https://github.com/zqhang/Accurate-WinCLIP-pytorch) (unofficial) |
+| 2023 | AnomalyCLIP | [paper](https://arxiv.org/abs/2310.18961) | [official code](https://github.com/zqhang/AnomalyCLIP) |
+| 2024 | CLIP-AD | [paper](https://arxiv.org/abs/2311.00453) | [official code](https://github.com/xuhai-chen/CLIP-AD) |
+| 2024 | PromptAD | [paper](https://openaccess.thecvf.com/content/CVPR2024/html/Li_PromptAD_Learning_Prompts_with_only_Normal_Samples_for_Few-Shot_Anomaly_CVPR_2024_paper.html) | [official code](https://github.com/FuNz-0/PromptAD) |
+| 2024 | AdaCLIP | [paper](https://arxiv.org/abs/2407.15795) | [official code](https://github.com/caoyunkang/AdaCLIP) |
+| 2024 | MuSc | [paper](https://arxiv.org/abs/2401.16753) | [official code](https://github.com/xrli-U/MuSc) |
+| 2024 | PointAD | [paper](https://arxiv.org/abs/2410.00320) | [official code](https://github.com/zqhang/PointAD) |
+| 2024 | AnomalyGPT | [paper](https://arxiv.org/abs/2308.15366) | [official code](https://github.com/CASIA-LMC-Lab/AnomalyGPT) |
+| 2025 | Bayes-PFL | [paper](https://arxiv.org/abs/2503.10080) | [official code](https://github.com/xiaozhen228/Bayes-PFL) |
+| 2025 | FE-CLIP | [paper](https://openaccess.thecvf.com/content/ICCV2025/html/Gong_FE-CLIP_Frequency_Enhanced_CLIP_Model_for_Zero-Shot_Anomaly_Detection_and_ICCV_2025_paper.html) | Not verified |
+| 2025 | RareCLIP | [paper](https://openaccess.thecvf.com/content/ICCV2025/html/He_RareCLIP_Rarity-aware_Online_Zero-shot_Industrial_Anomaly_Detection_ICCV_2025_paper.html) | [official code](https://github.com/hjf02/RareCLIP) |
+| 2025 | MMAD | [paper](https://arxiv.org/abs/2410.09453) | [official code and data](https://github.com/jam-cc/MMAD) |
+| 2026 | S2SWCLIP | [paper](https://www.nature.com/articles/s41598-026-43044-3) | [official code](https://github.com/Huanzh111/S2SW) |
+| 2026 | PromptMoE | [paper](https://arxiv.org/abs/2511.18116) | Not verified |
+| 2026 | IndusAgent | [paper](https://arxiv.org/abs/2605.20682) | Not verified |
+
+The machine-readable version of this index, including link status, is maintained in [`data/papers.yml`](data/papers.yml).
+
 ## Foundation Models and Dense Readout Precursors
 
 | Year | Paper | Venue or source | Why it matters |
