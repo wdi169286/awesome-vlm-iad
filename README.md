@@ -18,6 +18,7 @@ The repository connects three kinds of evidence that are often scattered across 
 | [Datasets](datasets.md) | Dataset scope, modalities, and inspection questions |
 | [Metrics and protocols](metrics-and-protocols.md) | Metric definitions and comparison cautions |
 | [Paper companion](paper/README.md) | Map from the manuscript to public tables, figures, and records |
+| [Review audit data](review-audit/README.md) | Frozen screening decisions, reliability records, and evidence-path coding |
 | [Controlled experiments](experiments/README.md) | E1--E4 interventions, validity checks, and result artifacts |
 | [Result records](results/README.md) | Compact machine-readable aggregates and final validity audits |
 | [Model zoo](MODEL_ZOO.md) | Official weights, study-trained checkpoints, and released-output analyses |
