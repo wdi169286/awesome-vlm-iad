@@ -1,0 +1,1144 @@
+{
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "category",
+  "dataset": "mvtec",
+  "method": "vand",
+  "schema": 1,
+  "threshold_policy": "per-category q95(method=higher) on independent official train-normal split; frozen across test conditions",
+  "treatments": {
+    "format_matched_irrelevant": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.6939282477177114,
+          "ci95_low": 0.4876238341797079,
+          "macro_mean": 0.5929389322545856
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.6714432639869045,
+          "ci95_low": 0.42140934899687377,
+          "macro_mean": 0.5525687518285616
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -1.8617727689317607,
+          "ci95_low": -4.3725363443769245,
+          "macro_mean": -3.050789884439568
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.002677085026296081,
+          "ci95_low": -0.07380366229882633,
+          "macro_mean": -0.03347871045918364
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.12127637736259989,
+          "ci95_low": 0.03264417195936842,
+          "macro_mean": 0.0711975703274951
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.7936507936507936,
+          "delta_anomaly_fnr": 0.7619047619047619,
+          "delta_margin_in_calibration_sd": -4.405992435721093,
+          "delta_normal_fpr": -0.05,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_fnr": 0.2222222222222222,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.8175744414329529,
+          "treatment_anomaly_fnr": 0.9841269841269841,
+          "treatment_normal_fpr": 0.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.33695652173913043,
+          "delta_anomaly_fnr": 0.25,
+          "delta_margin_in_calibration_sd": -1.9126086823499893,
+          "delta_normal_fpr": 0.10344827586206896,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 0.10344827586206896,
+          "reference_anomaly_fnr": 0.6630434782608695,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7025300860404968,
+          "treatment_anomaly_fnr": 0.9130434782608695,
+          "treatment_normal_fpr": 0.10344827586206896
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.44036697247706424,
+          "delta_anomaly_fnr": 0.22018348623853212,
+          "delta_margin_in_calibration_sd": -1.9930974420769019,
+          "delta_normal_fpr": 0.043478260869565216,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 0.043478260869565216,
+          "reference_anomaly_fnr": 0.5137614678899083,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.314050555229187,
+          "treatment_anomaly_fnr": 0.7339449541284404,
+          "treatment_normal_fpr": 0.043478260869565216
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.7415730337078652,
+          "delta_anomaly_fnr": 0.7415730337078652,
+          "delta_margin_in_calibration_sd": -8.873505810201115,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.5273165106773376,
+          "treatment_anomaly_fnr": 0.7752808988764045,
+          "treatment_normal_fpr": 0.0
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.631578947368421,
+          "delta_anomaly_fnr": 0.631578947368421,
+          "delta_margin_in_calibration_sd": -1.7820344223020006,
+          "delta_normal_fpr": -0.047619047619047616,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.047619047619047616,
+          "reference_anomaly_fnr": 0.3684210526315789,
+          "reference_normal_fpr": 0.047619047619047616,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.7285714285714285,
+          "delta_anomaly_fnr": 0.7285714285714286,
+          "delta_margin_in_calibration_sd": -2.3552639364571313,
+          "delta_normal_fpr": -0.075,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.075,
+          "reference_anomaly_fnr": 0.2714285714285714,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.907312273979187,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.782608695652174,
+          "delta_anomaly_fnr": 0.782608695652174,
+          "delta_margin_in_calibration_sd": -5.078053439901108,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.021739130434782608,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.6150878667831421,
+          "treatment_anomaly_fnr": 0.8043478260869565,
+          "treatment_normal_fpr": 0.0
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.43010752688172044,
+          "delta_anomaly_fnr": 0.4301075268817204,
+          "delta_margin_in_calibration_sd": -0.4146681075002097,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.5698924731182796,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7718434929847717,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.48226950354609927,
+          "delta_anomaly_fnr": 0.4822695035460993,
+          "delta_margin_in_calibration_sd": -1.127932196454925,
+          "delta_normal_fpr": -0.038461538461538464,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 0.038461538461538464,
+          "reference_anomaly_fnr": 0.5035460992907801,
+          "reference_normal_fpr": 0.038461538461538464,
+          "threshold_q95_higher": 0.531209409236908,
+          "treatment_anomaly_fnr": 0.9858156028368794,
+          "treatment_normal_fpr": 0.0
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.3277310924369748,
+          "delta_anomaly_fnr": 0.32773109243697474,
+          "delta_margin_in_calibration_sd": -0.5399204364145432,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.6722689075630253,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.7772998809814453,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.7857142857142857,
+          "delta_anomaly_fnr": 0.7857142857142857,
+          "delta_margin_in_calibration_sd": -6.378671665435052,
+          "delta_normal_fpr": -0.030303030303030304,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.030303030303030304,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.5389832258224487,
+          "treatment_anomaly_fnr": 0.7857142857142857,
+          "treatment_normal_fpr": 0.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.2,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -0.06790591602927139,
+          "delta_normal_fpr": -0.16666666666666669,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 0.3333333333333333,
+          "reference_anomaly_fnr": 0.8333333333333334,
+          "reference_normal_fpr": 0.25,
+          "threshold_q95_higher": 0.6513549089431763,
+          "treatment_anomaly_fnr": 0.8333333333333334,
+          "treatment_normal_fpr": 0.08333333333333333
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.725,
+          "delta_anomaly_fnr": 0.725,
+          "delta_margin_in_calibration_sd": -1.9044787375256576,
+          "delta_normal_fpr": -0.21666666666666667,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.21666666666666667,
+          "reference_anomaly_fnr": 0.275,
+          "reference_normal_fpr": 0.21666666666666667,
+          "threshold_q95_higher": 0.7185943722724915,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.9333333333333333,
+          "delta_anomaly_fnr": 0.8666666666666667,
+          "delta_margin_in_calibration_sd": -6.62700153185103,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.10526315789473684,
+          "reference_anomaly_fnr": 0.03333333333333333,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.5888891220092773,
+          "treatment_anomaly_fnr": 0.9,
+          "treatment_normal_fpr": 0.15789473684210525
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.5546218487394958,
+          "delta_anomaly_fnr": 0.5546218487394958,
+          "delta_margin_in_calibration_sd": -2.3007135063734956,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.44537815126050423,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.66888028383255,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/bottle__full__seed0.npz",
+          "calibration_sha256": "64ecc2526d47645f5a1b884dee0d92d7d2959e9c79603b59b5f529dfe537b0ac",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "6e5bcf44c9b4c75d58682003a767792c5a6bad899d0e22d4e59c046411a6e602",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/bottle__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "2224af6f02128479953588ae4fc8c7c463aad0a64f4eb0a490994dfb032dbf44"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/cable__full__seed0.npz",
+          "calibration_sha256": "a18f55d91a3d804ff1e0777f0b0cb882d02477c6c139b553c8b903a05bde16cc",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "b34ece357385d5ef0795809b2ff6c4f4e02eaa547e9e8d1266e411a90f560b51",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/cable__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "b1ca459ce1edfb0b5bf4540a979f866cbd8e08c1fea4487455d6a08ca1544ae9"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/capsule__full__seed0.npz",
+          "calibration_sha256": "b57f29a7a185f8e5ba3adb65d6bc859c44bea6448dbbd9d698994d126b78d57f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "d58e1bf59dea3a4299c04d1aec1cee1277bc286dc9fb271ee2dc133de9edb31c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/capsule__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "71a423967a4e5f9ee459b57b39f00981f51e0aa852fd8a998c55d85dc6e889d1"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/carpet__full__seed0.npz",
+          "calibration_sha256": "ac85264b2860946b37eb14e34f210c75326bdf628aa0d63508f223640b81b4fb",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "5014d3a2b530880e63fbf4899a8882fd4523da6950cd1e20c321f2ffd8cdbc1b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/carpet__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "26da96e6b52ce69bef5fc76a23328f0c325447815dc41f365071a19fb472ea56"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/grid__full__seed0.npz",
+          "calibration_sha256": "7c21f7f1874f4b6fcafe0d6c9a011af4dda6e471eb77a1e40b7417cf5447135d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "251c396f2637fcc2826e0c62c41996cb5de27675892976543e0e3c28923386ad",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/grid__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "af8d036d9fad01d611ae518de5e49fa1e83ea3503887c909caf29450936be25a"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/hazelnut__full__seed0.npz",
+          "calibration_sha256": "38b5e13f9f20ea255b94b9a43489b1d2c96da17217e4684cec8d2f92ae87976e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "ecc56c61e3396194adf0e1e38cdbfee8f67cb754e782d16de78de371a375cf58",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/hazelnut__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "2fde97b7194121ff00d50940b9725a942477d49ecabaf4077cbf39974dae34bd"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/leather__full__seed0.npz",
+          "calibration_sha256": "0c8f74cae37fe06c3b6ff216242b1f5c7c96bfd8e1633b94804a8f748aa274a4",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "6e511b11dbcf51d5e17c93648bfe22d0252a1afd7c8d741c8f413aa82784c815",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/leather__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "86598352e91fb77bff4d035c6ecf48f090f7efbf35d54823927cab5dae4e8f70"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/metal_nut__full__seed0.npz",
+          "calibration_sha256": "a9025df6f072311a25ece3a103f1060c128cd4889789dc2b0957afb9e6e72f25",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "0be7feabf5f2a73499cc8e39b19e3c9103a13a24f576e583a5471328208830cb",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/metal_nut__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "1b62b160d42f85e6df2dc0710ee319eb802f2c383b6acf711601c4e226a7f145"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/pill__full__seed0.npz",
+          "calibration_sha256": "a54924dd292111cba2bc0381a3667f9886cc11f8ac4c5673fde27d5fe6da5a91",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "da3c30fd7b36c7fb2479c49f660691ea9d926b69190c14e987f9280238b68039",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/pill__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "3bf8e389f5d62f063852b410baab67e0236794c8d1013c7d245020d8219a5820"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/screw__full__seed0.npz",
+          "calibration_sha256": "8de1562deb0efb78d8ad40e68c5330afd255b91e0ad894f392b673518f2041a1",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "e2b1dc0bfc727004ba69227dd1e263c42d24d666b33bb4a14b894fc99b765ac5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/screw__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "7cbfe0d4ccbed8fb384ad901cde3ae657274d7788af091286880e96da3299493"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/tile__full__seed0.npz",
+          "calibration_sha256": "feeabbdaaade810661c6e186625a33f3aaae6f7fd5ca499315426287d61f20f7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "39c23390d992fd3ae6961870d2d97e6c8c7ddfd4bd2ae5032dcca811462247e5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/tile__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "a10ce35cb58a2d293bac2f583441338ce13386c443702e9d9f4f748a33e5952d"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/toothbrush__full__seed0.npz",
+          "calibration_sha256": "697bd5db580e1f2566d3917553d6244941f63d6f8c48ed24cde3cf46195d2481",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "4c6c021d98ac91155f817529a3edb6bec0a507b07863cbf11f21358e9a9c397b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/toothbrush__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "9e4e996e14dede049b52c3f650bb2e2ebfeb142d1db9d7731060cfe3c870684b"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/transistor__full__seed0.npz",
+          "calibration_sha256": "8358c0b766f21e18ab1100d94f783bad76fe9ca9f93c45faa746420d44958764",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f82f00038c3233456dee3509ab5b0aba57d048642581e388038288eb30052d89",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/transistor__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "57922a1866d2df0b936b07382c464e4f425fda094d4bd519f3487f25fca7391a"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/wood__full__seed0.npz",
+          "calibration_sha256": "a6167ae98428ecadf462160ccc60f94dc39725012673320f108ea12be5ddbf82",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "4de6cb52c0e33e59b07f45cb05ddfb5ebab77bdaade30bf136bbada11fa5c80c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/wood__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "c60f93377ceb640dad59c21db04327b0c5673c9a130d5bd77d78cffea2bf6b89"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/zipper__full__seed0.npz",
+          "calibration_sha256": "724107aee04d38fe2266c5c0d2579e7d2584d5bfd05c449da667de1f96c305ef",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "9a6e13cacf936439448b6e6d7f832c5133cf1f5d4a410e3ca69b20bee742e2dd",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/format_matched_irrelevant/zipper__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "23ed6c0aed5965e48c9f9061878dc13a4680a80b556aafcb15f117c6da2a6fde"
+        }
+      }
+    },
+    "meaning_preserving_paraphrase": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.4047225196860568,
+          "ci95_low": 0.20686577447305823,
+          "macro_mean": 0.30556600298335995
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.3602810443366237,
+          "ci95_low": 0.07863256122752302,
+          "macro_mean": 0.22633161341127758
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -0.09537652432390094,
+          "ci95_low": -1.0002091250293095,
+          "macro_mean": -0.5188761990730876
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.19610530934708564,
+          "ci95_low": -0.06600605489842493,
+          "macro_mean": 0.040313630350536624
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.26311981658692185,
+          "ci95_low": 0.03827980247448316,
+          "macro_mean": 0.12658153588673485
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.12698412698412698,
+          "delta_anomaly_fnr": 0.12698412698412698,
+          "delta_margin_in_calibration_sd": -0.22756888863931246,
+          "delta_normal_fpr": -0.05,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_fnr": 0.2222222222222222,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.8175744414329529,
+          "treatment_anomaly_fnr": 0.3492063492063492,
+          "treatment_normal_fpr": 0.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.33695652173913043,
+          "delta_anomaly_fnr": 0.3369565217391305,
+          "delta_margin_in_calibration_sd": -0.4677157203502837,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.6630434782608695,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7025300860404968,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.5137614678899083,
+          "delta_anomaly_fnr": -0.5137614678899083,
+          "delta_margin_in_calibration_sd": -0.7268593029316299,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.5137614678899083,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.314050555229187,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.5280898876404494,
+          "delta_anomaly_fnr": 0.5280898876404495,
+          "delta_margin_in_calibration_sd": -2.7924200864507593,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.5273165106773376,
+          "treatment_anomaly_fnr": 0.5617977528089888,
+          "treatment_normal_fpr": 0.0
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.543859649122807,
+          "delta_anomaly_fnr": 0.5438596491228069,
+          "delta_margin_in_calibration_sd": -0.7045940967554306,
+          "delta_normal_fpr": -0.047619047619047616,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.047619047619047616,
+          "reference_anomaly_fnr": 0.3684210526315789,
+          "reference_normal_fpr": 0.047619047619047616,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.9122807017543859,
+          "treatment_normal_fpr": 0.0
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.5428571428571428,
+          "delta_anomaly_fnr": 0.5428571428571429,
+          "delta_margin_in_calibration_sd": 0.3574276800761479,
+          "delta_normal_fpr": -0.075,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.075,
+          "reference_anomaly_fnr": 0.2714285714285714,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.907312273979187,
+          "treatment_anomaly_fnr": 0.8142857142857143,
+          "treatment_normal_fpr": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.03260869565217391,
+          "delta_anomaly_fnr": 0.03260869565217391,
+          "delta_margin_in_calibration_sd": -0.8280215504320162,
+          "delta_normal_fpr": 0.03125,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.03125,
+          "reference_anomaly_fnr": 0.021739130434782608,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.6150878667831421,
+          "treatment_anomaly_fnr": 0.05434782608695652,
+          "treatment_normal_fpr": 0.03125
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.3655913978494624,
+          "delta_anomaly_fnr": 0.36559139784946226,
+          "delta_margin_in_calibration_sd": 0.056258998681748315,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.5698924731182796,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7718434929847717,
+          "treatment_anomaly_fnr": 0.9354838709677419,
+          "treatment_normal_fpr": 0.0
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.1773049645390071,
+          "delta_anomaly_fnr": 0.04964539007092206,
+          "delta_margin_in_calibration_sd": -0.8240088228679533,
+          "delta_normal_fpr": 0.07692307692307693,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 0.07692307692307693,
+          "reference_anomaly_fnr": 0.5035460992907801,
+          "reference_normal_fpr": 0.038461538461538464,
+          "threshold_q95_higher": 0.531209409236908,
+          "treatment_anomaly_fnr": 0.5531914893617021,
+          "treatment_normal_fpr": 0.11538461538461539
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.3277310924369748,
+          "delta_anomaly_fnr": 0.32773109243697474,
+          "delta_margin_in_calibration_sd": 0.4080109189535756,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.6722689075630253,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.7772998809814453,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -1.5744404849624047,
+          "delta_normal_fpr": 0.09090909090909091,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.09090909090909091,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.5389832258224487,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.12121212121212122
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.16666666666666666,
+          "delta_anomaly_fnr": 0.16666666666666663,
+          "delta_margin_in_calibration_sd": 0.23974046157629578,
+          "delta_normal_fpr": -0.25,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 0.25,
+          "reference_anomaly_fnr": 0.8333333333333334,
+          "reference_normal_fpr": 0.25,
+          "threshold_q95_higher": 0.6513549089431763,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.375,
+          "delta_anomaly_fnr": 0.375,
+          "delta_margin_in_calibration_sd": 0.6711999539727531,
+          "delta_normal_fpr": -0.2,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.2,
+          "reference_anomaly_fnr": 0.275,
+          "reference_normal_fpr": 0.21666666666666667,
+          "threshold_q95_higher": 0.7185943722724915,
+          "treatment_anomaly_fnr": 0.65,
+          "treatment_normal_fpr": 0.016666666666666666
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.016666666666666666,
+          "delta_anomaly_fnr": -0.016666666666666666,
+          "delta_margin_in_calibration_sd": -1.5385239856406183,
+          "delta_normal_fpr": 0.05263157894736842,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.05263157894736842,
+          "reference_anomaly_fnr": 0.03333333333333333,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.5888891220092773,
+          "treatment_anomaly_fnr": 0.016666666666666666,
+          "treatment_normal_fpr": 0.21052631578947367
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.5294117647058824,
+          "delta_anomaly_fnr": 0.5294117647058822,
+          "delta_margin_in_calibration_sd": 0.16837193967357628,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.44537815126050423,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.66888028383255,
+          "treatment_anomaly_fnr": 0.9747899159663865,
+          "treatment_normal_fpr": 0.0
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/bottle__full__seed0.npz",
+          "calibration_sha256": "64ecc2526d47645f5a1b884dee0d92d7d2959e9c79603b59b5f529dfe537b0ac",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "6e5bcf44c9b4c75d58682003a767792c5a6bad899d0e22d4e59c046411a6e602",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/bottle__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "9dbe968f7df96f78335f259f210d9cd024324d78adeba7e011d2f9f72044d608"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/cable__full__seed0.npz",
+          "calibration_sha256": "a18f55d91a3d804ff1e0777f0b0cb882d02477c6c139b553c8b903a05bde16cc",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "b34ece357385d5ef0795809b2ff6c4f4e02eaa547e9e8d1266e411a90f560b51",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/cable__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "8bc29920785ab968abce5114d6e1c6aeb45a19f553bec454353a4254a7c399ee"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/capsule__full__seed0.npz",
+          "calibration_sha256": "b57f29a7a185f8e5ba3adb65d6bc859c44bea6448dbbd9d698994d126b78d57f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "d58e1bf59dea3a4299c04d1aec1cee1277bc286dc9fb271ee2dc133de9edb31c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/capsule__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "0cb298d2d76ea763b1cc7975e47e55dfdde998efd1cd8470b2aa051f5ce1e541"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/carpet__full__seed0.npz",
+          "calibration_sha256": "ac85264b2860946b37eb14e34f210c75326bdf628aa0d63508f223640b81b4fb",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "5014d3a2b530880e63fbf4899a8882fd4523da6950cd1e20c321f2ffd8cdbc1b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/carpet__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "11e1366e963ceab5fe1a4fc9ed50eddc3806d2666623d50412e2bf4a6040b8c1"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/grid__full__seed0.npz",
+          "calibration_sha256": "7c21f7f1874f4b6fcafe0d6c9a011af4dda6e471eb77a1e40b7417cf5447135d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "251c396f2637fcc2826e0c62c41996cb5de27675892976543e0e3c28923386ad",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/grid__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "4ab46892f3ce2d04097c1daea6ee2f37ab81bafbd17a5e0e67b395eda352ece9"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/hazelnut__full__seed0.npz",
+          "calibration_sha256": "38b5e13f9f20ea255b94b9a43489b1d2c96da17217e4684cec8d2f92ae87976e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "ecc56c61e3396194adf0e1e38cdbfee8f67cb754e782d16de78de371a375cf58",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/hazelnut__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "416c1e9e2a69a301f600eec27f00db6919e1b9caaedcc43a4573497514791869"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/leather__full__seed0.npz",
+          "calibration_sha256": "0c8f74cae37fe06c3b6ff216242b1f5c7c96bfd8e1633b94804a8f748aa274a4",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "6e511b11dbcf51d5e17c93648bfe22d0252a1afd7c8d741c8f413aa82784c815",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/leather__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "09667115d03ab0d39626efc2044037c62035248b337879d4fe6dda8f8d841afa"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/metal_nut__full__seed0.npz",
+          "calibration_sha256": "a9025df6f072311a25ece3a103f1060c128cd4889789dc2b0957afb9e6e72f25",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "0be7feabf5f2a73499cc8e39b19e3c9103a13a24f576e583a5471328208830cb",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/metal_nut__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "1845853d616ea817fe40e8cdb7856dc11a3d1a9eb4e11466699b381c792bbf5c"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/pill__full__seed0.npz",
+          "calibration_sha256": "a54924dd292111cba2bc0381a3667f9886cc11f8ac4c5673fde27d5fe6da5a91",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "da3c30fd7b36c7fb2479c49f660691ea9d926b69190c14e987f9280238b68039",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/pill__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "f471aa831ab2323f681e66183f26096e25a660955d6c89ad0cdf370661e1b016"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/screw__full__seed0.npz",
+          "calibration_sha256": "8de1562deb0efb78d8ad40e68c5330afd255b91e0ad894f392b673518f2041a1",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "e2b1dc0bfc727004ba69227dd1e263c42d24d666b33bb4a14b894fc99b765ac5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/screw__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "9ed6e6694cd9ca0edd223af7c93a45afa43f9a576fdb2345814772ca1f2a7e7c"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/tile__full__seed0.npz",
+          "calibration_sha256": "feeabbdaaade810661c6e186625a33f3aaae6f7fd5ca499315426287d61f20f7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "39c23390d992fd3ae6961870d2d97e6c8c7ddfd4bd2ae5032dcca811462247e5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/tile__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "67f648366048467a57a77749e8a7529ce3e8a2b60a7bbe66dbf3cf450859fa4a"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/toothbrush__full__seed0.npz",
+          "calibration_sha256": "697bd5db580e1f2566d3917553d6244941f63d6f8c48ed24cde3cf46195d2481",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "4c6c021d98ac91155f817529a3edb6bec0a507b07863cbf11f21358e9a9c397b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/toothbrush__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "99b9da0a55a35859b88a451f3c4effd3812af7db550e15d3176d9c926466cfc3"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/transistor__full__seed0.npz",
+          "calibration_sha256": "8358c0b766f21e18ab1100d94f783bad76fe9ca9f93c45faa746420d44958764",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f82f00038c3233456dee3509ab5b0aba57d048642581e388038288eb30052d89",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/transistor__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "721e018f90680615b55072ccfe5bef771664b3bebdc8b8b72bc6f56c2806742d"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/wood__full__seed0.npz",
+          "calibration_sha256": "a6167ae98428ecadf462160ccc60f94dc39725012673320f108ea12be5ddbf82",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "4de6cb52c0e33e59b07f45cb05ddfb5ebab77bdaade30bf136bbada11fa5c80c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/wood__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "20a39bf3bb45160c30da584c709f4e2e2b82027a4f8617ea853a0d570b9797d1"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/zipper__full__seed0.npz",
+          "calibration_sha256": "724107aee04d38fe2266c5c0d2579e7d2584d5bfd05c449da667de1f96c305ef",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "9a6e13cacf936439448b6e6d7f832c5133cf1f5d4a410e3ca69b20bee742e2dd",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/meaning_preserving_paraphrase/zipper__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "8c355245bb7d1a77fe4ea7e0ac4f4a95980904a90bd3e1d72cbb2a72d1ae9013"
+        }
+      }
+    },
+    "semantic_content_error": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.6985476447110481,
+          "ci95_low": 0.4634741944756319,
+          "macro_mean": 0.5846978589338531
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.5326557319563278,
+          "ci95_low": -0.007256309893926413,
+          "macro_mean": 0.27359445053038767
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -1.902702774968513,
+          "ci95_low": -4.600492454929691,
+          "macro_mean": -3.169289441703482
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.4988984320368015,
+          "ci95_low": 0.06995625540244803,
+          "macro_mean": 0.2768367392239177
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.5402653603399143,
+          "ci95_low": 0.16832271011330704,
+          "macro_mean": 0.34669695887874585
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.746031746031746,
+          "delta_anomaly_fnr": 0.746031746031746,
+          "delta_margin_in_calibration_sd": -3.133184188237545,
+          "delta_normal_fpr": -0.05,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_fnr": 0.2222222222222222,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.8175744414329529,
+          "treatment_anomaly_fnr": 0.9682539682539683,
+          "treatment_normal_fpr": 0.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.6304347826086957,
+          "delta_anomaly_fnr": -0.4130434782608695,
+          "delta_margin_in_calibration_sd": -2.319052214376481,
+          "delta_normal_fpr": 0.8793103448275862,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 0.8793103448275862,
+          "reference_anomaly_fnr": 0.6630434782608695,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7025300860404968,
+          "treatment_anomaly_fnr": 0.25,
+          "treatment_normal_fpr": 0.8793103448275862
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.5137614678899083,
+          "delta_anomaly_fnr": -0.5137614678899083,
+          "delta_margin_in_calibration_sd": -2.040242951828739,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.5137614678899083,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.314050555229187,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.9550561797752809,
+          "delta_anomaly_fnr": 0.9550561797752809,
+          "delta_margin_in_calibration_sd": -8.822513684219148,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.5273165106773376,
+          "treatment_anomaly_fnr": 0.9887640449438202,
+          "treatment_normal_fpr": 0.0
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.47368421052631576,
+          "delta_anomaly_fnr": 0.3684210526315789,
+          "delta_margin_in_calibration_sd": -1.791707519233264,
+          "delta_normal_fpr": 0.19047619047619047,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.19047619047619047,
+          "reference_anomaly_fnr": 0.3684210526315789,
+          "reference_normal_fpr": 0.047619047619047616,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.7368421052631579,
+          "treatment_normal_fpr": 0.23809523809523808
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.7285714285714285,
+          "delta_anomaly_fnr": 0.7285714285714286,
+          "delta_margin_in_calibration_sd": -1.0067154242566556,
+          "delta_normal_fpr": -0.075,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.075,
+          "reference_anomaly_fnr": 0.2714285714285714,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.907312273979187,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.5217391304347826,
+          "delta_anomaly_fnr": 0.4782608695652174,
+          "delta_margin_in_calibration_sd": -5.891629336913814,
+          "delta_normal_fpr": 0.15625,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.15625,
+          "reference_anomaly_fnr": 0.021739130434782608,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.6150878667831421,
+          "treatment_anomaly_fnr": 0.5,
+          "treatment_normal_fpr": 0.15625
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.43010752688172044,
+          "delta_anomaly_fnr": 0.4301075268817204,
+          "delta_margin_in_calibration_sd": -2.100519400332775,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.5698924731182796,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.7718434929847717,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.41134751773049644,
+          "delta_anomaly_fnr": -0.36879432624113473,
+          "delta_margin_in_calibration_sd": -1.2901096859718766,
+          "delta_normal_fpr": 0.7307692307692308,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 0.7307692307692307,
+          "reference_anomaly_fnr": 0.5035460992907801,
+          "reference_normal_fpr": 0.038461538461538464,
+          "threshold_q95_higher": 0.531209409236908,
+          "treatment_anomaly_fnr": 0.1347517730496454,
+          "treatment_normal_fpr": 0.7692307692307693
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.3277310924369748,
+          "delta_anomaly_fnr": 0.32773109243697474,
+          "delta_margin_in_calibration_sd": -0.6836168544114926,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.6722689075630253,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.7772998809814453,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.03571428571428571,
+          "delta_anomaly_fnr": 0.03571428571428571,
+          "delta_margin_in_calibration_sd": -9.047151341581728,
+          "delta_normal_fpr": 0.9696969696969697,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.9696969696969697,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.5389832258224487,
+          "treatment_anomaly_fnr": 0.03571428571428571,
+          "treatment_normal_fpr": 1.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.8333333333333334,
+          "delta_anomaly_fnr": -0.8333333333333334,
+          "delta_margin_in_calibration_sd": -0.08856187425269565,
+          "delta_normal_fpr": 0.75,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 0.75,
+          "reference_anomaly_fnr": 0.8333333333333334,
+          "reference_normal_fpr": 0.25,
+          "threshold_q95_higher": 0.6513549089431763,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.725,
+          "delta_anomaly_fnr": 0.725,
+          "delta_margin_in_calibration_sd": -1.4548079243272343,
+          "delta_normal_fpr": -0.21666666666666667,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.21666666666666667,
+          "reference_anomaly_fnr": 0.275,
+          "reference_normal_fpr": 0.21666666666666667,
+          "threshold_q95_higher": 0.7185943722724915,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.8833333333333333,
+          "delta_anomaly_fnr": 0.8833333333333333,
+          "delta_margin_in_calibration_sd": -5.555358420371775,
+          "delta_normal_fpr": -0.15789473684210525,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.15789473684210525,
+          "reference_anomaly_fnr": 0.03333333333333333,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.5888891220092773,
+          "treatment_anomaly_fnr": 0.9166666666666666,
+          "treatment_normal_fpr": 0.0
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.5546218487394958,
+          "delta_anomaly_fnr": 0.5546218487394958,
+          "delta_margin_in_calibration_sd": -2.3141708052370005,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.44537815126050423,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.66888028383255,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/bottle__full__seed0.npz",
+          "calibration_sha256": "64ecc2526d47645f5a1b884dee0d92d7d2959e9c79603b59b5f529dfe537b0ac",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "6e5bcf44c9b4c75d58682003a767792c5a6bad899d0e22d4e59c046411a6e602",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/bottle__semantic_content_error__seed0.npz",
+          "treatment_sha256": "29a9055a535c51a9c09749c79358fe161282dea578a3afc8472a42d2fcdbe587"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/cable__full__seed0.npz",
+          "calibration_sha256": "a18f55d91a3d804ff1e0777f0b0cb882d02477c6c139b553c8b903a05bde16cc",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "b34ece357385d5ef0795809b2ff6c4f4e02eaa547e9e8d1266e411a90f560b51",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/cable__semantic_content_error__seed0.npz",
+          "treatment_sha256": "5a296128c3186ea6fe700aff932a51b6cec9faf3e7b585a77a7bcf69d35df715"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/capsule__full__seed0.npz",
+          "calibration_sha256": "b57f29a7a185f8e5ba3adb65d6bc859c44bea6448dbbd9d698994d126b78d57f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "d58e1bf59dea3a4299c04d1aec1cee1277bc286dc9fb271ee2dc133de9edb31c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/capsule__semantic_content_error__seed0.npz",
+          "treatment_sha256": "0e424166e3e671346781a6cb6eb4468942dbb02725f99c3e48e85fa660931afd"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/carpet__full__seed0.npz",
+          "calibration_sha256": "ac85264b2860946b37eb14e34f210c75326bdf628aa0d63508f223640b81b4fb",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "5014d3a2b530880e63fbf4899a8882fd4523da6950cd1e20c321f2ffd8cdbc1b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/carpet__semantic_content_error__seed0.npz",
+          "treatment_sha256": "bfe521145c6c56ef8c1dc0e3248090e8a1f436ab2353463f9e09233a892d0e37"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/grid__full__seed0.npz",
+          "calibration_sha256": "7c21f7f1874f4b6fcafe0d6c9a011af4dda6e471eb77a1e40b7417cf5447135d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "251c396f2637fcc2826e0c62c41996cb5de27675892976543e0e3c28923386ad",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/grid__semantic_content_error__seed0.npz",
+          "treatment_sha256": "5a65210f072719f26d92b2949c3efe1ca1fbbf6b07ba8abd195741d16ee7f2cc"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/hazelnut__full__seed0.npz",
+          "calibration_sha256": "38b5e13f9f20ea255b94b9a43489b1d2c96da17217e4684cec8d2f92ae87976e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "ecc56c61e3396194adf0e1e38cdbfee8f67cb754e782d16de78de371a375cf58",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/hazelnut__semantic_content_error__seed0.npz",
+          "treatment_sha256": "42d70ec2c804644e63185fa0833f4f6f7600a447a24d49740e182754c5a89273"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/leather__full__seed0.npz",
+          "calibration_sha256": "0c8f74cae37fe06c3b6ff216242b1f5c7c96bfd8e1633b94804a8f748aa274a4",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "6e511b11dbcf51d5e17c93648bfe22d0252a1afd7c8d741c8f413aa82784c815",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/leather__semantic_content_error__seed0.npz",
+          "treatment_sha256": "4a28d8106828d22f7971ad948350a756b3cca97b5b044d8d2288b3a10a037081"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/metal_nut__full__seed0.npz",
+          "calibration_sha256": "a9025df6f072311a25ece3a103f1060c128cd4889789dc2b0957afb9e6e72f25",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "0be7feabf5f2a73499cc8e39b19e3c9103a13a24f576e583a5471328208830cb",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/metal_nut__semantic_content_error__seed0.npz",
+          "treatment_sha256": "c7242c7ce0495cd94d33e6a4c382ce1796e08a7106c60c546bea9acfdc145f8f"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/pill__full__seed0.npz",
+          "calibration_sha256": "a54924dd292111cba2bc0381a3667f9886cc11f8ac4c5673fde27d5fe6da5a91",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "da3c30fd7b36c7fb2479c49f660691ea9d926b69190c14e987f9280238b68039",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/pill__semantic_content_error__seed0.npz",
+          "treatment_sha256": "2c71173b75fdf49f098b74cefa7098f3196b0b5c79591ca48b69fb44270c59b0"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/screw__full__seed0.npz",
+          "calibration_sha256": "8de1562deb0efb78d8ad40e68c5330afd255b91e0ad894f392b673518f2041a1",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "e2b1dc0bfc727004ba69227dd1e263c42d24d666b33bb4a14b894fc99b765ac5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/screw__semantic_content_error__seed0.npz",
+          "treatment_sha256": "360bfb45159b2ed85cbcf353f47799e04abebff8639ead8c44a8a07217bf3a89"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/tile__full__seed0.npz",
+          "calibration_sha256": "feeabbdaaade810661c6e186625a33f3aaae6f7fd5ca499315426287d61f20f7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "39c23390d992fd3ae6961870d2d97e6c8c7ddfd4bd2ae5032dcca811462247e5",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/tile__semantic_content_error__seed0.npz",
+          "treatment_sha256": "b4613939598857190a0d0bd80ebf80b8a54f6ec18c5b4b61c9894913c7f93795"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/toothbrush__full__seed0.npz",
+          "calibration_sha256": "697bd5db580e1f2566d3917553d6244941f63d6f8c48ed24cde3cf46195d2481",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "4c6c021d98ac91155f817529a3edb6bec0a507b07863cbf11f21358e9a9c397b",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/toothbrush__semantic_content_error__seed0.npz",
+          "treatment_sha256": "6cebb438fa3e6d5d4fb53e3619e9c93ed2170fb003acca5d8c09410150ea5d27"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/transistor__full__seed0.npz",
+          "calibration_sha256": "8358c0b766f21e18ab1100d94f783bad76fe9ca9f93c45faa746420d44958764",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f82f00038c3233456dee3509ab5b0aba57d048642581e388038288eb30052d89",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/transistor__semantic_content_error__seed0.npz",
+          "treatment_sha256": "7e07981c2699559e27cd743cd823c09e8839cd59482719881c880cd757f509f3"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/wood__full__seed0.npz",
+          "calibration_sha256": "a6167ae98428ecadf462160ccc60f94dc39725012673320f108ea12be5ddbf82",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "4de6cb52c0e33e59b07f45cb05ddfb5ebab77bdaade30bf136bbada11fa5c80c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/wood__semantic_content_error__seed0.npz",
+          "treatment_sha256": "3d4c0d49744918f359c85c0c5c4239dc0053d5a710e6403f344821de2c876abf"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/mvtec/full/zipper__full__seed0.npz",
+          "calibration_sha256": "724107aee04d38fe2266c5c0d2579e7d2584d5bfd05c449da667de1f96c305ef",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "9a6e13cacf936439448b6e6d7f832c5133cf1f5d4a410e3ca69b20bee742e2dd",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/mvtec/semantic_content_error/zipper__semantic_content_error__seed0.npz",
+          "treatment_sha256": "2e69ab74c82d350c922d709f0cdd7b40db8b844fb0ab29b1b955fc8faa1cbfff"
+        }
+      }
+    }
+  }
+}

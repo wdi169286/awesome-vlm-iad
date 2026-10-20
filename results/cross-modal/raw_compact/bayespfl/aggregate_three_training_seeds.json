@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "method": "Bayes-PFL",
+  "contrast": "token_permute-minus-full",
+  "bootstrap": {
+    "design": "training_seed_then_category_then_nested_mapping",
+    "draws": 10000,
+    "seed": 20261019
+  },
+  "datasets": {
+    "mvtec": {
+      "training_seeds": [
+        333,
+        444,
+        555
+      ],
+      "mapping_seeds": [
+        0,
+        1,
+        2
+      ],
+      "categories": [
+        "bottle",
+        "cable",
+        "capsule",
+        "carpet",
+        "grid",
+        "hazelnut",
+        "leather",
+        "metal_nut",
+        "pill",
+        "screw",
+        "tile",
+        "toothbrush",
+        "transistor",
+        "wood",
+        "zipper"
+      ],
+      "paired_cells": 135,
+      "endpoints": {
+        "image_auroc": {
+          "estimate": -0.014043615864303072,
+          "ci95": [
+            -0.033367339996497415,
+            0.005657774940770882
+          ]
+        },
+        "image_ap": {
+          "estimate": -0.0034547946291357007,
+          "ci95": [
+            -0.013349373540691859,
+            0.00811167131765377
+          ]
+        },
+        "pixel_auroc": {
+          "estimate": -0.43500613385311804,
+          "ci95": [
+            -0.46601809935960803,
+            -0.40277966185420777
+          ]
+        },
+        "pixel_ap": {
+          "estimate": -0.4337183569797599,
+          "ci95": [
+            -0.4995148951500345,
+            -0.3685143873386504
+          ]
+        },
+        "aupro_0_30": {
+          "estimate": -0.7362148109685491,
+          "ci95": [
+            -0.7762394519564177,
+            -0.6922959694169738
+          ]
+        }
+      }
+    },
+    "visa": {
+      "training_seeds": [
+        333,
+        444,
+        555
+      ],
+      "mapping_seeds": [
+        0,
+        1,
+        2
+      ],
+      "categories": [
+        "candle",
+        "capsules",
+        "cashew",
+        "chewinggum",
+        "fryum",
+        "macaroni1",
+        "macaroni2",
+        "pcb1",
+        "pcb2",
+        "pcb3",
+        "pcb4",
+        "pipe_fryum"
+      ],
+      "paired_cells": 108,
+      "endpoints": {
+        "image_auroc": {
+          "estimate": -0.015395209937660435,
+          "ci95": [
+            -0.027824981779427913,
+            -0.0016269404336267403
+          ]
+        },
+        "image_ap": {
+          "estimate": -0.008260347546222686,
+          "ci95": [
+            -0.021287250372358655,
+            0.007200525238496512
+          ]
+        },
+        "pixel_auroc": {
+          "estimate": -0.44420042614261096,
+          "ci95": [
+            -0.46899188408762005,
+            -0.4129158941268824
+          ]
+        },
+        "pixel_ap": {
+          "estimate": -0.27994189542119396,
+          "ci95": [
+            -0.35328826825181686,
+            -0.2144869479067675
+          ]
+        },
+        "aupro_0_30": {
+          "estimate": -0.7541188084761854,
+          "ci95": [
+            -0.776294811022537,
+            -0.731222976733827
+          ]
+        }
+      }
+    }
+  }
+}

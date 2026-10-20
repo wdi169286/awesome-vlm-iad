@@ -1,0 +1,1144 @@
+{
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "category",
+  "dataset": "mvtec_ad",
+  "method": "winclip",
+  "schema": 1,
+  "threshold_policy": "per-category q95(method=higher) on independent official train-normal split; frozen across test conditions",
+  "treatments": {
+    "format_matched_irrelevant": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.4382016261729902,
+          "ci95_low": 0.17818446119614254,
+          "macro_mean": 0.3039288259100886
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": -0.008753236425948293,
+          "ci95_low": -0.34880069132294317,
+          "macro_mean": -0.17907672904297306
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -2.4422022104202807,
+          "ci95_low": -6.042807318775935,
+          "macro_mean": -4.0756755205946815
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.9369166206441664,
+          "ci95_low": 0.5453567637944278,
+          "macro_mean": 0.7492168724173941
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.9369166206441664,
+          "ci95_low": 0.571369425131404,
+          "macro_mean": 0.7624689049377193
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.1746031746031746,
+          "delta_anomaly_fnr": -0.1746031746031746,
+          "delta_margin_in_calibration_sd": -7.255170321647559,
+          "delta_normal_fpr": 0.95,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_fnr": 0.1746031746031746,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.4223885238170624,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.6739130434782609,
+          "delta_anomaly_fnr": -0.6739130434782609,
+          "delta_margin_in_calibration_sd": -1.3366424984656984,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.6739130434782609,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4476626217365265,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.7522935779816514,
+          "delta_anomaly_fnr": -0.7522935779816514,
+          "delta_margin_in_calibration_sd": -0.8456386986835174,
+          "delta_normal_fpr": 0.9130434782608696,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 0.9130434782608695,
+          "reference_anomaly_fnr": 0.7522935779816514,
+          "reference_normal_fpr": 0.08695652173913043,
+          "threshold_q95_higher": 0.36544090509414673,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.033707865168539325,
+          "delta_anomaly_fnr": -0.033707865168539325,
+          "delta_margin_in_calibration_sd": -5.950131014378815,
+          "delta_normal_fpr": 0.9642857142857143,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.9642857142857143,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.03571428571428571,
+          "threshold_q95_higher": 0.4077984392642975,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.017543859649122806,
+          "delta_anomaly_fnr": -0.017543859649122806,
+          "delta_margin_in_calibration_sd": -5.082297093644069,
+          "delta_normal_fpr": 0.9047619047619048,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.9047619047619048,
+          "reference_anomaly_fnr": 0.017543859649122806,
+          "reference_normal_fpr": 0.09523809523809523,
+          "threshold_q95_higher": 0.3749273717403412,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.5428571428571428,
+          "delta_anomaly_fnr": 0.34285714285714286,
+          "delta_margin_in_calibration_sd": -1.8086303359283855,
+          "delta_normal_fpr": -0.075,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.075,
+          "reference_anomaly_fnr": 0.24285714285714285,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.505012035369873,
+          "treatment_anomaly_fnr": 0.5857142857142857,
+          "treatment_normal_fpr": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -13.463041482818715,
+          "delta_normal_fpr": 0.90625,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.90625,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.09375,
+          "threshold_q95_higher": 0.3723607659339905,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.3118279569892473,
+          "delta_anomaly_fnr": -0.3118279569892473,
+          "delta_margin_in_calibration_sd": -1.420519383610873,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.3118279569892473,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4887012541294098,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.3900709219858156,
+          "delta_anomaly_fnr": 0.36170212765957444,
+          "delta_margin_in_calibration_sd": -1.2455280370157555,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.6170212765957447,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4717026948928833,
+          "treatment_anomaly_fnr": 0.9787234042553191,
+          "treatment_normal_fpr": 0.0
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.11764705882352941,
+          "delta_anomaly_fnr": 0.11764705882352944,
+          "delta_margin_in_calibration_sd": -0.6713649628058083,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.8823529411764706,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.4763145446777344,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -9.761005483927718,
+          "delta_normal_fpr": 0.9696969696969697,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.9696969696969697,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.36720922589302063,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.6666666666666666,
+          "delta_anomaly_fnr": -0.6666666666666666,
+          "delta_margin_in_calibration_sd": -1.600057260446092,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.6666666666666666,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4861948788166046,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.475,
+          "delta_anomaly_fnr": -0.475,
+          "delta_margin_in_calibration_sd": -2.40620370561781,
+          "delta_normal_fpr": 0.95,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_fnr": 0.475,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.47712746262550354,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.06666666666666667,
+          "delta_anomaly_fnr": -0.06666666666666667,
+          "delta_margin_in_calibration_sd": -4.881048987807464,
+          "delta_normal_fpr": 0.8421052631578947,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.8421052631578947,
+          "reference_anomaly_fnr": 0.06666666666666667,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.39838987588882446,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.33613445378151263,
+          "delta_anomaly_fnr": -0.33613445378151263,
+          "delta_margin_in_calibration_sd": -3.407853542121924,
+          "delta_normal_fpr": 0.9375,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.9375,
+          "reference_anomaly_fnr": 0.33613445378151263,
+          "reference_normal_fpr": 0.0625,
+          "threshold_q95_higher": 0.4201541543006897,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/bottle.npz",
+          "calibration_sha256": "bc29aede25d9e2b23897e16a97226843d66ae105cef6edc8d6a8b8c0e2fe4618",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/bottle.npz",
+          "reference_sha256": "79901e58e94111a6327fee1dbf815f99a4d67c82af5f63e68d7d1834523acfa8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/bottle.npz",
+          "treatment_sha256": "35a5ab7c9f72591e98fa783b56987914e45d4d23088ef9433db77a85960bce85"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/cable.npz",
+          "calibration_sha256": "3ab84f36266ca6b0a86467f801fd7032a03b3dadf614c0e58a4a227ab90c48fa",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/cable.npz",
+          "reference_sha256": "1997ce378d40c2b1c072c5e9e6b3bea9278a2e84e8facaad486bc87900dee008",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/cable.npz",
+          "treatment_sha256": "743ee0709a469650ef4c870d3185e14ad7a29c4f5d362191f51bc2e78d1c9f75"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/capsule.npz",
+          "calibration_sha256": "7327354f12207a87aa50ba9642de8fffeec5dd96766c6c89ad3d71544b0360af",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/capsule.npz",
+          "reference_sha256": "2ce501540b0c50a15bb7a837b8154e974bb40abaaeaf9eeff318c55a637b6c1b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/capsule.npz",
+          "treatment_sha256": "6c29869eba6cc3ab4c688bf927a1d82f6c1ccba127447f448bc6f1a08d39157b"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/carpet.npz",
+          "calibration_sha256": "84bf6276d2b51103fe0db7d25ddd321c752cabb0f4bbb038f35929dfb182a7bc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/carpet.npz",
+          "reference_sha256": "ecd8dc6a90131ccc83298a8d4c92478e32d67dbd738b18a0a22ef3524c5ca75b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/carpet.npz",
+          "treatment_sha256": "982559a76485a438faefac8e0e5b7e1003af21ae9dec3761233b2494f32fc146"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/grid.npz",
+          "calibration_sha256": "231163a0fe50b6e00d2b745266b2458de6c59ea8604dad78d59a843a085686a2",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/grid.npz",
+          "reference_sha256": "26f124f85c7ecde7f40f78ac651cb141c65d3fc818e8e8623ad249225223c461",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/grid.npz",
+          "treatment_sha256": "a8c3ff525b6767038388b24ca17fe01f7135b6138b348e53bb25aeec930d3f6a"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/hazelnut.npz",
+          "calibration_sha256": "f45c2009e4fcbc06ab9675fda5f6ab07612a039228b0cddb25bfebc2fa34bb5f",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/hazelnut.npz",
+          "reference_sha256": "c131946e7a3d00a20817900f5395184ea3427a5051729a5206419bb44b3b31f3",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/hazelnut.npz",
+          "treatment_sha256": "d9d7279fa11dd6a3b4172094b025be65fa4ca0eda4af68ec6b6f74972c0f9912"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/leather.npz",
+          "calibration_sha256": "0b983b31abfbb27f32df2cd3ae996156182d3bf69b655b3c7b8015a14339995b",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/leather.npz",
+          "reference_sha256": "d6808f17aae29b821cf5161ae72b832111e3f4b673b8ed27bc4ae0c5400553fe",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/leather.npz",
+          "treatment_sha256": "c3ab58efe98742b2aaaa598a65caca32ad7639726ee19419727699de74a2a001"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/metal_nut.npz",
+          "calibration_sha256": "adaefedc96d2f49a69e3d6b81edfb6f8da2daea2d7adb66f0ea8248d123ccfbc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/metal_nut.npz",
+          "reference_sha256": "381517c59eb323bdb5ae964d53a36034c6e4a9c743c54d3582abfc9da3195640",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/metal_nut.npz",
+          "treatment_sha256": "85fdc516f04109cb00acd4538b83f41aa98289c053b1ffa8b28e729579b351d2"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/pill.npz",
+          "calibration_sha256": "a4bcf3f7d8eb293d1620be134363f9d92a4ef8a4de969003b82bcab292096049",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/pill.npz",
+          "reference_sha256": "fb0b3ec8377141c8ca1c25093c89eaa090908bbaaf971c4d9fcbdfafdf450847",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/pill.npz",
+          "treatment_sha256": "c6469ff180693d82e3ca977c77258bdd521fc421078c02c3bbd13403e942f563"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/screw.npz",
+          "calibration_sha256": "c1e71cf37fdcdbcbb977ab35e65b39a13f9b5c9d5e90d37a6433268e428d37b0",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/screw.npz",
+          "reference_sha256": "532f189d26fef949324398debf976e5a9887860fe5d4c7010b63d20df74427ed",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/screw.npz",
+          "treatment_sha256": "46b437d5fb77ff8284e2cbf92a3ac3cb42f49aef51b3763744d60295b9e45669"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/tile.npz",
+          "calibration_sha256": "0622f4d70d051c74fd0e7ce0fea087bede8a27f0aaedd71aa343857dd873013d",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/tile.npz",
+          "reference_sha256": "29ccf2f8992f9b69594993f4812ca2cc60915d184201e8ee30a9a33479cd805e",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/tile.npz",
+          "treatment_sha256": "a84b2dc265e3370babfaa7513cd2783f403eabe343af09d01e1427983158ef5c"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/toothbrush.npz",
+          "calibration_sha256": "c12cc705bee11657df467622acf56c1d698b37cbd8d75c92382d8d6865fade01",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/toothbrush.npz",
+          "reference_sha256": "0840bd2f9356dc1742c0d5e3e533db0e91a074502644eb2a442bf78894a22c65",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/toothbrush.npz",
+          "treatment_sha256": "fa94828d461a36ae67bb12b867c59133f5b4775ea63b97154384e8d79e7ddf56"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/transistor.npz",
+          "calibration_sha256": "73e374c9f4b097d8750840daa281c3102801a726aa7be4f9fffeb153b3babc31",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/transistor.npz",
+          "reference_sha256": "9ce8551c30e4975c0bc57a6cc015d6d716e8754b8877ec8680dbe265e5c81fd8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/transistor.npz",
+          "treatment_sha256": "82eba712984d1acd7e45759e9a8682baef9f84403eb60f08d41747d99380ab8e"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/wood.npz",
+          "calibration_sha256": "544dc392934ccf348e0e0fedafcc0dd0cd5aa1a4e95281c9e051f5df7a9f97e3",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/wood.npz",
+          "reference_sha256": "7874dee8b99e33e7a29a7a697843c750b75ec2914d73add8b409330213374769",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/wood.npz",
+          "treatment_sha256": "ffb27fedbd80102f21566f211fb296be93505f5c63be2283c575e93b2bbf7279"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/zipper.npz",
+          "calibration_sha256": "8ba3b3922d30b4433b2b2cbd092334ec0351b58d0c5872db87edc59e00b4c321",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/zipper.npz",
+          "reference_sha256": "2da0a4f48a1daf75de9ff6eaf193875f778e02f1df5398b9beef809d477a29e6",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/format_matched_irrelevant/zipper.npz",
+          "treatment_sha256": "ca9eb4bb0d1584e2743323f69568c3e0f45213bc7a733faebc8a1aa41d3dca75"
+        }
+      }
+    },
+    "meaning_preserving_paraphrase": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.33297848910447747,
+          "ci95_low": 0.10894840553943463,
+          "macro_mean": 0.21236354253503129
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.007882092452385156,
+          "ci95_low": -0.2568830038473897,
+          "macro_mean": -0.1165770470211065
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -0.31615603080128024,
+          "ci95_low": -0.8452572109344829,
+          "macro_mean": -0.5671403698171595
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.5730416694527821,
+          "ci95_low": 0.1828150001296663,
+          "macro_mean": 0.3710013689251212
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.5830683885671655,
+          "ci95_low": 0.21192819084292214,
+          "macro_mean": 0.39060260779465283
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.1111111111111111,
+          "delta_anomaly_fnr": -0.1111111111111111,
+          "delta_margin_in_calibration_sd": -1.0254977825867229,
+          "delta_normal_fpr": 0.15000000000000002,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.15,
+          "reference_anomaly_fnr": 0.1746031746031746,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.4223885238170624,
+          "treatment_anomaly_fnr": 0.06349206349206349,
+          "treatment_normal_fpr": 0.2
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.09782608695652174,
+          "delta_anomaly_fnr": -0.010869565217391353,
+          "delta_margin_in_calibration_sd": -0.13783990624957126,
+          "delta_normal_fpr": 0.034482758620689655,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 0.034482758620689655,
+          "reference_anomaly_fnr": 0.6739130434782609,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4476626217365265,
+          "treatment_anomaly_fnr": 0.6630434782608695,
+          "treatment_normal_fpr": 0.034482758620689655
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.7522935779816514,
+          "delta_anomaly_fnr": -0.7522935779816514,
+          "delta_margin_in_calibration_sd": -0.20098868988736923,
+          "delta_normal_fpr": 0.9130434782608696,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 0.9130434782608695,
+          "reference_anomaly_fnr": 0.7522935779816514,
+          "reference_normal_fpr": 0.08695652173913043,
+          "threshold_q95_higher": 0.36544090509414673,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.033707865168539325,
+          "delta_anomaly_fnr": -0.033707865168539325,
+          "delta_margin_in_calibration_sd": -0.8177641518997711,
+          "delta_normal_fpr": 0.14285714285714285,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.14285714285714285,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.03571428571428571,
+          "threshold_q95_higher": 0.4077984392642975,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.17857142857142858
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -1.8318687990679883,
+          "delta_normal_fpr": 0.14285714285714285,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.23809523809523808,
+          "reference_anomaly_fnr": 0.017543859649122806,
+          "reference_normal_fpr": 0.09523809523809523,
+          "threshold_q95_higher": 0.3749273717403412,
+          "treatment_anomaly_fnr": 0.017543859649122806,
+          "treatment_normal_fpr": 0.23809523809523808
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.2571428571428571,
+          "delta_anomaly_fnr": 0.22857142857142856,
+          "delta_margin_in_calibration_sd": -0.11732384522313315,
+          "delta_normal_fpr": -0.075,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.075,
+          "reference_anomaly_fnr": 0.24285714285714285,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.505012035369873,
+          "treatment_anomaly_fnr": 0.4714285714285714,
+          "treatment_normal_fpr": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -1.2003478360347246,
+          "delta_normal_fpr": 0.90625,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.90625,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.09375,
+          "threshold_q95_higher": 0.3723607659339905,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.20430107526881722,
+          "delta_anomaly_fnr": 0.11827956989247312,
+          "delta_margin_in_calibration_sd": -0.9944092219902072,
+          "delta_normal_fpr": 0.13636363636363635,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 0.13636363636363635,
+          "reference_anomaly_fnr": 0.3118279569892473,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4887012541294098,
+          "treatment_anomaly_fnr": 0.43010752688172044,
+          "treatment_normal_fpr": 0.13636363636363635
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.23404255319148937,
+          "delta_anomaly_fnr": 0.1063829787234043,
+          "delta_margin_in_calibration_sd": -0.5148789776450499,
+          "delta_normal_fpr": 0.0,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 0.0,
+          "reference_anomaly_fnr": 0.6170212765957447,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4717026948928833,
+          "treatment_anomaly_fnr": 0.723404255319149,
+          "treatment_normal_fpr": 0.0
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.06722689075630252,
+          "delta_anomaly_fnr": 0.0672268907563025,
+          "delta_margin_in_calibration_sd": 0.21991166012380167,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.8823529411764706,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.4763145446777344,
+          "treatment_anomaly_fnr": 0.9495798319327731,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -0.2882926863450015,
+          "delta_normal_fpr": 0.9696969696969697,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.9696969696969697,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.36720922589302063,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.5666666666666667,
+          "delta_anomaly_fnr": -0.5,
+          "delta_margin_in_calibration_sd": -0.27896819223934405,
+          "delta_normal_fpr": 0.4166666666666667,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 0.4166666666666667,
+          "reference_anomaly_fnr": 0.6666666666666666,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4861948788166046,
+          "treatment_anomaly_fnr": 0.16666666666666666,
+          "treatment_normal_fpr": 0.4166666666666667
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.475,
+          "delta_anomaly_fnr": -0.475,
+          "delta_margin_in_calibration_sd": -0.28734239230781805,
+          "delta_normal_fpr": 0.7666666666666666,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.7666666666666667,
+          "reference_anomaly_fnr": 0.475,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.47712746262550354,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.8166666666666667
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.05,
+          "delta_anomaly_fnr": -0.05,
+          "delta_margin_in_calibration_sd": -0.1166792723055768,
+          "delta_normal_fpr": 0.21052631578947367,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.21052631578947367,
+          "reference_anomaly_fnr": 0.06666666666666667,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.39838987588882446,
+          "treatment_anomaly_fnr": 0.016666666666666666,
+          "treatment_normal_fpr": 0.3684210526315789
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.33613445378151263,
+          "delta_anomaly_fnr": -0.33613445378151263,
+          "delta_margin_in_calibration_sd": -0.9148154535989153,
+          "delta_normal_fpr": 0.875,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.875,
+          "reference_anomaly_fnr": 0.33613445378151263,
+          "reference_normal_fpr": 0.0625,
+          "threshold_q95_higher": 0.4201541543006897,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.9375
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/bottle.npz",
+          "calibration_sha256": "bc29aede25d9e2b23897e16a97226843d66ae105cef6edc8d6a8b8c0e2fe4618",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/bottle.npz",
+          "reference_sha256": "79901e58e94111a6327fee1dbf815f99a4d67c82af5f63e68d7d1834523acfa8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/bottle.npz",
+          "treatment_sha256": "c21543e8a0e6b6d362a44da9199e41cbbf56297f4c66769dd18edcb235839281"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/cable.npz",
+          "calibration_sha256": "3ab84f36266ca6b0a86467f801fd7032a03b3dadf614c0e58a4a227ab90c48fa",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/cable.npz",
+          "reference_sha256": "1997ce378d40c2b1c072c5e9e6b3bea9278a2e84e8facaad486bc87900dee008",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/cable.npz",
+          "treatment_sha256": "9038c8861398385a2de8ed8e0b5cd15631e874bd3d2c3274911595ea23c9adda"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/capsule.npz",
+          "calibration_sha256": "7327354f12207a87aa50ba9642de8fffeec5dd96766c6c89ad3d71544b0360af",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/capsule.npz",
+          "reference_sha256": "2ce501540b0c50a15bb7a837b8154e974bb40abaaeaf9eeff318c55a637b6c1b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/capsule.npz",
+          "treatment_sha256": "aad950fec512c196bb2375d3d050e04004b35cefe56dbd876d3313261ba5d5b8"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/carpet.npz",
+          "calibration_sha256": "84bf6276d2b51103fe0db7d25ddd321c752cabb0f4bbb038f35929dfb182a7bc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/carpet.npz",
+          "reference_sha256": "ecd8dc6a90131ccc83298a8d4c92478e32d67dbd738b18a0a22ef3524c5ca75b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/carpet.npz",
+          "treatment_sha256": "0a18ce6d09bb19e0d5c696ddaa0aff3ded0e90ddd1a7796065f1e6837604d760"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/grid.npz",
+          "calibration_sha256": "231163a0fe50b6e00d2b745266b2458de6c59ea8604dad78d59a843a085686a2",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/grid.npz",
+          "reference_sha256": "26f124f85c7ecde7f40f78ac651cb141c65d3fc818e8e8623ad249225223c461",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/grid.npz",
+          "treatment_sha256": "38af3acc6b170c588bd3a94ad11e95ad939368ed5ca3c5936bd877b2fcbcda1d"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/hazelnut.npz",
+          "calibration_sha256": "f45c2009e4fcbc06ab9675fda5f6ab07612a039228b0cddb25bfebc2fa34bb5f",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/hazelnut.npz",
+          "reference_sha256": "c131946e7a3d00a20817900f5395184ea3427a5051729a5206419bb44b3b31f3",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/hazelnut.npz",
+          "treatment_sha256": "9365fd6240c601f833dd534a7fa11ca543ba5b48811dca87dfd9d7bd486f0485"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/leather.npz",
+          "calibration_sha256": "0b983b31abfbb27f32df2cd3ae996156182d3bf69b655b3c7b8015a14339995b",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/leather.npz",
+          "reference_sha256": "d6808f17aae29b821cf5161ae72b832111e3f4b673b8ed27bc4ae0c5400553fe",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/leather.npz",
+          "treatment_sha256": "341306c4851d039b929cadde6fd39830b442b46b94716a961734858f7789c22b"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/metal_nut.npz",
+          "calibration_sha256": "adaefedc96d2f49a69e3d6b81edfb6f8da2daea2d7adb66f0ea8248d123ccfbc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/metal_nut.npz",
+          "reference_sha256": "381517c59eb323bdb5ae964d53a36034c6e4a9c743c54d3582abfc9da3195640",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/metal_nut.npz",
+          "treatment_sha256": "5265a8018ad08e39237184d15131b2118353e67675d3733dc44ca52a3d0617be"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/pill.npz",
+          "calibration_sha256": "a4bcf3f7d8eb293d1620be134363f9d92a4ef8a4de969003b82bcab292096049",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/pill.npz",
+          "reference_sha256": "fb0b3ec8377141c8ca1c25093c89eaa090908bbaaf971c4d9fcbdfafdf450847",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/pill.npz",
+          "treatment_sha256": "61c091c6d71ca2f20a1f314878fadfa519de63707f9eb7cbdc4724e3f838fb46"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/screw.npz",
+          "calibration_sha256": "c1e71cf37fdcdbcbb977ab35e65b39a13f9b5c9d5e90d37a6433268e428d37b0",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/screw.npz",
+          "reference_sha256": "532f189d26fef949324398debf976e5a9887860fe5d4c7010b63d20df74427ed",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/screw.npz",
+          "treatment_sha256": "981f835986bec04028fd439f58ad27cd79eb0b80138a524c05309da34d97d102"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/tile.npz",
+          "calibration_sha256": "0622f4d70d051c74fd0e7ce0fea087bede8a27f0aaedd71aa343857dd873013d",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/tile.npz",
+          "reference_sha256": "29ccf2f8992f9b69594993f4812ca2cc60915d184201e8ee30a9a33479cd805e",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/tile.npz",
+          "treatment_sha256": "7577800a940cccf986bc1142a6dccf5e92b3be88397861cb57ed75fe91cac985"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/toothbrush.npz",
+          "calibration_sha256": "c12cc705bee11657df467622acf56c1d698b37cbd8d75c92382d8d6865fade01",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/toothbrush.npz",
+          "reference_sha256": "0840bd2f9356dc1742c0d5e3e533db0e91a074502644eb2a442bf78894a22c65",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/toothbrush.npz",
+          "treatment_sha256": "07f39037478dcfe423c62597e2db74bf6f5cda53285a20f52354cebbde73ac88"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/transistor.npz",
+          "calibration_sha256": "73e374c9f4b097d8750840daa281c3102801a726aa7be4f9fffeb153b3babc31",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/transistor.npz",
+          "reference_sha256": "9ce8551c30e4975c0bc57a6cc015d6d716e8754b8877ec8680dbe265e5c81fd8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/transistor.npz",
+          "treatment_sha256": "6050e8b8345c966f148b6edfcde25f47bf87213cfa5273eee0be9de05cd14fdb"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/wood.npz",
+          "calibration_sha256": "544dc392934ccf348e0e0fedafcc0dd0cd5aa1a4e95281c9e051f5df7a9f97e3",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/wood.npz",
+          "reference_sha256": "7874dee8b99e33e7a29a7a697843c750b75ec2914d73add8b409330213374769",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/wood.npz",
+          "treatment_sha256": "9b552907f0863d34948fe890a395e2990308639208f55a1bdfe88d9a41ba92f4"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/zipper.npz",
+          "calibration_sha256": "8ba3b3922d30b4433b2b2cbd092334ec0351b58d0c5872db87edc59e00b4c321",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/zipper.npz",
+          "reference_sha256": "2da0a4f48a1daf75de9ff6eaf193875f778e02f1df5398b9beef809d477a29e6",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/meaning_preserving_paraphrase/zipper.npz",
+          "treatment_sha256": "57e9320a01d0979c3b7d801b2e125bbcc01c8c982c1aca2e48d3006a60078ea3"
+        }
+      }
+    },
+    "semantic_content_error": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.511382840024264,
+          "ci95_low": 0.23874574784178798,
+          "macro_mean": 0.3770764530999076
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.11823568459599514,
+          "ci95_low": -0.3060003952003138,
+          "macro_mean": -0.09256428135109855
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -1.5914282292860784,
+          "ci95_low": -4.89068502203932,
+          "macro_mean": -3.109466418789123
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.8132502806427928,
+          "ci95_low": 0.37135008827699695,
+          "macro_mean": 0.5980710546336455
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.8253724066454671,
+          "ci95_low": 0.43308974723345256,
+          "macro_mean": 0.632375718732918
+        }
+      },
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.7936507936507936,
+          "delta_anomaly_fnr": 0.7936507936507937,
+          "delta_margin_in_calibration_sd": -4.650843762433078,
+          "delta_normal_fpr": -0.05,
+          "n_calibration_normal": 209,
+          "n_test_anomaly": 63,
+          "n_test_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_fnr": 0.1746031746031746,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.4223885238170624,
+          "treatment_anomaly_fnr": 0.9682539682539683,
+          "treatment_normal_fpr": 0.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.6630434782608695,
+          "delta_anomaly_fnr": -0.6630434782608695,
+          "delta_margin_in_calibration_sd": -1.5120287561718522,
+          "delta_normal_fpr": 0.9827586206896551,
+          "n_calibration_normal": 224,
+          "n_test_anomaly": 92,
+          "n_test_normal": 58,
+          "normal_flip_rate": 0.9827586206896551,
+          "reference_anomaly_fnr": 0.6739130434782609,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4476626217365265,
+          "treatment_anomaly_fnr": 0.010869565217391304,
+          "treatment_normal_fpr": 0.9827586206896551
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.7522935779816514,
+          "delta_anomaly_fnr": -0.7522935779816514,
+          "delta_margin_in_calibration_sd": -0.3846383269339198,
+          "delta_normal_fpr": 0.9130434782608696,
+          "n_calibration_normal": 219,
+          "n_test_anomaly": 109,
+          "n_test_normal": 23,
+          "normal_flip_rate": 0.9130434782608695,
+          "reference_anomaly_fnr": 0.7522935779816514,
+          "reference_normal_fpr": 0.08695652173913043,
+          "threshold_q95_higher": 0.36544090509414673,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.11235955056179775,
+          "delta_anomaly_fnr": 0.0449438202247191,
+          "delta_margin_in_calibration_sd": -5.770644473110465,
+          "delta_normal_fpr": 0.8571428571428572,
+          "n_calibration_normal": 280,
+          "n_test_anomaly": 89,
+          "n_test_normal": 28,
+          "normal_flip_rate": 0.8571428571428571,
+          "reference_anomaly_fnr": 0.033707865168539325,
+          "reference_normal_fpr": 0.03571428571428571,
+          "threshold_q95_higher": 0.4077984392642975,
+          "treatment_anomaly_fnr": 0.07865168539325842,
+          "treatment_normal_fpr": 0.8928571428571429
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.017543859649122806,
+          "delta_anomaly_fnr": -0.017543859649122806,
+          "delta_margin_in_calibration_sd": -3.129112689884871,
+          "delta_normal_fpr": 0.9047619047619048,
+          "n_calibration_normal": 264,
+          "n_test_anomaly": 57,
+          "n_test_normal": 21,
+          "normal_flip_rate": 0.9047619047619048,
+          "reference_anomaly_fnr": 0.017543859649122806,
+          "reference_normal_fpr": 0.09523809523809523,
+          "threshold_q95_higher": 0.3749273717403412,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.4857142857142857,
+          "delta_anomaly_fnr": 0.37142857142857144,
+          "delta_margin_in_calibration_sd": -1.5705636640154808,
+          "delta_normal_fpr": 0.09999999999999999,
+          "n_calibration_normal": 391,
+          "n_test_anomaly": 70,
+          "n_test_normal": 40,
+          "normal_flip_rate": 0.15,
+          "reference_anomaly_fnr": 0.24285714285714285,
+          "reference_normal_fpr": 0.075,
+          "threshold_q95_higher": 0.505012035369873,
+          "treatment_anomaly_fnr": 0.6142857142857143,
+          "treatment_normal_fpr": 0.175
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -10.43157403026215,
+          "delta_normal_fpr": 0.90625,
+          "n_calibration_normal": 245,
+          "n_test_anomaly": 92,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.90625,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.09375,
+          "threshold_q95_higher": 0.3723607659339905,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.3225806451612903,
+          "delta_anomaly_fnr": 0.021505376344086002,
+          "delta_margin_in_calibration_sd": -0.35295398864656996,
+          "delta_normal_fpr": 0.13636363636363635,
+          "n_calibration_normal": 220,
+          "n_test_anomaly": 93,
+          "n_test_normal": 22,
+          "normal_flip_rate": 0.13636363636363635,
+          "reference_anomaly_fnr": 0.3118279569892473,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4887012541294098,
+          "treatment_anomaly_fnr": 0.3333333333333333,
+          "treatment_normal_fpr": 0.13636363636363635
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.5886524822695035,
+          "delta_anomaly_fnr": -0.5886524822695035,
+          "delta_margin_in_calibration_sd": 0.13078694167024765,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 267,
+          "n_test_anomaly": 141,
+          "n_test_normal": 26,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.6170212765957447,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4717026948928833,
+          "treatment_anomaly_fnr": 0.028368794326241134,
+          "treatment_normal_fpr": 1.0
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.08403361344537816,
+          "delta_anomaly_fnr": 0.08403361344537819,
+          "delta_margin_in_calibration_sd": -0.05092412127381914,
+          "delta_normal_fpr": -0.024390243902439025,
+          "n_calibration_normal": 320,
+          "n_test_anomaly": 119,
+          "n_test_normal": 41,
+          "normal_flip_rate": 0.024390243902439025,
+          "reference_anomaly_fnr": 0.8823529411764706,
+          "reference_normal_fpr": 0.024390243902439025,
+          "threshold_q95_higher": 0.4763145446777344,
+          "treatment_anomaly_fnr": 0.9663865546218487,
+          "treatment_normal_fpr": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_fnr": 0.0,
+          "delta_margin_in_calibration_sd": -10.608365529428873,
+          "delta_normal_fpr": 0.9696969696969697,
+          "n_calibration_normal": 230,
+          "n_test_anomaly": 84,
+          "n_test_normal": 33,
+          "normal_flip_rate": 0.9696969696969697,
+          "reference_anomaly_fnr": 0.0,
+          "reference_normal_fpr": 0.030303030303030304,
+          "threshold_q95_higher": 0.36720922589302063,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.6666666666666666,
+          "delta_anomaly_fnr": -0.6666666666666666,
+          "delta_margin_in_calibration_sd": -1.2267805478491893,
+          "delta_normal_fpr": 1.0,
+          "n_calibration_normal": 60,
+          "n_test_anomaly": 30,
+          "n_test_normal": 12,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_fnr": 0.6666666666666666,
+          "reference_normal_fpr": 0.0,
+          "threshold_q95_higher": 0.4861948788166046,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.5,
+          "delta_anomaly_fnr": -0.39999999999999997,
+          "delta_margin_in_calibration_sd": -2.6168155851942294,
+          "delta_normal_fpr": 0.9333333333333332,
+          "n_calibration_normal": 213,
+          "n_test_anomaly": 40,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.9333333333333333,
+          "reference_anomaly_fnr": 0.475,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.47712746262550354,
+          "treatment_anomaly_fnr": 0.075,
+          "treatment_normal_fpr": 0.9833333333333333
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.31666666666666665,
+          "delta_anomaly_fnr": 0.2833333333333333,
+          "delta_margin_in_calibration_sd": -1.3674262645966926,
+          "delta_normal_fpr": -0.15789473684210525,
+          "n_calibration_normal": 247,
+          "n_test_anomaly": 60,
+          "n_test_normal": 19,
+          "normal_flip_rate": 0.15789473684210525,
+          "reference_anomaly_fnr": 0.06666666666666667,
+          "reference_normal_fpr": 0.15789473684210525,
+          "threshold_q95_higher": 0.39838987588882446,
+          "treatment_anomaly_fnr": 0.35,
+          "treatment_normal_fpr": 0.0
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.35294117647058826,
+          "delta_anomaly_fnr": 0.10084033613445376,
+          "delta_margin_in_calibration_sd": -3.1001114837059047,
+          "delta_normal_fpr": 0.5,
+          "n_calibration_normal": 240,
+          "n_test_anomaly": 119,
+          "n_test_normal": 32,
+          "normal_flip_rate": 0.5,
+          "reference_anomaly_fnr": 0.33613445378151263,
+          "reference_normal_fpr": 0.0625,
+          "threshold_q95_higher": 0.4201541543006897,
+          "treatment_anomaly_fnr": 0.4369747899159664,
+          "treatment_normal_fpr": 0.5625
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/bottle.npz",
+          "calibration_sha256": "bc29aede25d9e2b23897e16a97226843d66ae105cef6edc8d6a8b8c0e2fe4618",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/bottle.npz",
+          "reference_sha256": "79901e58e94111a6327fee1dbf815f99a4d67c82af5f63e68d7d1834523acfa8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/bottle.npz",
+          "treatment_sha256": "c393b9a99a7c7d85905f48397059966fca0f3f2122bdb5bf5385b28e4a291a47"
+        },
+        "cable": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/cable.npz",
+          "calibration_sha256": "3ab84f36266ca6b0a86467f801fd7032a03b3dadf614c0e58a4a227ab90c48fa",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/cable.npz",
+          "reference_sha256": "1997ce378d40c2b1c072c5e9e6b3bea9278a2e84e8facaad486bc87900dee008",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/cable.npz",
+          "treatment_sha256": "16a1460db87401c537a9df6338528fc092044f3d70fd1c160be72731dccca6f4"
+        },
+        "capsule": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/capsule.npz",
+          "calibration_sha256": "7327354f12207a87aa50ba9642de8fffeec5dd96766c6c89ad3d71544b0360af",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/capsule.npz",
+          "reference_sha256": "2ce501540b0c50a15bb7a837b8154e974bb40abaaeaf9eeff318c55a637b6c1b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/capsule.npz",
+          "treatment_sha256": "a7e5111fafa076d8a356b22d7fc397041a359a52a6208cd729703f75a0d6fb23"
+        },
+        "carpet": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/carpet.npz",
+          "calibration_sha256": "84bf6276d2b51103fe0db7d25ddd321c752cabb0f4bbb038f35929dfb182a7bc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/carpet.npz",
+          "reference_sha256": "ecd8dc6a90131ccc83298a8d4c92478e32d67dbd738b18a0a22ef3524c5ca75b",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/carpet.npz",
+          "treatment_sha256": "c102b277aef4a98eb8c3839c989077c929e6505d7e8db4b6b30a0e90fe345bb2"
+        },
+        "grid": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/grid.npz",
+          "calibration_sha256": "231163a0fe50b6e00d2b745266b2458de6c59ea8604dad78d59a843a085686a2",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/grid.npz",
+          "reference_sha256": "26f124f85c7ecde7f40f78ac651cb141c65d3fc818e8e8623ad249225223c461",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/grid.npz",
+          "treatment_sha256": "fe247edd4b3ce1e6bf331c05362419b1fd99a7ac2a6d7bd9fb5e6da30bf6e137"
+        },
+        "hazelnut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/hazelnut.npz",
+          "calibration_sha256": "f45c2009e4fcbc06ab9675fda5f6ab07612a039228b0cddb25bfebc2fa34bb5f",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/hazelnut.npz",
+          "reference_sha256": "c131946e7a3d00a20817900f5395184ea3427a5051729a5206419bb44b3b31f3",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/hazelnut.npz",
+          "treatment_sha256": "7f7a5b67285bb60bdc0b53b1fa77eb7735111cae798099e21ccbedcb9ce70c28"
+        },
+        "leather": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/leather.npz",
+          "calibration_sha256": "0b983b31abfbb27f32df2cd3ae996156182d3bf69b655b3c7b8015a14339995b",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/leather.npz",
+          "reference_sha256": "d6808f17aae29b821cf5161ae72b832111e3f4b673b8ed27bc4ae0c5400553fe",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/leather.npz",
+          "treatment_sha256": "2a9f207fecaaf83c1923aa13da3234246b9b141ee872b0c5e2a583982bc3eec4"
+        },
+        "metal_nut": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/metal_nut.npz",
+          "calibration_sha256": "adaefedc96d2f49a69e3d6b81edfb6f8da2daea2d7adb66f0ea8248d123ccfbc",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/metal_nut.npz",
+          "reference_sha256": "381517c59eb323bdb5ae964d53a36034c6e4a9c743c54d3582abfc9da3195640",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/metal_nut.npz",
+          "treatment_sha256": "4644fb3990069954091c8873f61ee22114c9f94d576ece8ca3ec522b94ce6e6d"
+        },
+        "pill": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/pill.npz",
+          "calibration_sha256": "a4bcf3f7d8eb293d1620be134363f9d92a4ef8a4de969003b82bcab292096049",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/pill.npz",
+          "reference_sha256": "fb0b3ec8377141c8ca1c25093c89eaa090908bbaaf971c4d9fcbdfafdf450847",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/pill.npz",
+          "treatment_sha256": "2055f5cc497545119fb666da447b569afd6900cad56f0a03144c7383ef7d4f91"
+        },
+        "screw": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/screw.npz",
+          "calibration_sha256": "c1e71cf37fdcdbcbb977ab35e65b39a13f9b5c9d5e90d37a6433268e428d37b0",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/screw.npz",
+          "reference_sha256": "532f189d26fef949324398debf976e5a9887860fe5d4c7010b63d20df74427ed",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/screw.npz",
+          "treatment_sha256": "ecd7b174e612bf11a00d8b1285f94cc4e84bb544d3cb9e16704a05abc7e44d86"
+        },
+        "tile": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/tile.npz",
+          "calibration_sha256": "0622f4d70d051c74fd0e7ce0fea087bede8a27f0aaedd71aa343857dd873013d",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/tile.npz",
+          "reference_sha256": "29ccf2f8992f9b69594993f4812ca2cc60915d184201e8ee30a9a33479cd805e",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/tile.npz",
+          "treatment_sha256": "01c6153669d6485d093a57075eb05d07c19f3cc481c150d7e128f228d205f429"
+        },
+        "toothbrush": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/toothbrush.npz",
+          "calibration_sha256": "c12cc705bee11657df467622acf56c1d698b37cbd8d75c92382d8d6865fade01",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/toothbrush.npz",
+          "reference_sha256": "0840bd2f9356dc1742c0d5e3e533db0e91a074502644eb2a442bf78894a22c65",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/toothbrush.npz",
+          "treatment_sha256": "825d3dd3468c1c870e869b4a8450171fa2017306ca7f43770b5fa73e16053f8b"
+        },
+        "transistor": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/transistor.npz",
+          "calibration_sha256": "73e374c9f4b097d8750840daa281c3102801a726aa7be4f9fffeb153b3babc31",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/transistor.npz",
+          "reference_sha256": "9ce8551c30e4975c0bc57a6cc015d6d716e8754b8877ec8680dbe265e5c81fd8",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/transistor.npz",
+          "treatment_sha256": "e21a0783268e8793d0b1e78903698c6fc54e2e941ab771cb340296ac86b5f61c"
+        },
+        "wood": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/wood.npz",
+          "calibration_sha256": "544dc392934ccf348e0e0fedafcc0dd0cd5aa1a4e95281c9e051f5df7a9f97e3",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/wood.npz",
+          "reference_sha256": "7874dee8b99e33e7a29a7a697843c750b75ec2914d73add8b409330213374769",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/wood.npz",
+          "treatment_sha256": "ad4aff64264ac6ad0eec3926d31a0255e0c32486bc95e2b1f2774f6be0a6e77f"
+        },
+        "zipper": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/winclip/mvtec_ad/zipper.npz",
+          "calibration_sha256": "8ba3b3922d30b4433b2b2cbd092334ec0351b58d0c5872db87edc59e00b4c321",
+          "reference": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/full/zipper.npz",
+          "reference_sha256": "2da0a4f48a1daf75de9ff6eaf193875f778e02f1df5398b9beef809d477a29e6",
+          "treatment": "private_intermediate_not_redistributed/e1_independent_boundary_v1/views/winclip/mvtec_ad/semantic_content_error/zipper.npz",
+          "treatment_sha256": "1a8034f387dedc5b9696780bc62330891919e159738571ff33c3d4c3e2c96f20"
+        }
+      }
+    }
+  }
+}

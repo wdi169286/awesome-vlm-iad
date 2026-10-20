@@ -1,0 +1,73 @@
+{
+  "bootstrap": "crossed nonparametric resampling of mapping and category axes; predictions are never pooled",
+  "bootstrap_repetitions": 20000,
+  "categories": [
+    "candle",
+    "capsules",
+    "cashew",
+    "chewinggum",
+    "fryum",
+    "macaroni1",
+    "macaroni2",
+    "pcb1",
+    "pcb2",
+    "pcb3",
+    "pcb4",
+    "pipe_fryum"
+  ],
+  "draw_ids": [
+    0,
+    1,
+    2
+  ],
+  "estimand": "macro mean paired effect across categories and preregistered spatial permutation mappings",
+  "metrics": {
+    "image_ap": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    },
+    "image_auroc": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    },
+    "mean_anomalous_image_pixel_ap": {
+      "ci95_high": -0.030816729850397642,
+      "ci95_low": -0.12406305527121336,
+      "draws_with_negative_effect": 3,
+      "macro_mean": -0.07249241439057201,
+      "per_draw_macro_mean": {
+        "0": -0.07424326844880984,
+        "1": -0.06918198210208579,
+        "2": -0.07405199262082042
+      }
+    },
+    "score_margin": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    }
+  },
+  "n_categories": 12,
+  "n_mapping_draws": 3,
+  "schema": 1
+}

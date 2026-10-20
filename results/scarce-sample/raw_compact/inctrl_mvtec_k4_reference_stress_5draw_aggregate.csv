@@ -1,0 +1,16 @@
+contrast,metric,mean_effect,ci_low,ci_high,positive_category_means,negative_category_means,n_categories,draws_per_category,bootstrap
+cross_category_normal_minus_target_clean,image_auroc,-0.15939455021532808,-0.20399811074641847,-0.1159916753769769,0,15,15,5,hierarchical category then within-category draw
+cross_category_normal_minus_target_clean,image_auprc,-0.07201653880522126,-0.10766311522804604,-0.04319045293073745,0,15,15,5,hierarchical category then within-category draw
+cross_category_normal_minus_target_clean,score_margin,-0.09342376550038656,-0.13668834898869198,-0.05700602030009031,0,15,15,5,hierarchical category then within-category draw
+cross_category_normal_minus_target_clean,normal_fpr_at_clean_calibration_q95,0.7330494171399111,0.6030416451187455,0.8461626607827039,15,0,15,5,hierarchical category then within-category draw
+cross_category_normal_minus_target_clean,anomaly_fnr_at_clean_calibration_q95,-0.25967970907906524,-0.4060223150670555,-0.12301521442218882,0,13,15,5,hierarchical category then within-category draw
+contamination_p25_minus_matched_clean_p25,image_auroc,-0.0063102744009743954,-0.012214097124251498,-0.0005562949178167116,4,11,15,5,hierarchical category then within-category draw
+contamination_p25_minus_matched_clean_p25,image_auprc,-0.0007521402563174358,-0.004653176012174911,0.004879600670033323,4,11,15,5,hierarchical category then within-category draw
+contamination_p25_minus_matched_clean_p25,score_margin,-0.012932225863138835,-0.020890777381757895,-0.005399160236120224,1,14,15,5,hierarchical category then within-category draw
+contamination_p25_minus_matched_clean_p25,normal_fpr_at_clean_calibration_q95,-0.016875456346355202,-0.03268997040459619,-0.0029816186194768723,3,8,15,5,hierarchical category then within-category draw
+contamination_p25_minus_matched_clean_p25,anomaly_fnr_at_clean_calibration_q95,0.026097792056213768,0.00677117395927074,0.04837443007844278,13,0,15,5,hierarchical category then within-category draw
+contamination_p50_minus_matched_clean_p50,image_auroc,-0.016959393602165886,-0.029720974308720696,-0.0038405055965971212,2,13,15,5,hierarchical category then within-category draw
+contamination_p50_minus_matched_clean_p50,image_auprc,-0.004903310651383385,-0.013851852964408695,0.005793086402166194,4,11,15,5,hierarchical category then within-category draw
+contamination_p50_minus_matched_clean_p50,score_margin,-0.02634374479452769,-0.043012018476923305,-0.010896062632401785,1,14,15,5,hierarchical category then within-category draw
+contamination_p50_minus_matched_clean_p50,normal_fpr_at_clean_calibration_q95,-0.03416086513261947,-0.06382763902867912,-0.008471392762671648,2,8,15,5,hierarchical category then within-category draw
+contamination_p50_minus_matched_clean_p50,anomaly_fnr_at_clean_calibration_q95,0.04157468794793434,0.010050535317171679,0.08130314516276352,12,0,15,5,hierarchical category then within-category draw

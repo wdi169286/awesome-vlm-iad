@@ -1,0 +1,937 @@
+{
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "category",
+  "dataset": "visa",
+  "method": "vand",
+  "schema": 1,
+  "threshold_policy": "per-category q95(method=higher) on independent official train-normal split; frozen across test conditions",
+  "treatments": {
+    "format_matched_irrelevant": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.6475,
+          "ci95_low": 0.3541666666666667,
+          "macro_mean": 0.4991666666666667
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.07749999999999997,
+          "ci95_low": -0.4891666666666667,
+          "macro_mean": -0.21750000000000005
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -0.8813815919631189,
+          "ci95_low": -3.0571473445315798,
+          "macro_mean": -1.8918215595657555
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.8459735973597359,
+          "ci95_low": 0.36283333333333334,
+          "macro_mean": 0.6141419141914192
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.8583333333333333,
+          "ci95_low": 0.4064663778877888,
+          "macro_mean": 0.6407425742574258
+        }
+      },
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.44,
+          "delta_anomaly_fnr": 0.43999999999999995,
+          "delta_margin_in_calibration_sd": -1.8262511941053412,
+          "delta_normal_fpr": -0.02,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_fnr": 0.56,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.79,
+          "delta_anomaly_fnr": -0.79,
+          "delta_margin_in_calibration_sd": 0.5199084531050203,
+          "delta_normal_fpr": 0.95,
+          "n_calibration_normal": 542,
+          "n_test_anomaly": 100,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.16026602685451508,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.37,
+          "delta_anomaly_fnr": -0.37,
+          "delta_margin_in_calibration_sd": -3.0979840105825094,
+          "delta_normal_fpr": 0.98,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.98,
+          "reference_anomaly_fnr": 0.37,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.43782350420951843,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.12,
+          "delta_anomaly_fnr": -0.08,
+          "delta_margin_in_calibration_sd": -6.236333391456471,
+          "delta_normal_fpr": 0.94,
+          "n_calibration_normal": 453,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.94,
+          "reference_anomaly_fnr": 0.11,
+          "reference_normal_fpr": 0.04,
+          "threshold_q95_higher": 0.46490156650543213,
+          "treatment_anomaly_fnr": 0.03,
+          "treatment_normal_fpr": 0.98
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.31,
+          "delta_anomaly_fnr": -0.31,
+          "delta_margin_in_calibration_sd": -3.1585473092935614,
+          "delta_normal_fpr": 0.98,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.98,
+          "reference_anomaly_fnr": 0.31,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.4882833957672119,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.77,
+          "delta_anomaly_fnr": -0.75,
+          "delta_margin_in_calibration_sd": -0.7745272692123286,
+          "delta_normal_fpr": 0.89,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.91,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.08,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.04,
+          "treatment_normal_fpr": 0.97
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.17,
+          "delta_anomaly_fnr": 0.17000000000000004,
+          "delta_margin_in_calibration_sd": -0.4139216897437882,
+          "delta_normal_fpr": -0.07,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.07,
+          "reference_anomaly_fnr": 0.83,
+          "reference_normal_fpr": 0.07,
+          "threshold_q95_higher": 0.9314625263214111,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.92,
+          "delta_anomaly_fnr": -0.92,
+          "delta_margin_in_calibration_sd": 0.2606429066452013,
+          "delta_normal_fpr": 0.98,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.98,
+          "reference_anomaly_fnr": 0.92,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5428633093833923,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.27,
+          "delta_anomaly_fnr": 0.16999999999999993,
+          "delta_margin_in_calibration_sd": -1.3084052613826431,
+          "delta_normal_fpr": -0.01,
+          "n_calibration_normal": 901,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.03,
+          "reference_anomaly_fnr": 0.77,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5583269596099854,
+          "treatment_anomaly_fnr": 0.94,
+          "treatment_normal_fpr": 0.01
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.66,
+          "delta_anomaly_fnr": -0.58,
+          "delta_margin_in_calibration_sd": -0.7634318952333934,
+          "delta_normal_fpr": 0.8316831683168316,
+          "n_calibration_normal": 905,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.8712871287128713,
+          "reference_anomaly_fnr": 0.74,
+          "reference_normal_fpr": 0.039603960396039604,
+          "threshold_q95_higher": 0.45713675022125244,
+          "treatment_anomaly_fnr": 0.16,
+          "treatment_normal_fpr": 0.8712871287128713
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.76,
+          "delta_anomaly_fnr": 0.76,
+          "delta_margin_in_calibration_sd": -4.384962699113959,
+          "delta_normal_fpr": 0.19801980198019803,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.2376237623762376,
+          "reference_anomaly_fnr": 0.23,
+          "reference_normal_fpr": 0.019801980198019802,
+          "threshold_q95_higher": 0.5078118443489075,
+          "treatment_anomaly_fnr": 0.99,
+          "treatment_normal_fpr": 0.21782178217821782
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.41,
+          "delta_anomaly_fnr": -0.35000000000000003,
+          "delta_margin_in_calibration_sd": -1.518045354415294,
+          "delta_normal_fpr": 0.72,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.72,
+          "reference_anomaly_fnr": 0.4,
+          "reference_normal_fpr": 0.06,
+          "threshold_q95_higher": 0.29421496391296387,
+          "treatment_anomaly_fnr": 0.05,
+          "treatment_normal_fpr": 0.78
+        }
+      },
+      "provenance": {
+        "candle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/candle__full__seed0.npz",
+          "calibration_sha256": "ebdc3270a4fc032b89a19e3eb672e84c3c924db76f79fe71d9d82617b8242b6d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "1add99da8890357e460730c6e96206aea6f30e2e29a7b559e1481f5381fe3b78",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/candle__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "b66242120e38a663560215202ace3e0ad34ed2547c24a78c4f8e43c365049eaa"
+        },
+        "capsules": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/capsules__full__seed0.npz",
+          "calibration_sha256": "4f75b86674576bc64e7c3c6067a27c6f6a9a50cee2d569d5764fcd239581d5b7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "1d2f019077157ab4e12cf90fa19591712b4b639272e4d46964d618b1b5a35515",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/capsules__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "a1ee513da44d8d5ff918ef12dfa69cbbe1710c0e3f1f633ec15111ddf27725cd"
+        },
+        "cashew": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/cashew__full__seed0.npz",
+          "calibration_sha256": "c16b68ffb680f917cb8f6502eefb571c922e121cc819d25e2573ba479f8642f8",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "dfd2a31e04d37cfa8f861c6fea818a466c75efa3b90ed0e46f51d4fc741cd57f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/cashew__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "4e81041647ce218aaebb03d8b0aca6277d5f281d0e24a35a1d96378dff734c3c"
+        },
+        "chewinggum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/chewinggum__full__seed0.npz",
+          "calibration_sha256": "6bf4a1d7a98cadd243f97e9af59c1d5effc8cae3f139ee41839500cf11ecf0db",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "16cfedad8d23a4992f9881c51a6e47d929f9376425e78626b2a634125324e16f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/chewinggum__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "ba737eb79f525bd7a8f46312cfd1b13877e4cad8110cf69252bf3f4e6f0b9d6b"
+        },
+        "fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/fryum__full__seed0.npz",
+          "calibration_sha256": "564a85850f68bbcf5876ebc9d7a041fa54ddf3b1efddcaf9149c3828100ff01c",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "b1a2cb08357c3a65e507a13eef8b560846c163bf566cd412c7714c925ab64168",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/fryum__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "0ba9f2a2f5b4ca94486ff171840e1c6017d37bb30b79acf5eadaef7ed4341b6d"
+        },
+        "macaroni1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni1__full__seed0.npz",
+          "calibration_sha256": "f2fa576703b1fff93f6549fe5092cacc4294d87bed7226d2581d21baa4061a7e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "46cb39a88dab5e9b21a2a659edd45ec0c897d33e600231e699f34def9f4b5b73",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/macaroni1__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "66a342ff04b8360609505484550a0793c3d9fd36c5fc8613f0ede3ad9724b0b1"
+        },
+        "macaroni2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni2__full__seed0.npz",
+          "calibration_sha256": "eaa70096eb59570d95e6e1dcbccd2faed632e39433b400a074fda52f39353ef2",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "a99a7b0ca7d88d5f3dcb10395828b2c1826b1681e84c7da29e02ef73b576993c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/macaroni2__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "727689b6bbb007109908614149e715c7b69899801859902d8572fe5eaf8cfb0b"
+        },
+        "pcb1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb1__full__seed0.npz",
+          "calibration_sha256": "6a524a54101ad098cfa0b48fa06fc49081efa0f1bb5bb8af6502edb335d29281",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "4c948eaca9da35ea9b8f4cd00e185a458383daa3c7c603dc8c02a16e2df7ee84",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/pcb1__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "bfb4ff05482a8bd0c6f2ecfab9d450f3970c2d455a298c91824eb5e32988d89c"
+        },
+        "pcb2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb2__full__seed0.npz",
+          "calibration_sha256": "253ddbc555421fd6071ca6211f8f41600426a8162286d229a21779903651872f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "ef9ef2e0afc346ac3e605c58a86d5537b7358af0175f8bd49e65ca3f2848ae07",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/pcb2__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "95a82e566ee3cbf9f10bceaaecfbc183b69ac23deabc28c8424eac4985bdb0dc"
+        },
+        "pcb3": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb3__full__seed0.npz",
+          "calibration_sha256": "286f1446237ccbf2b9b4b6485b2862ecff029760f6ac25bfa8fddc31daa7e7d6",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "43d69bc332b359ddc8bf8a0f2d11574c13e4a73cd4c144e7b8cc5796710ed9f6",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/pcb3__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "0941619417ea5ba3cb8970c51631837de969041f6d0dd05c475011fb7edc8c6f"
+        },
+        "pcb4": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb4__full__seed0.npz",
+          "calibration_sha256": "dd91d768f2a742577abda19d78a72d69066b43856b78ad2a5f78f85143ec8684",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "737110b8c9140751d0718c225338335796210eaf92b0689cbe51a620545bf63c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/pcb4__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "42790dfc96da85a00e2dae06c6534e406c34dd820f38d416cec116fbc589d6d9"
+        },
+        "pipe_fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pipe_fryum__full__seed0.npz",
+          "calibration_sha256": "0a99f1392640326b906cef44ba4ccb9c2c4331583ee38fa2ff30411b34ff042a",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "8c375a1d5e150a95033ddb905e22bfa1644d0e454003b196b8bdc87927d6807d",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/format_matched_irrelevant/pipe_fryum__format_matched_irrelevant__seed0.npz",
+          "treatment_sha256": "17bb7d89886510e4d299c7f21932e4dfb5c39a3387ecd23d1805c5ea52a058e8"
+        }
+      }
+    },
+    "meaning_preserving_paraphrase": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.4483333333333334,
+          "ci95_low": 0.19831250000000003,
+          "macro_mean": 0.31833333333333336
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": -0.11916666666666666,
+          "ci95_low": -0.42668750000000005,
+          "macro_mean": -0.27
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": 0.069251159797165,
+          "ci95_low": -0.601757806062515,
+          "macro_mean": -0.2647823562894629
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.5580369224422439,
+          "ci95_low": 0.15870132013201316,
+          "macro_mean": 0.3497772277227722
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.5670567244224423,
+          "ci95_low": 0.19083333333333333,
+          "macro_mean": 0.3697772277227722
+        }
+      },
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.23,
+          "delta_anomaly_fnr": -0.23000000000000004,
+          "delta_margin_in_calibration_sd": -0.2156755331041037,
+          "delta_normal_fpr": 0.02,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_fnr": 0.56,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.33,
+          "treatment_normal_fpr": 0.04
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.79,
+          "delta_anomaly_fnr": -0.79,
+          "delta_margin_in_calibration_sd": 0.7290469561472644,
+          "delta_normal_fpr": 0.95,
+          "n_calibration_normal": 542,
+          "n_test_anomaly": 100,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.16026602685451508,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.09,
+          "delta_anomaly_fnr": -0.010000000000000009,
+          "delta_margin_in_calibration_sd": -1.0706637146292464,
+          "delta_normal_fpr": 0.08,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.08,
+          "reference_anomaly_fnr": 0.37,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.43782350420951843,
+          "treatment_anomaly_fnr": 0.36,
+          "treatment_normal_fpr": 0.1
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.03,
+          "delta_anomaly_fnr": -0.03,
+          "delta_margin_in_calibration_sd": -1.246833197631319,
+          "delta_normal_fpr": 0.18,
+          "n_calibration_normal": 453,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.18,
+          "reference_anomaly_fnr": 0.11,
+          "reference_normal_fpr": 0.04,
+          "threshold_q95_higher": 0.46490156650543213,
+          "treatment_anomaly_fnr": 0.08,
+          "treatment_normal_fpr": 0.22
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.22,
+          "delta_anomaly_fnr": -0.2,
+          "delta_margin_in_calibration_sd": -0.8270399261705276,
+          "delta_normal_fpr": 0.2,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.2,
+          "reference_anomaly_fnr": 0.31,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.4882833957672119,
+          "treatment_anomaly_fnr": 0.11,
+          "treatment_normal_fpr": 0.22
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.11,
+          "delta_anomaly_fnr": 0.04999999999999993,
+          "delta_margin_in_calibration_sd": -0.2601893408714139,
+          "delta_normal_fpr": -0.05,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.08,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.84,
+          "treatment_normal_fpr": 0.03
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.16,
+          "delta_anomaly_fnr": 0.16000000000000003,
+          "delta_margin_in_calibration_sd": 0.04104526246994131,
+          "delta_normal_fpr": -0.07,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.07,
+          "reference_anomaly_fnr": 0.83,
+          "reference_normal_fpr": 0.07,
+          "threshold_q95_higher": 0.9314625263214111,
+          "treatment_anomaly_fnr": 0.99,
+          "treatment_normal_fpr": 0.0
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.48,
+          "delta_anomaly_fnr": -0.48000000000000004,
+          "delta_margin_in_calibration_sd": 0.5501223609557859,
+          "delta_normal_fpr": 0.21000000000000002,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.21,
+          "reference_anomaly_fnr": 0.92,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5428633093833923,
+          "treatment_anomaly_fnr": 0.44,
+          "treatment_normal_fpr": 0.23
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.6,
+          "delta_anomaly_fnr": -0.6,
+          "delta_margin_in_calibration_sd": 0.07283424491837305,
+          "delta_normal_fpr": 0.47,
+          "n_calibration_normal": 901,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.47,
+          "reference_anomaly_fnr": 0.77,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5583269596099854,
+          "treatment_anomaly_fnr": 0.17,
+          "treatment_normal_fpr": 0.49
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.48,
+          "delta_anomaly_fnr": -0.48,
+          "delta_margin_in_calibration_sd": -0.09915003632845001,
+          "delta_normal_fpr": 0.5544554455445544,
+          "n_calibration_normal": 905,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.5544554455445545,
+          "reference_anomaly_fnr": 0.74,
+          "reference_normal_fpr": 0.039603960396039604,
+          "threshold_q95_higher": 0.45713675022125244,
+          "treatment_anomaly_fnr": 0.26,
+          "treatment_normal_fpr": 0.594059405940594
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.23,
+          "delta_anomaly_fnr": -0.23,
+          "delta_margin_in_calibration_sd": 0.0032205163370490073,
+          "delta_normal_fpr": 0.7128712871287128,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.7128712871287128,
+          "reference_anomaly_fnr": 0.23,
+          "reference_normal_fpr": 0.019801980198019802,
+          "threshold_q95_higher": 0.5078118443489075,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.7326732673267327
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.4,
+          "delta_anomaly_fnr": -0.4,
+          "delta_margin_in_calibration_sd": -0.8541058675669083,
+          "delta_normal_fpr": 0.94,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.94,
+          "reference_anomaly_fnr": 0.4,
+          "reference_normal_fpr": 0.06,
+          "threshold_q95_higher": 0.29421496391296387,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        }
+      },
+      "provenance": {
+        "candle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/candle__full__seed0.npz",
+          "calibration_sha256": "ebdc3270a4fc032b89a19e3eb672e84c3c924db76f79fe71d9d82617b8242b6d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "1add99da8890357e460730c6e96206aea6f30e2e29a7b559e1481f5381fe3b78",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/candle__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "9ea886a7bb0cfc495141441413d662d5980a90645dcfe996ea14e49a8df092ab"
+        },
+        "capsules": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/capsules__full__seed0.npz",
+          "calibration_sha256": "4f75b86674576bc64e7c3c6067a27c6f6a9a50cee2d569d5764fcd239581d5b7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "1d2f019077157ab4e12cf90fa19591712b4b639272e4d46964d618b1b5a35515",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/capsules__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "f9c5e29ef27ca0a5ac70dac246187d1ef144f2b39a04621b641de6298be95d5b"
+        },
+        "cashew": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/cashew__full__seed0.npz",
+          "calibration_sha256": "c16b68ffb680f917cb8f6502eefb571c922e121cc819d25e2573ba479f8642f8",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "dfd2a31e04d37cfa8f861c6fea818a466c75efa3b90ed0e46f51d4fc741cd57f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/cashew__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "95d617919df2666a8d2e065b8cd7523f5f0aa45493ab919fd785b5cc46844f25"
+        },
+        "chewinggum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/chewinggum__full__seed0.npz",
+          "calibration_sha256": "6bf4a1d7a98cadd243f97e9af59c1d5effc8cae3f139ee41839500cf11ecf0db",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "16cfedad8d23a4992f9881c51a6e47d929f9376425e78626b2a634125324e16f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/chewinggum__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "29a5302f0adb514dc031ef37564f31fb0088acb9a835993991cab7ef9597d2d0"
+        },
+        "fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/fryum__full__seed0.npz",
+          "calibration_sha256": "564a85850f68bbcf5876ebc9d7a041fa54ddf3b1efddcaf9149c3828100ff01c",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "b1a2cb08357c3a65e507a13eef8b560846c163bf566cd412c7714c925ab64168",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/fryum__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "00278200834d3ce79359d38c7894f42979e28099c7fc7aeabd6ac2759ddb1d2e"
+        },
+        "macaroni1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni1__full__seed0.npz",
+          "calibration_sha256": "f2fa576703b1fff93f6549fe5092cacc4294d87bed7226d2581d21baa4061a7e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "46cb39a88dab5e9b21a2a659edd45ec0c897d33e600231e699f34def9f4b5b73",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/macaroni1__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "39bfb62df62d3918794cddf42066decb0bbf594da7907dd2e6f9bc0c96be5993"
+        },
+        "macaroni2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni2__full__seed0.npz",
+          "calibration_sha256": "eaa70096eb59570d95e6e1dcbccd2faed632e39433b400a074fda52f39353ef2",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "a99a7b0ca7d88d5f3dcb10395828b2c1826b1681e84c7da29e02ef73b576993c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/macaroni2__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "e370133f126b6518ec1bbbaa2a5f6dd13fcc42fd96f564194079a8a172e521b9"
+        },
+        "pcb1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb1__full__seed0.npz",
+          "calibration_sha256": "6a524a54101ad098cfa0b48fa06fc49081efa0f1bb5bb8af6502edb335d29281",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "4c948eaca9da35ea9b8f4cd00e185a458383daa3c7c603dc8c02a16e2df7ee84",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/pcb1__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "93f19c8aac1abc3297aaa4431494e5167b4c23ed107a7f824479ba7f349fec69"
+        },
+        "pcb2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb2__full__seed0.npz",
+          "calibration_sha256": "253ddbc555421fd6071ca6211f8f41600426a8162286d229a21779903651872f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "ef9ef2e0afc346ac3e605c58a86d5537b7358af0175f8bd49e65ca3f2848ae07",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/pcb2__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "ab11d6f5f3c1bb3a883e36564bf633f7719f5e0f4869941c8b0a9d1b986c1be8"
+        },
+        "pcb3": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb3__full__seed0.npz",
+          "calibration_sha256": "286f1446237ccbf2b9b4b6485b2862ecff029760f6ac25bfa8fddc31daa7e7d6",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "43d69bc332b359ddc8bf8a0f2d11574c13e4a73cd4c144e7b8cc5796710ed9f6",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/pcb3__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "8ad8aac672baa0b3cdc6ce34bc9b9aa4aa54ccc1f34be8c37c59f8c6e5d80040"
+        },
+        "pcb4": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb4__full__seed0.npz",
+          "calibration_sha256": "dd91d768f2a742577abda19d78a72d69066b43856b78ad2a5f78f85143ec8684",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "737110b8c9140751d0718c225338335796210eaf92b0689cbe51a620545bf63c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/pcb4__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "e526ca02d74ec06bc79f926be6c3f2fddca24e6705492532043133f54c453045"
+        },
+        "pipe_fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pipe_fryum__full__seed0.npz",
+          "calibration_sha256": "0a99f1392640326b906cef44ba4ccb9c2c4331583ee38fa2ff30411b34ff042a",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "8c375a1d5e150a95033ddb905e22bfa1644d0e454003b196b8bdc87927d6807d",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/meaning_preserving_paraphrase/pipe_fryum__meaning_preserving_paraphrase__seed0.npz",
+          "treatment_sha256": "05fa280c984f037c88a526b7159986c1c5c1946686ec2bdbc595fcfff108ca4c"
+        }
+      }
+    },
+    "semantic_content_error": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.5975208333333331,
+          "ci95_low": 0.31249999999999994,
+          "macro_mean": 0.45083333333333336
+        },
+        "delta_anomaly_fnr": {
+          "ci95_high": 0.06583333333333333,
+          "ci95_low": -0.4575208333333334,
+          "macro_mean": -0.1991666666666667
+        },
+        "delta_margin_in_calibration_sd": {
+          "ci95_high": -0.7393312754356156,
+          "ci95_low": -2.247624855351484,
+          "macro_mean": -1.4187803080927825
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.7809234735973595,
+          "ci95_low": 0.2834057343234323,
+          "macro_mean": 0.5399752475247525
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.7925018564356435,
+          "ci95_low": 0.33997524752475244,
+          "macro_mean": 0.5716419141914192
+        }
+      },
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.42,
+          "delta_anomaly_fnr": 0.41999999999999993,
+          "delta_margin_in_calibration_sd": -1.3116388401444283,
+          "delta_normal_fpr": -0.02,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_fnr": 0.56,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 0.98,
+          "treatment_normal_fpr": 0.0
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.79,
+          "delta_anomaly_fnr": -0.79,
+          "delta_margin_in_calibration_sd": -0.14490602006324585,
+          "delta_normal_fpr": 0.95,
+          "n_calibration_normal": 542,
+          "n_test_anomaly": 100,
+          "n_test_normal": 60,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.05,
+          "threshold_q95_higher": 0.16026602685451508,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.59,
+          "delta_anomaly_fnr": 0.59,
+          "delta_margin_in_calibration_sd": -1.557150853476278,
+          "delta_normal_fpr": -0.02,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_fnr": 0.37,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.43782350420951843,
+          "treatment_anomaly_fnr": 0.96,
+          "treatment_normal_fpr": 0.0
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.11,
+          "delta_anomaly_fnr": -0.11,
+          "delta_margin_in_calibration_sd": -4.575531287705123,
+          "delta_normal_fpr": 0.96,
+          "n_calibration_normal": 453,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.96,
+          "reference_anomaly_fnr": 0.11,
+          "reference_normal_fpr": 0.04,
+          "threshold_q95_higher": 0.46490156650543213,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.31,
+          "delta_anomaly_fnr": -0.31,
+          "delta_margin_in_calibration_sd": -3.6257412067446984,
+          "delta_normal_fpr": 0.98,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.98,
+          "reference_anomaly_fnr": 0.31,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.4882833957672119,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.21,
+          "delta_anomaly_fnr": 0.20999999999999996,
+          "delta_margin_in_calibration_sd": -0.5350201825453433,
+          "delta_normal_fpr": -0.08,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.08,
+          "reference_anomaly_fnr": 0.79,
+          "reference_normal_fpr": 0.08,
+          "threshold_q95_higher": 0.6076632142066956,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.17,
+          "delta_anomaly_fnr": 0.17000000000000004,
+          "delta_margin_in_calibration_sd": -0.19740442651432222,
+          "delta_normal_fpr": -0.07,
+          "n_calibration_normal": 900,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.07,
+          "reference_anomaly_fnr": 0.83,
+          "reference_normal_fpr": 0.07,
+          "threshold_q95_higher": 0.9314625263214111,
+          "treatment_anomaly_fnr": 1.0,
+          "treatment_normal_fpr": 0.0
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.92,
+          "delta_anomaly_fnr": -0.92,
+          "delta_margin_in_calibration_sd": -0.19079643538123386,
+          "delta_normal_fpr": 0.98,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.98,
+          "reference_anomaly_fnr": 0.92,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5428633093833923,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 1.0
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.77,
+          "delta_anomaly_fnr": -0.77,
+          "delta_margin_in_calibration_sd": -0.8222627466613952,
+          "delta_normal_fpr": 0.87,
+          "n_calibration_normal": 901,
+          "n_test_anomaly": 100,
+          "n_test_normal": 100,
+          "normal_flip_rate": 0.87,
+          "reference_anomaly_fnr": 0.77,
+          "reference_normal_fpr": 0.02,
+          "threshold_q95_higher": 0.5583269596099854,
+          "treatment_anomaly_fnr": 0.0,
+          "treatment_normal_fpr": 0.89
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.46,
+          "delta_anomaly_fnr": -0.33999999999999997,
+          "delta_margin_in_calibration_sd": -0.7056318538373103,
+          "delta_normal_fpr": 0.5742574257425742,
+          "n_calibration_normal": 905,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.5742574257425742,
+          "reference_anomaly_fnr": 0.74,
+          "reference_normal_fpr": 0.039603960396039604,
+          "threshold_q95_higher": 0.45713675022125244,
+          "treatment_anomaly_fnr": 0.4,
+          "treatment_normal_fpr": 0.6138613861386139
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.22,
+          "delta_anomaly_fnr": -0.2,
+          "delta_margin_in_calibration_sd": -1.8335892560216638,
+          "delta_normal_fpr": 0.4554455445544554,
+          "n_calibration_normal": 904,
+          "n_test_anomaly": 100,
+          "n_test_normal": 101,
+          "normal_flip_rate": 0.45544554455445546,
+          "reference_anomaly_fnr": 0.23,
+          "reference_normal_fpr": 0.019801980198019802,
+          "threshold_q95_higher": 0.5078118443489075,
+          "treatment_anomaly_fnr": 0.03,
+          "treatment_normal_fpr": 0.4752475247524752
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.44,
+          "delta_anomaly_fnr": -0.34,
+          "delta_margin_in_calibration_sd": -1.5256905880183502,
+          "delta_normal_fpr": 0.8999999999999999,
+          "n_calibration_normal": 450,
+          "n_test_anomaly": 100,
+          "n_test_normal": 50,
+          "normal_flip_rate": 0.9,
+          "reference_anomaly_fnr": 0.4,
+          "reference_normal_fpr": 0.06,
+          "threshold_q95_higher": 0.29421496391296387,
+          "treatment_anomaly_fnr": 0.06,
+          "treatment_normal_fpr": 0.96
+        }
+      },
+      "provenance": {
+        "candle": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/candle__full__seed0.npz",
+          "calibration_sha256": "ebdc3270a4fc032b89a19e3eb672e84c3c924db76f79fe71d9d82617b8242b6d",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "1add99da8890357e460730c6e96206aea6f30e2e29a7b559e1481f5381fe3b78",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/candle__semantic_content_error__seed0.npz",
+          "treatment_sha256": "a5ce2e628af4d6384e35bbe9aa1253dbc257ef09815980bc6b66895d74bcae3b"
+        },
+        "capsules": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/capsules__full__seed0.npz",
+          "calibration_sha256": "4f75b86674576bc64e7c3c6067a27c6f6a9a50cee2d569d5764fcd239581d5b7",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "1d2f019077157ab4e12cf90fa19591712b4b639272e4d46964d618b1b5a35515",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/capsules__semantic_content_error__seed0.npz",
+          "treatment_sha256": "c9f2ab497d72feba1ee55d462481d28207565c141a235ee0e40a569bcc0b4a5f"
+        },
+        "cashew": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/cashew__full__seed0.npz",
+          "calibration_sha256": "c16b68ffb680f917cb8f6502eefb571c922e121cc819d25e2573ba479f8642f8",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "dfd2a31e04d37cfa8f861c6fea818a466c75efa3b90ed0e46f51d4fc741cd57f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/cashew__semantic_content_error__seed0.npz",
+          "treatment_sha256": "45b7773d6326fcd483383ae6f4983bd2b44e640a92e02a462364bedbd855bc0d"
+        },
+        "chewinggum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/chewinggum__full__seed0.npz",
+          "calibration_sha256": "6bf4a1d7a98cadd243f97e9af59c1d5effc8cae3f139ee41839500cf11ecf0db",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "16cfedad8d23a4992f9881c51a6e47d929f9376425e78626b2a634125324e16f",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/chewinggum__semantic_content_error__seed0.npz",
+          "treatment_sha256": "6d2c9ea37c612ab291d6d50e43c2124576791b80f3fdd802e7d41be63a288a07"
+        },
+        "fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/fryum__full__seed0.npz",
+          "calibration_sha256": "564a85850f68bbcf5876ebc9d7a041fa54ddf3b1efddcaf9149c3828100ff01c",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "b1a2cb08357c3a65e507a13eef8b560846c163bf566cd412c7714c925ab64168",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/fryum__semantic_content_error__seed0.npz",
+          "treatment_sha256": "b08f3c33813cdb31873689c4d9b670cfc322665aa4d1fc1b6ad017ada26f43d1"
+        },
+        "macaroni1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni1__full__seed0.npz",
+          "calibration_sha256": "f2fa576703b1fff93f6549fe5092cacc4294d87bed7226d2581d21baa4061a7e",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "46cb39a88dab5e9b21a2a659edd45ec0c897d33e600231e699f34def9f4b5b73",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/macaroni1__semantic_content_error__seed0.npz",
+          "treatment_sha256": "692d123308d2c2ed236487e195d9ea84d5d7951052179a03ba2112e40224e525"
+        },
+        "macaroni2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/macaroni2__full__seed0.npz",
+          "calibration_sha256": "eaa70096eb59570d95e6e1dcbccd2faed632e39433b400a074fda52f39353ef2",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "a99a7b0ca7d88d5f3dcb10395828b2c1826b1681e84c7da29e02ef73b576993c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/macaroni2__semantic_content_error__seed0.npz",
+          "treatment_sha256": "dd783bc7ae8c6feb751a0b1fe1b4c89e20d59c5427cbccc8ce03584e0cbaf946"
+        },
+        "pcb1": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb1__full__seed0.npz",
+          "calibration_sha256": "6a524a54101ad098cfa0b48fa06fc49081efa0f1bb5bb8af6502edb335d29281",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "4c948eaca9da35ea9b8f4cd00e185a458383daa3c7c603dc8c02a16e2df7ee84",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/pcb1__semantic_content_error__seed0.npz",
+          "treatment_sha256": "8828d3a85f257b7e45cb0ef87ceecd645cf380d8d1304316caef4f75675d01a8"
+        },
+        "pcb2": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb2__full__seed0.npz",
+          "calibration_sha256": "253ddbc555421fd6071ca6211f8f41600426a8162286d229a21779903651872f",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "ef9ef2e0afc346ac3e605c58a86d5537b7358af0175f8bd49e65ca3f2848ae07",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/pcb2__semantic_content_error__seed0.npz",
+          "treatment_sha256": "7c43ab20c9cb1fa3e257ca13b356510d5300b4be3c900518489fef63acf30d23"
+        },
+        "pcb3": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb3__full__seed0.npz",
+          "calibration_sha256": "286f1446237ccbf2b9b4b6485b2862ecff029760f6ac25bfa8fddc31daa7e7d6",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "43d69bc332b359ddc8bf8a0f2d11574c13e4a73cd4c144e7b8cc5796710ed9f6",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/pcb3__semantic_content_error__seed0.npz",
+          "treatment_sha256": "5dfc2fa7a1990f74b9828b33a2946e6e6b691a58bed870657df58d9f2e7db4f9"
+        },
+        "pcb4": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pcb4__full__seed0.npz",
+          "calibration_sha256": "dd91d768f2a742577abda19d78a72d69066b43856b78ad2a5f78f85143ec8684",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "737110b8c9140751d0718c225338335796210eaf92b0689cbe51a620545bf63c",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/pcb4__semantic_content_error__seed0.npz",
+          "treatment_sha256": "4f80e2fb7197aefaeccc23ff197ae629730921e59fb2f6738adfefdfc96e0cb1"
+        },
+        "pipe_fryum": {
+          "calibration": "private_intermediate_not_redistributed/e1_independent_boundary_v1/calibration/vand/visa/full/pipe_fryum__full__seed0.npz",
+          "calibration_sha256": "0a99f1392640326b906cef44ba4ccb9c2c4331583ee38fa2ff30411b34ff042a",
+          "reference": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "8c375a1d5e150a95033ddb905e22bfa1644d0e454003b196b8bdc87927d6807d",
+          "treatment": "private_intermediate_not_redistributed/e1_natural_semantic_v1/vand/predictions/visa/semantic_content_error/pipe_fryum__semantic_content_error__seed0.npz",
+          "treatment_sha256": "29459d3a23d735044586b8ba8cf4ccfa350a0edbc980eebddbdd5e0aecc6230f"
+        }
+      }
+    }
+  }
+}

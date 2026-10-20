@@ -1,0 +1,1557 @@
+{
+  "passed": true,
+  "reports": {
+    "carrot": {
+      "comparison": "unmodified official test.py versus independently archived full-condition predictions, checked per category",
+      "difference": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        }
+      },
+      "official": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.7,
+            "image_auroc": 98.9,
+            "pixel_aupro": 98.8,
+            "pixel_auroc": 99.7
+          },
+          "cable_gland": {
+            "image_ap": 95.8,
+            "image_auroc": 82.8,
+            "pixel_aupro": 88.8,
+            "pixel_auroc": 95.7
+          },
+          "cookie": {
+            "image_ap": 95.4,
+            "image_auroc": 84.5,
+            "pixel_aupro": 89.4,
+            "pixel_auroc": 94.7
+          },
+          "dowel": {
+            "image_ap": 88.8,
+            "image_auroc": 64.8,
+            "pixel_aupro": 88.5,
+            "pixel_auroc": 96.8
+          },
+          "foam": {
+            "image_ap": 96.5,
+            "image_auroc": 85.8,
+            "pixel_aupro": 69.4,
+            "pixel_auroc": 90.0
+          },
+          "peach": {
+            "image_ap": 98.6,
+            "image_auroc": 93.9,
+            "pixel_aupro": 97.7,
+            "pixel_auroc": 99.2
+          },
+          "potato": {
+            "image_ap": 95.0,
+            "image_auroc": 85.0,
+            "pixel_aupro": 98.4,
+            "pixel_auroc": 99.6
+          },
+          "rope": {
+            "image_ap": 96.6,
+            "image_auroc": 91.4,
+            "pixel_aupro": 89.7,
+            "pixel_auroc": 97.9
+          },
+          "tire": {
+            "image_ap": 94.4,
+            "image_auroc": 81.1,
+            "pixel_aupro": 82.3,
+            "pixel_auroc": 95.9
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 99.4,
+            "image_auroc": 97.7,
+            "pixel_aupro": 97.4,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 85.1,
+            "image_auroc": 52.1,
+            "pixel_aupro": 69.6,
+            "pixel_auroc": 89.2
+          },
+          "cookie": {
+            "image_ap": 97.5,
+            "image_auroc": 90.5,
+            "pixel_aupro": 82.8,
+            "pixel_auroc": 88.5
+          },
+          "dowel": {
+            "image_ap": 85.4,
+            "image_auroc": 62.2,
+            "pixel_aupro": 76.5,
+            "pixel_auroc": 94.0
+          },
+          "foam": {
+            "image_ap": 84.2,
+            "image_auroc": 56.8,
+            "pixel_aupro": 28.5,
+            "pixel_auroc": 70.1
+          },
+          "peach": {
+            "image_ap": 97.5,
+            "image_auroc": 90.5,
+            "pixel_aupro": 97.4,
+            "pixel_auroc": 99.1
+          },
+          "potato": {
+            "image_ap": 99.0,
+            "image_auroc": 95.8,
+            "pixel_aupro": 96.6,
+            "pixel_auroc": 99.1
+          },
+          "rope": {
+            "image_ap": 98.0,
+            "image_auroc": 94.4,
+            "pixel_aupro": 86.3,
+            "pixel_auroc": 97.5
+          },
+          "tire": {
+            "image_ap": 77.3,
+            "image_auroc": 46.4,
+            "pixel_aupro": 20.6,
+            "pixel_auroc": 66.0
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.8,
+            "image_auroc": 94.7,
+            "pixel_aupro": 95.8,
+            "pixel_auroc": 99.2
+          },
+          "cable_gland": {
+            "image_ap": 96.1,
+            "image_auroc": 86.3,
+            "pixel_aupro": 90.6,
+            "pixel_auroc": 96.3
+          },
+          "cookie": {
+            "image_ap": 89.9,
+            "image_auroc": 68.3,
+            "pixel_aupro": 82.0,
+            "pixel_auroc": 94.4
+          },
+          "dowel": {
+            "image_ap": 87.3,
+            "image_auroc": 61.2,
+            "pixel_aupro": 83.0,
+            "pixel_auroc": 95.3
+          },
+          "foam": {
+            "image_ap": 95.8,
+            "image_auroc": 83.5,
+            "pixel_aupro": 65.2,
+            "pixel_auroc": 87.4
+          },
+          "peach": {
+            "image_ap": 96.7,
+            "image_auroc": 87.7,
+            "pixel_aupro": 96.4,
+            "pixel_auroc": 98.8
+          },
+          "potato": {
+            "image_ap": 87.8,
+            "image_auroc": 66.7,
+            "pixel_aupro": 92.2,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 92.9,
+            "image_auroc": 82.2,
+            "pixel_aupro": 76.7,
+            "pixel_auroc": 92.2
+          },
+          "tire": {
+            "image_ap": 94.4,
+            "image_auroc": 81.6,
+            "pixel_aupro": 85.6,
+            "pixel_auroc": 96.4
+          }
+        }
+      },
+      "passed": true,
+      "reproduced": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.7,
+            "image_auroc": 98.9,
+            "pixel_aupro": 98.8,
+            "pixel_auroc": 99.7
+          },
+          "cable_gland": {
+            "image_ap": 95.8,
+            "image_auroc": 82.8,
+            "pixel_aupro": 88.8,
+            "pixel_auroc": 95.7
+          },
+          "cookie": {
+            "image_ap": 95.4,
+            "image_auroc": 84.5,
+            "pixel_aupro": 89.4,
+            "pixel_auroc": 94.7
+          },
+          "dowel": {
+            "image_ap": 88.8,
+            "image_auroc": 64.8,
+            "pixel_aupro": 88.5,
+            "pixel_auroc": 96.8
+          },
+          "foam": {
+            "image_ap": 96.5,
+            "image_auroc": 85.8,
+            "pixel_aupro": 69.4,
+            "pixel_auroc": 90.0
+          },
+          "peach": {
+            "image_ap": 98.6,
+            "image_auroc": 93.9,
+            "pixel_aupro": 97.7,
+            "pixel_auroc": 99.2
+          },
+          "potato": {
+            "image_ap": 95.0,
+            "image_auroc": 85.0,
+            "pixel_aupro": 98.4,
+            "pixel_auroc": 99.6
+          },
+          "rope": {
+            "image_ap": 96.6,
+            "image_auroc": 91.4,
+            "pixel_aupro": 89.7,
+            "pixel_auroc": 97.9
+          },
+          "tire": {
+            "image_ap": 94.4,
+            "image_auroc": 81.1,
+            "pixel_aupro": 82.3,
+            "pixel_auroc": 95.9
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 99.4,
+            "image_auroc": 97.7,
+            "pixel_aupro": 97.4,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 85.1,
+            "image_auroc": 52.1,
+            "pixel_aupro": 69.6,
+            "pixel_auroc": 89.2
+          },
+          "cookie": {
+            "image_ap": 97.5,
+            "image_auroc": 90.5,
+            "pixel_aupro": 82.8,
+            "pixel_auroc": 88.5
+          },
+          "dowel": {
+            "image_ap": 85.4,
+            "image_auroc": 62.2,
+            "pixel_aupro": 76.5,
+            "pixel_auroc": 94.0
+          },
+          "foam": {
+            "image_ap": 84.2,
+            "image_auroc": 56.8,
+            "pixel_aupro": 28.5,
+            "pixel_auroc": 70.1
+          },
+          "peach": {
+            "image_ap": 97.5,
+            "image_auroc": 90.5,
+            "pixel_aupro": 97.4,
+            "pixel_auroc": 99.1
+          },
+          "potato": {
+            "image_ap": 99.0,
+            "image_auroc": 95.8,
+            "pixel_aupro": 96.6,
+            "pixel_auroc": 99.1
+          },
+          "rope": {
+            "image_ap": 98.0,
+            "image_auroc": 94.4,
+            "pixel_aupro": 86.3,
+            "pixel_auroc": 97.5
+          },
+          "tire": {
+            "image_ap": 77.3,
+            "image_auroc": 46.4,
+            "pixel_aupro": 20.6,
+            "pixel_auroc": 66.0
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.8,
+            "image_auroc": 94.7,
+            "pixel_aupro": 95.8,
+            "pixel_auroc": 99.2
+          },
+          "cable_gland": {
+            "image_ap": 96.1,
+            "image_auroc": 86.3,
+            "pixel_aupro": 90.6,
+            "pixel_auroc": 96.3
+          },
+          "cookie": {
+            "image_ap": 89.9,
+            "image_auroc": 68.3,
+            "pixel_aupro": 82.0,
+            "pixel_auroc": 94.4
+          },
+          "dowel": {
+            "image_ap": 87.3,
+            "image_auroc": 61.2,
+            "pixel_aupro": 83.0,
+            "pixel_auroc": 95.3
+          },
+          "foam": {
+            "image_ap": 95.8,
+            "image_auroc": 83.5,
+            "pixel_aupro": 65.2,
+            "pixel_auroc": 87.4
+          },
+          "peach": {
+            "image_ap": 96.7,
+            "image_auroc": 87.7,
+            "pixel_aupro": 96.4,
+            "pixel_auroc": 98.8
+          },
+          "potato": {
+            "image_ap": 87.8,
+            "image_auroc": 66.7,
+            "pixel_aupro": 92.2,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 92.9,
+            "image_auroc": 82.2,
+            "pixel_aupro": 76.7,
+            "pixel_auroc": 92.2
+          },
+          "tire": {
+            "image_ap": 94.4,
+            "image_auroc": 81.6,
+            "pixel_aupro": 85.6,
+            "pixel_auroc": 96.4
+          }
+        }
+      },
+      "schema": 1,
+      "tolerance": 0.1,
+      "units": "percentage points; both sides rounded to one decimal as in official output"
+    },
+    "cookie": {
+      "comparison": "unmodified official test.py versus independently archived full-condition predictions, checked per category",
+      "difference": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "dowel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        }
+      },
+      "official": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.8,
+            "image_auroc": 99.3,
+            "pixel_aupro": 98.8,
+            "pixel_auroc": 99.6
+          },
+          "cable_gland": {
+            "image_ap": 96.3,
+            "image_auroc": 84.2,
+            "pixel_aupro": 83.1,
+            "pixel_auroc": 94.0
+          },
+          "carrot": {
+            "image_ap": 98.3,
+            "image_auroc": 92.3,
+            "pixel_aupro": 92.1,
+            "pixel_auroc": 97.3
+          },
+          "dowel": {
+            "image_ap": 93.0,
+            "image_auroc": 77.0,
+            "pixel_aupro": 86.7,
+            "pixel_auroc": 96.7
+          },
+          "foam": {
+            "image_ap": 94.6,
+            "image_auroc": 79.0,
+            "pixel_aupro": 65.6,
+            "pixel_auroc": 87.3
+          },
+          "peach": {
+            "image_ap": 99.2,
+            "image_auroc": 96.9,
+            "pixel_aupro": 98.4,
+            "pixel_auroc": 99.6
+          },
+          "potato": {
+            "image_ap": 94.2,
+            "image_auroc": 83.0,
+            "pixel_aupro": 96.2,
+            "pixel_auroc": 99.0
+          },
+          "rope": {
+            "image_ap": 94.3,
+            "image_auroc": 86.0,
+            "pixel_aupro": 90.6,
+            "pixel_auroc": 97.6
+          },
+          "tire": {
+            "image_ap": 89.6,
+            "image_auroc": 64.6,
+            "pixel_aupro": 73.7,
+            "pixel_auroc": 93.8
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 99.3,
+            "image_auroc": 97.1,
+            "pixel_aupro": 97.3,
+            "pixel_auroc": 99.1
+          },
+          "cable_gland": {
+            "image_ap": 86.9,
+            "image_auroc": 57.5,
+            "pixel_aupro": 52.7,
+            "pixel_auroc": 83.9
+          },
+          "carrot": {
+            "image_ap": 97.1,
+            "image_auroc": 86.3,
+            "pixel_aupro": 88.2,
+            "pixel_auroc": 96.1
+          },
+          "dowel": {
+            "image_ap": 91.8,
+            "image_auroc": 70.6,
+            "pixel_aupro": 67.9,
+            "pixel_auroc": 91.8
+          },
+          "foam": {
+            "image_ap": 82.8,
+            "image_auroc": 50.5,
+            "pixel_aupro": 27.8,
+            "pixel_auroc": 69.7
+          },
+          "peach": {
+            "image_ap": 98.1,
+            "image_auroc": 93.0,
+            "pixel_aupro": 98.2,
+            "pixel_auroc": 99.5
+          },
+          "potato": {
+            "image_ap": 97.0,
+            "image_auroc": 88.3,
+            "pixel_aupro": 93.4,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 98.5,
+            "image_auroc": 96.3,
+            "pixel_aupro": 83.2,
+            "pixel_auroc": 98.0
+          },
+          "tire": {
+            "image_ap": 77.0,
+            "image_auroc": 47.7,
+            "pixel_aupro": 23.9,
+            "pixel_auroc": 74.5
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.9,
+            "image_auroc": 94.9,
+            "pixel_aupro": 94.6,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 96.6,
+            "image_auroc": 87.1,
+            "pixel_aupro": 92.8,
+            "pixel_auroc": 97.2
+          },
+          "carrot": {
+            "image_ap": 98.3,
+            "image_auroc": 92.8,
+            "pixel_aupro": 81.1,
+            "pixel_auroc": 94.2
+          },
+          "dowel": {
+            "image_ap": 90.1,
+            "image_auroc": 70.2,
+            "pixel_aupro": 83.4,
+            "pixel_auroc": 95.9
+          },
+          "foam": {
+            "image_ap": 94.1,
+            "image_auroc": 78.0,
+            "pixel_aupro": 58.0,
+            "pixel_auroc": 81.0
+          },
+          "peach": {
+            "image_ap": 98.0,
+            "image_auroc": 92.2,
+            "pixel_aupro": 97.1,
+            "pixel_auroc": 99.0
+          },
+          "potato": {
+            "image_ap": 88.0,
+            "image_auroc": 66.6,
+            "pixel_aupro": 83.6,
+            "pixel_auroc": 96.7
+          },
+          "rope": {
+            "image_ap": 81.6,
+            "image_auroc": 58.4,
+            "pixel_aupro": 75.6,
+            "pixel_auroc": 90.1
+          },
+          "tire": {
+            "image_ap": 91.3,
+            "image_auroc": 70.7,
+            "pixel_aupro": 81.4,
+            "pixel_auroc": 95.9
+          }
+        }
+      },
+      "passed": true,
+      "reproduced": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.8,
+            "image_auroc": 99.3,
+            "pixel_aupro": 98.8,
+            "pixel_auroc": 99.6
+          },
+          "cable_gland": {
+            "image_ap": 96.3,
+            "image_auroc": 84.2,
+            "pixel_aupro": 83.1,
+            "pixel_auroc": 94.0
+          },
+          "carrot": {
+            "image_ap": 98.3,
+            "image_auroc": 92.3,
+            "pixel_aupro": 92.1,
+            "pixel_auroc": 97.3
+          },
+          "dowel": {
+            "image_ap": 93.0,
+            "image_auroc": 77.0,
+            "pixel_aupro": 86.7,
+            "pixel_auroc": 96.7
+          },
+          "foam": {
+            "image_ap": 94.6,
+            "image_auroc": 79.0,
+            "pixel_aupro": 65.6,
+            "pixel_auroc": 87.3
+          },
+          "peach": {
+            "image_ap": 99.2,
+            "image_auroc": 96.9,
+            "pixel_aupro": 98.4,
+            "pixel_auroc": 99.6
+          },
+          "potato": {
+            "image_ap": 94.2,
+            "image_auroc": 83.0,
+            "pixel_aupro": 96.2,
+            "pixel_auroc": 99.0
+          },
+          "rope": {
+            "image_ap": 94.3,
+            "image_auroc": 86.0,
+            "pixel_aupro": 90.6,
+            "pixel_auroc": 97.6
+          },
+          "tire": {
+            "image_ap": 89.6,
+            "image_auroc": 64.6,
+            "pixel_aupro": 73.7,
+            "pixel_auroc": 93.8
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 99.3,
+            "image_auroc": 97.1,
+            "pixel_aupro": 97.3,
+            "pixel_auroc": 99.1
+          },
+          "cable_gland": {
+            "image_ap": 86.9,
+            "image_auroc": 57.5,
+            "pixel_aupro": 52.7,
+            "pixel_auroc": 83.9
+          },
+          "carrot": {
+            "image_ap": 97.1,
+            "image_auroc": 86.3,
+            "pixel_aupro": 88.2,
+            "pixel_auroc": 96.1
+          },
+          "dowel": {
+            "image_ap": 91.8,
+            "image_auroc": 70.6,
+            "pixel_aupro": 67.9,
+            "pixel_auroc": 91.8
+          },
+          "foam": {
+            "image_ap": 82.8,
+            "image_auroc": 50.5,
+            "pixel_aupro": 27.8,
+            "pixel_auroc": 69.7
+          },
+          "peach": {
+            "image_ap": 98.1,
+            "image_auroc": 93.0,
+            "pixel_aupro": 98.2,
+            "pixel_auroc": 99.5
+          },
+          "potato": {
+            "image_ap": 97.0,
+            "image_auroc": 88.3,
+            "pixel_aupro": 93.4,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 98.5,
+            "image_auroc": 96.3,
+            "pixel_aupro": 83.2,
+            "pixel_auroc": 98.0
+          },
+          "tire": {
+            "image_ap": 77.0,
+            "image_auroc": 47.7,
+            "pixel_aupro": 23.9,
+            "pixel_auroc": 74.5
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.9,
+            "image_auroc": 94.9,
+            "pixel_aupro": 94.6,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 96.6,
+            "image_auroc": 87.1,
+            "pixel_aupro": 92.8,
+            "pixel_auroc": 97.2
+          },
+          "carrot": {
+            "image_ap": 98.3,
+            "image_auroc": 92.8,
+            "pixel_aupro": 81.1,
+            "pixel_auroc": 94.2
+          },
+          "dowel": {
+            "image_ap": 90.1,
+            "image_auroc": 70.2,
+            "pixel_aupro": 83.4,
+            "pixel_auroc": 95.9
+          },
+          "foam": {
+            "image_ap": 94.1,
+            "image_auroc": 78.0,
+            "pixel_aupro": 58.0,
+            "pixel_auroc": 81.0
+          },
+          "peach": {
+            "image_ap": 98.0,
+            "image_auroc": 92.2,
+            "pixel_aupro": 97.1,
+            "pixel_auroc": 99.0
+          },
+          "potato": {
+            "image_ap": 88.0,
+            "image_auroc": 66.6,
+            "pixel_aupro": 83.6,
+            "pixel_auroc": 96.7
+          },
+          "rope": {
+            "image_ap": 81.6,
+            "image_auroc": 58.4,
+            "pixel_aupro": 75.6,
+            "pixel_auroc": 90.1
+          },
+          "tire": {
+            "image_ap": 91.3,
+            "image_auroc": 70.7,
+            "pixel_aupro": 81.4,
+            "pixel_auroc": 95.9
+          }
+        }
+      },
+      "schema": 1,
+      "tolerance": 0.1,
+      "units": "percentage points; both sides rounded to one decimal as in official output"
+    },
+    "dowel": {
+      "comparison": "unmodified official test.py versus independently archived full-condition predictions, checked per category",
+      "difference": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cable_gland": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "carrot": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "cookie": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "foam": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "peach": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "potato": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "rope": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          },
+          "tire": {
+            "image_ap": 0.0,
+            "image_auroc": 0.0,
+            "pixel_aupro": 0.0,
+            "pixel_auroc": 0.0
+          }
+        }
+      },
+      "official": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.3,
+            "image_auroc": 97.1,
+            "pixel_aupro": 97.0,
+            "pixel_auroc": 99.2
+          },
+          "cable_gland": {
+            "image_ap": 97.2,
+            "image_auroc": 88.6,
+            "pixel_aupro": 87.9,
+            "pixel_auroc": 95.0
+          },
+          "carrot": {
+            "image_ap": 97.7,
+            "image_auroc": 90.2,
+            "pixel_aupro": 94.6,
+            "pixel_auroc": 98.3
+          },
+          "cookie": {
+            "image_ap": 94.3,
+            "image_auroc": 82.6,
+            "pixel_aupro": 65.5,
+            "pixel_auroc": 87.8
+          },
+          "foam": {
+            "image_ap": 94.0,
+            "image_auroc": 78.2,
+            "pixel_aupro": 64.0,
+            "pixel_auroc": 86.6
+          },
+          "peach": {
+            "image_ap": 97.5,
+            "image_auroc": 91.5,
+            "pixel_aupro": 94.3,
+            "pixel_auroc": 97.8
+          },
+          "potato": {
+            "image_ap": 91.7,
+            "image_auroc": 74.5,
+            "pixel_aupro": 95.6,
+            "pixel_auroc": 98.8
+          },
+          "rope": {
+            "image_ap": 97.4,
+            "image_auroc": 93.3,
+            "pixel_aupro": 81.8,
+            "pixel_auroc": 94.4
+          },
+          "tire": {
+            "image_ap": 87.1,
+            "image_auroc": 58.0,
+            "pixel_aupro": 70.3,
+            "pixel_auroc": 91.9
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 97.9,
+            "image_auroc": 91.7,
+            "pixel_aupro": 91.1,
+            "pixel_auroc": 95.0
+          },
+          "cable_gland": {
+            "image_ap": 86.6,
+            "image_auroc": 61.4,
+            "pixel_aupro": 65.9,
+            "pixel_auroc": 84.2
+          },
+          "carrot": {
+            "image_ap": 97.7,
+            "image_auroc": 88.8,
+            "pixel_aupro": 84.6,
+            "pixel_auroc": 94.1
+          },
+          "cookie": {
+            "image_ap": 96.9,
+            "image_auroc": 89.3,
+            "pixel_aupro": 33.9,
+            "pixel_auroc": 73.2
+          },
+          "foam": {
+            "image_ap": 87.8,
+            "image_auroc": 63.6,
+            "pixel_aupro": 12.2,
+            "pixel_auroc": 50.7
+          },
+          "peach": {
+            "image_ap": 98.0,
+            "image_auroc": 92.5,
+            "pixel_aupro": 88.6,
+            "pixel_auroc": 95.1
+          },
+          "potato": {
+            "image_ap": 98.5,
+            "image_auroc": 93.3,
+            "pixel_aupro": 93.4,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 96.6,
+            "image_auroc": 90.9,
+            "pixel_aupro": 73.4,
+            "pixel_auroc": 91.1
+          },
+          "tire": {
+            "image_ap": 81.7,
+            "image_auroc": 52.9,
+            "pixel_aupro": 4.7,
+            "pixel_auroc": 44.4
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.7,
+            "image_auroc": 94.2,
+            "pixel_aupro": 94.4,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 97.6,
+            "image_auroc": 89.8,
+            "pixel_aupro": 87.6,
+            "pixel_auroc": 95.8
+          },
+          "carrot": {
+            "image_ap": 96.4,
+            "image_auroc": 85.6,
+            "pixel_aupro": 92.3,
+            "pixel_auroc": 97.9
+          },
+          "cookie": {
+            "image_ap": 88.7,
+            "image_auroc": 66.3,
+            "pixel_aupro": 80.1,
+            "pixel_auroc": 93.0
+          },
+          "foam": {
+            "image_ap": 94.0,
+            "image_auroc": 77.2,
+            "pixel_aupro": 62.6,
+            "pixel_auroc": 86.0
+          },
+          "peach": {
+            "image_ap": 94.1,
+            "image_auroc": 82.4,
+            "pixel_aupro": 92.9,
+            "pixel_auroc": 97.4
+          },
+          "potato": {
+            "image_ap": 83.7,
+            "image_auroc": 55.8,
+            "pixel_aupro": 93.1,
+            "pixel_auroc": 98.0
+          },
+          "rope": {
+            "image_ap": 94.0,
+            "image_auroc": 86.5,
+            "pixel_aupro": 66.5,
+            "pixel_auroc": 87.6
+          },
+          "tire": {
+            "image_ap": 87.6,
+            "image_auroc": 59.4,
+            "pixel_aupro": 81.2,
+            "pixel_auroc": 95.9
+          }
+        }
+      },
+      "passed": true,
+      "reproduced": {
+        "fusion": {
+          "bagel": {
+            "image_ap": 99.3,
+            "image_auroc": 97.1,
+            "pixel_aupro": 97.0,
+            "pixel_auroc": 99.2
+          },
+          "cable_gland": {
+            "image_ap": 97.2,
+            "image_auroc": 88.6,
+            "pixel_aupro": 87.9,
+            "pixel_auroc": 95.0
+          },
+          "carrot": {
+            "image_ap": 97.7,
+            "image_auroc": 90.2,
+            "pixel_aupro": 94.6,
+            "pixel_auroc": 98.3
+          },
+          "cookie": {
+            "image_ap": 94.3,
+            "image_auroc": 82.6,
+            "pixel_aupro": 65.5,
+            "pixel_auroc": 87.8
+          },
+          "foam": {
+            "image_ap": 94.0,
+            "image_auroc": 78.2,
+            "pixel_aupro": 64.0,
+            "pixel_auroc": 86.6
+          },
+          "peach": {
+            "image_ap": 97.5,
+            "image_auroc": 91.5,
+            "pixel_aupro": 94.3,
+            "pixel_auroc": 97.8
+          },
+          "potato": {
+            "image_ap": 91.7,
+            "image_auroc": 74.5,
+            "pixel_aupro": 95.6,
+            "pixel_auroc": 98.8
+          },
+          "rope": {
+            "image_ap": 97.4,
+            "image_auroc": 93.3,
+            "pixel_aupro": 81.8,
+            "pixel_auroc": 94.4
+          },
+          "tire": {
+            "image_ap": 87.1,
+            "image_auroc": 58.0,
+            "pixel_aupro": 70.3,
+            "pixel_auroc": 91.9
+          }
+        },
+        "point": {
+          "bagel": {
+            "image_ap": 97.9,
+            "image_auroc": 91.7,
+            "pixel_aupro": 91.1,
+            "pixel_auroc": 95.0
+          },
+          "cable_gland": {
+            "image_ap": 86.6,
+            "image_auroc": 61.4,
+            "pixel_aupro": 65.9,
+            "pixel_auroc": 84.2
+          },
+          "carrot": {
+            "image_ap": 97.7,
+            "image_auroc": 88.8,
+            "pixel_aupro": 84.6,
+            "pixel_auroc": 94.1
+          },
+          "cookie": {
+            "image_ap": 96.9,
+            "image_auroc": 89.3,
+            "pixel_aupro": 33.9,
+            "pixel_auroc": 73.2
+          },
+          "foam": {
+            "image_ap": 87.8,
+            "image_auroc": 63.6,
+            "pixel_aupro": 12.2,
+            "pixel_auroc": 50.7
+          },
+          "peach": {
+            "image_ap": 98.0,
+            "image_auroc": 92.5,
+            "pixel_aupro": 88.6,
+            "pixel_auroc": 95.1
+          },
+          "potato": {
+            "image_ap": 98.5,
+            "image_auroc": 93.3,
+            "pixel_aupro": 93.4,
+            "pixel_auroc": 98.1
+          },
+          "rope": {
+            "image_ap": 96.6,
+            "image_auroc": 90.9,
+            "pixel_aupro": 73.4,
+            "pixel_auroc": 91.1
+          },
+          "tire": {
+            "image_ap": 81.7,
+            "image_auroc": 52.9,
+            "pixel_aupro": 4.7,
+            "pixel_auroc": 44.4
+          }
+        },
+        "rgb": {
+          "bagel": {
+            "image_ap": 98.7,
+            "image_auroc": 94.2,
+            "pixel_aupro": 94.4,
+            "pixel_auroc": 98.9
+          },
+          "cable_gland": {
+            "image_ap": 97.6,
+            "image_auroc": 89.8,
+            "pixel_aupro": 87.6,
+            "pixel_auroc": 95.8
+          },
+          "carrot": {
+            "image_ap": 96.4,
+            "image_auroc": 85.6,
+            "pixel_aupro": 92.3,
+            "pixel_auroc": 97.9
+          },
+          "cookie": {
+            "image_ap": 88.7,
+            "image_auroc": 66.3,
+            "pixel_aupro": 80.1,
+            "pixel_auroc": 93.0
+          },
+          "foam": {
+            "image_ap": 94.0,
+            "image_auroc": 77.2,
+            "pixel_aupro": 62.6,
+            "pixel_auroc": 86.0
+          },
+          "peach": {
+            "image_ap": 94.1,
+            "image_auroc": 82.4,
+            "pixel_aupro": 92.9,
+            "pixel_auroc": 97.4
+          },
+          "potato": {
+            "image_ap": 83.7,
+            "image_auroc": 55.8,
+            "pixel_aupro": 93.1,
+            "pixel_auroc": 98.0
+          },
+          "rope": {
+            "image_ap": 94.0,
+            "image_auroc": 86.5,
+            "pixel_aupro": 66.5,
+            "pixel_auroc": 87.6
+          },
+          "tire": {
+            "image_ap": 87.6,
+            "image_auroc": 59.4,
+            "pixel_aupro": 81.2,
+            "pixel_auroc": 95.9
+          }
+        }
+      },
+      "schema": 1,
+      "tolerance": 0.1,
+      "units": "percentage points; both sides rounded to one decimal as in official output"
+    }
+  },
+  "schema": 1
+}

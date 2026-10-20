@@ -1,0 +1,148 @@
+{
+  "claim_status": "supported_positive_interaction",
+  "coverage_manipulation": {
+    "categories": 15,
+    "ci95": [
+      -0.5132986229729984,
+      -0.20415587609910718
+    ],
+    "draws": 10000,
+    "estimate": -0.3550213518169453,
+    "mappings": 5,
+    "status": "complete"
+  },
+  "dataset": "mvtec",
+  "estimand": "([SAM-box]_native)-([SAM-box]_degraded)",
+  "interaction": {
+    "categories": 15,
+    "ci95": [
+      0.058485694821876,
+      0.13898447914120213
+    ],
+    "draws": 10000,
+    "estimate": 0.09573851434995197,
+    "mappings": 5,
+    "status": "complete"
+  },
+  "manipulation_pass": true,
+  "mapping_design": "cyclic_center",
+  "normal_route": {
+    "categories": 15,
+    "ci95": [
+      -0.002393135988129632,
+      0.03443127229998031
+    ],
+    "draws": 10000,
+    "estimate": 0.013016178450135923,
+    "mappings": 5,
+    "status": "complete"
+  },
+  "primary_outcome": "per-anomalous-image pixel AP; macro category and mapping weighting",
+  "strata": {
+    "complexity_high": {
+      "interaction": {
+        "categories": 15,
+        "ci95": [
+          0.06788794773101753,
+          0.20393938160384845
+        ],
+        "draws": 10000,
+        "estimate": 0.1318965522461505,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 3115
+    },
+    "complexity_low": {
+      "interaction": {
+        "categories": 15,
+        "ci95": [
+          -0.0026123661175370973,
+          0.0967725781013159
+        ],
+        "draws": 10000,
+        "estimate": 0.05172273366384055,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 3120
+    },
+    "size_large": {
+      "interaction": {
+        "categories": 14,
+        "ci95": [
+          -0.016187041880122495,
+          0.10102261245972073
+        ],
+        "draws": 10000,
+        "estimate": 0.04620336144239049,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 2080
+    },
+    "size_medium": {
+      "interaction": {
+        "categories": 15,
+        "ci95": [
+          0.0542345861275888,
+          0.15039797776447847
+        ],
+        "draws": 10000,
+        "estimate": 0.09847742789527575,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 2075
+    },
+    "size_small": {
+      "interaction": {
+        "categories": 14,
+        "ci95": [
+          0.06560020106307878,
+          0.24159555137563668
+        ],
+        "draws": 10000,
+        "estimate": 0.14683725526761737,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 2080
+    },
+    "topology_multi": {
+      "interaction": {
+        "categories": 15,
+        "ci95": [
+          0.031317045488590406,
+          0.1355813104122536
+        ],
+        "draws": 10000,
+        "estimate": 0.0803792039958582,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 1510
+    },
+    "topology_single": {
+      "interaction": {
+        "categories": 15,
+        "ci95": [
+          0.06571174102538442,
+          0.15121899339398412
+        ],
+        "draws": 10000,
+        "estimate": 0.10552109440515675,
+        "mappings": 5,
+        "status": "complete"
+      },
+      "sample_mapping_rows": 4725
+    }
+  },
+  "strata_thresholds": {
+    "complexity_median": 2.4094063884989887,
+    "size_tertiles": [
+      0.007195348841641236,
+      0.02788375488496704
+    ]
+  }
+}

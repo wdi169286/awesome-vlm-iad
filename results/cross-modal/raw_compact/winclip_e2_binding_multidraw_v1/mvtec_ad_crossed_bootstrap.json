@@ -1,0 +1,76 @@
+{
+  "bootstrap": "crossed nonparametric resampling of mapping and category axes; predictions are never pooled",
+  "bootstrap_repetitions": 20000,
+  "categories": [
+    "bottle",
+    "cable",
+    "capsule",
+    "carpet",
+    "grid",
+    "hazelnut",
+    "leather",
+    "metal_nut",
+    "pill",
+    "screw",
+    "tile",
+    "toothbrush",
+    "transistor",
+    "wood",
+    "zipper"
+  ],
+  "draw_ids": [
+    0,
+    1,
+    2
+  ],
+  "estimand": "macro mean paired effect across categories and preregistered spatial permutation mappings",
+  "metrics": {
+    "image_ap": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    },
+    "image_auroc": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    },
+    "mean_anomalous_image_pixel_ap": {
+      "ci95_high": -0.16487805709073342,
+      "ci95_low": -0.31388875796587207,
+      "draws_with_negative_effect": 3,
+      "macro_mean": -0.23718945629417887,
+      "per_draw_macro_mean": {
+        "0": -0.24055434367755807,
+        "1": -0.23120222924420766,
+        "2": -0.23981179596077076
+      }
+    },
+    "score_margin": {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "draws_with_negative_effect": 0,
+      "macro_mean": 0.0,
+      "per_draw_macro_mean": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      }
+    }
+  },
+  "n_categories": 15,
+  "n_mapping_draws": 3,
+  "schema": 1
+}

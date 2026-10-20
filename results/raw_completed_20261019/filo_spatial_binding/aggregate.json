@@ -1,0 +1,354 @@
+{
+  "datasets": {
+    "mvtec": {
+      "box_mapping_gates": [
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "6194dcb3e31ae9cc2a72b6045f96df3cc3a2715f43793e6cd5bec8c90dd253e6",
+          "passed": true,
+          "rows": 1725
+        },
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "2f43b0bb09e551116536b5b4ab72cb05663398e217acceec6993ace9ff4d7468",
+          "passed": true,
+          "rows": 1725
+        },
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "117b870d0c991487b93253757f731bd7f0472db742f2ee035517ca7653dc866c",
+          "passed": true,
+          "rows": 1725
+        }
+      ],
+      "categories": 15,
+      "clean_replay_max_abs": 0.0,
+      "dataset": "mvtec",
+      "effects": {
+        "box": {
+          "aupro_0_30": {
+            "cells": 45,
+            "ci95_high": -0.005909753912113116,
+            "ci95_low": -0.012549572209386925,
+            "draws": 20000,
+            "estimate": -0.00913900753025618
+          },
+          "image_ap": {
+            "cells": 45,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "draws": 20000,
+            "estimate": 0.0
+          },
+          "image_auroc": {
+            "cells": 45,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "draws": 20000,
+            "estimate": 0.0
+          },
+          "mean_anomalous_image_pixel_ap": {
+            "cells": 45,
+            "ci95_high": -0.01045964536420047,
+            "ci95_low": -0.024386056069667116,
+            "draws": 20000,
+            "estimate": -0.0170624356620038
+          },
+          "pixel_ap": {
+            "cells": 45,
+            "ci95_high": -0.0066660950286418896,
+            "ci95_low": -0.02424864612754647,
+            "draws": 20000,
+            "estimate": -0.015113030667919252
+          },
+          "pixel_auroc": {
+            "cells": 45,
+            "ci95_high": -0.001059394949053531,
+            "ci95_low": -0.0035460272367682333,
+            "draws": 20000,
+            "estimate": -0.0021978141564639496
+          }
+        },
+        "position": {
+          "aupro_0_30": {
+            "cells": 45,
+            "ci95_high": 0.004506283287583625,
+            "ci95_low": -0.008081000931728734,
+            "draws": 20000,
+            "estimate": -0.0008433700955736453
+          },
+          "image_ap": {
+            "cells": 45,
+            "ci95_high": 0.0012873448629610877,
+            "ci95_low": -0.001275985687925385,
+            "draws": 20000,
+            "estimate": -3.7309253110900326e-05
+          },
+          "image_auroc": {
+            "cells": 45,
+            "ci95_high": 0.002310322456303527,
+            "ci95_low": -0.0030804072503323376,
+            "draws": 20000,
+            "estimate": -0.0004027045603205807
+          },
+          "mean_anomalous_image_pixel_ap": {
+            "cells": 45,
+            "ci95_high": 0.0003740896509988652,
+            "ci95_low": -0.0006581192353993084,
+            "draws": 20000,
+            "estimate": -6.509951904395282e-05
+          },
+          "pixel_ap": {
+            "cells": 45,
+            "ci95_high": 0.0017334804497419207,
+            "ci95_low": -0.0006527252164955073,
+            "draws": 20000,
+            "estimate": 0.0005939071382508561
+          },
+          "pixel_auroc": {
+            "cells": 45,
+            "ci95_high": 0.00327302099851572,
+            "ci95_low": -0.000178957405243421,
+            "draws": 20000,
+            "estimate": 0.0012084836967669007
+          }
+        }
+      },
+      "families": [
+        "position",
+        "box"
+      ],
+      "position_mapping_gate": {
+        "mapping_hashes": [
+          "a638b5fcce87153fc7c8907152513df8f201600d2363c3299fd2ea5888cabe4e",
+          "d16a97f3b2f06c365dafc094d21107ac2724e20748c6e4ec9c59070d3ee89ea2",
+          "dd685886acd602585e30ef724cbd6315ba771e224a0d09dd99d8e0d8b2d2ec37"
+        ],
+        "n_mappings": 3,
+        "passed": true
+      },
+      "queries": 1725,
+      "state_description_donor_maps": []
+    },
+    "visa": {
+      "box_mapping_gates": [
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "243a0498693bc3cb245765637e005ddc24dbbc40edaa4e2b572aba6a125d059e",
+          "passed": true,
+          "rows": 2162
+        },
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "748a238ee5f4aad0ef14722b67f3c5eb1a362812c1064d0f74ea56cabc90f6da",
+          "passed": true,
+          "rows": 2162
+        },
+        {
+          "box_multiset_preserved": true,
+          "mapping_hash": "6e332d5d13e9c9996f0e271f2fec073bdec4d09d14e0f5e20891ceeb72cb1504",
+          "passed": true,
+          "rows": 2162
+        }
+      ],
+      "categories": 12,
+      "clean_replay_max_abs": 0.0,
+      "dataset": "visa",
+      "effects": {
+        "box": {
+          "aupro_0_30": {
+            "cells": 36,
+            "ci95_high": -0.006772985945977939,
+            "ci95_low": -0.023104688209565443,
+            "draws": 20000,
+            "estimate": -0.013877233678772635
+          },
+          "image_ap": {
+            "cells": 36,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "draws": 20000,
+            "estimate": 0.0
+          },
+          "image_auroc": {
+            "cells": 36,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "draws": 20000,
+            "estimate": 0.0
+          },
+          "mean_anomalous_image_pixel_ap": {
+            "cells": 36,
+            "ci95_high": -0.04647061024580767,
+            "ci95_low": -0.091234511114572,
+            "draws": 20000,
+            "estimate": -0.06892989867590556
+          },
+          "pixel_ap": {
+            "cells": 36,
+            "ci95_high": -0.014310241487245606,
+            "ci95_low": -0.07252180385978309,
+            "draws": 20000,
+            "estimate": -0.0433688056940211
+          },
+          "pixel_auroc": {
+            "cells": 36,
+            "ci95_high": -0.0008963487274995484,
+            "ci95_low": -0.0028446242680779314,
+            "draws": 20000,
+            "estimate": -0.0018068066861795825
+          }
+        },
+        "position": {
+          "aupro_0_30": {
+            "cells": 36,
+            "ci95_high": 0.0044286947381048155,
+            "ci95_low": -0.002933074372418326,
+            "draws": 20000,
+            "estimate": 0.0005524012473205794
+          },
+          "image_ap": {
+            "cells": 36,
+            "ci95_high": 0.01442035006147757,
+            "ci95_low": -0.011910611694736846,
+            "draws": 20000,
+            "estimate": -8.869515469056875e-05
+          },
+          "image_auroc": {
+            "cells": 36,
+            "ci95_high": 0.014749827649431582,
+            "ci95_low": -0.0094709800146681,
+            "draws": 20000,
+            "estimate": 0.0013435918591859343
+          },
+          "mean_anomalous_image_pixel_ap": {
+            "cells": 36,
+            "ci95_high": 0.005841038903501546,
+            "ci95_low": 0.0005401802069238123,
+            "draws": 20000,
+            "estimate": 0.002943813045126302
+          },
+          "pixel_ap": {
+            "cells": 36,
+            "ci95_high": 0.005148951886311591,
+            "ci95_low": -0.001989866142790913,
+            "draws": 20000,
+            "estimate": 0.001499544434115371
+          },
+          "pixel_auroc": {
+            "cells": 36,
+            "ci95_high": 0.0017121501251064716,
+            "ci95_low": -0.00022168019496169913,
+            "draws": 20000,
+            "estimate": 0.0006404510758915479
+          }
+        },
+        "state": {
+          "aupro_0_30": {
+            "cells": 36,
+            "ci95_high": 0.001804137903400722,
+            "ci95_low": -0.0028669571609164514,
+            "draws": 20000,
+            "estimate": -0.00043469560206179584
+          },
+          "image_ap": {
+            "cells": 36,
+            "ci95_high": 0.0011207561241949264,
+            "ci95_low": -0.005301572696183561,
+            "draws": 20000,
+            "estimate": -0.0020166625110973305
+          },
+          "image_auroc": {
+            "cells": 36,
+            "ci95_high": 0.0005738160066006513,
+            "ci95_low": -0.006420225522552225,
+            "draws": 20000,
+            "estimate": -0.0028767968463513033
+          },
+          "mean_anomalous_image_pixel_ap": {
+            "cells": 36,
+            "ci95_high": 0.0014009387104242186,
+            "ci95_low": -0.003840303161939654,
+            "draws": 20000,
+            "estimate": -0.0011240706078490428
+          },
+          "pixel_ap": {
+            "cells": 36,
+            "ci95_high": 0.004114312054811988,
+            "ci95_low": -0.002568545159020485,
+            "draws": 20000,
+            "estimate": 0.0004505125317743708
+          },
+          "pixel_auroc": {
+            "cells": 36,
+            "ci95_high": 0.00046449412080802903,
+            "ci95_low": -0.00019074330983488624,
+            "draws": 20000,
+            "estimate": 0.00011986824284761993
+          }
+        }
+      },
+      "families": [
+        "box",
+        "position",
+        "state"
+      ],
+      "position_mapping_gate": {
+        "mapping_hashes": [
+          "a638b5fcce87153fc7c8907152513df8f201600d2363c3299fd2ea5888cabe4e",
+          "d16a97f3b2f06c365dafc094d21107ac2724e20748c6e4ec9c59070d3ee89ea2",
+          "dd685886acd602585e30ef724cbd6315ba771e224a0d09dd99d8e0d8b2d2ec37"
+        ],
+        "n_mappings": 3,
+        "passed": true
+      },
+      "queries": 2162,
+      "state_description_donor_maps": [
+        {
+          "candle": "capsules",
+          "capsules": "cashew",
+          "cashew": "chewinggum",
+          "chewinggum": "fryum",
+          "fryum": "macaroni1",
+          "macaroni1": "macaroni2",
+          "macaroni2": "pcb1",
+          "pcb1": "pcb2",
+          "pcb2": "pcb3",
+          "pcb3": "pcb4",
+          "pcb4": "pipe fryum",
+          "pipe fryum": "candle"
+        },
+        {
+          "candle": "macaroni1",
+          "capsules": "macaroni2",
+          "cashew": "pcb1",
+          "chewinggum": "pcb2",
+          "fryum": "pcb3",
+          "macaroni1": "pcb4",
+          "macaroni2": "pipe fryum",
+          "pcb1": "candle",
+          "pcb2": "capsules",
+          "pcb3": "cashew",
+          "pcb4": "chewinggum",
+          "pipe fryum": "fryum"
+        },
+        {
+          "candle": "pcb1",
+          "capsules": "pcb2",
+          "cashew": "pcb3",
+          "chewinggum": "pcb4",
+          "fryum": "pipe fryum",
+          "macaroni1": "candle",
+          "macaroni2": "capsules",
+          "pcb1": "cashew",
+          "pcb2": "chewinggum",
+          "pcb3": "fryum",
+          "pcb4": "macaroni1",
+          "pipe fryum": "macaroni2"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "uncertainty": "crossed nonparametric category by mapping bootstrap; predictions are not pooled"
+}

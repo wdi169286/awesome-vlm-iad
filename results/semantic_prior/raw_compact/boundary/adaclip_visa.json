@@ -1,0 +1,906 @@
+{
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "category",
+  "dataset": "visa",
+  "method": "AdaCLIP",
+  "reference": "full",
+  "schema": 1,
+  "seed": 0,
+  "threshold_policy": "per-category q95 of reference-condition normal scores; frozen for treatment",
+  "treatments": {
+    "semantic_collapse": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.8516874999999997,
+          "ci95_low": 0.6091666666666665,
+          "macro_mean": 0.7341666666666667
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": -0.6091666666666665,
+          "ci95_low": -0.8516875,
+          "macro_mean": -0.7341666666666667
+        },
+        "delta_normal_fpr": {
+          "ci95_high": -0.05070957095709572,
+          "ci95_low": -0.055833333333333346,
+          "macro_mean": -0.05325082508250826
+        },
+        "delta_standardized_margin": {
+          "ci95_high": -1.387296770351512,
+          "ci95_low": -1.6615364169450888,
+          "macro_mean": -1.5269609391611623
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.055833333333333346,
+          "ci95_low": 0.05070957095709572,
+          "macro_mean": 0.05325082508250826
+        }
+      },
+      "n_categories": 12,
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.74,
+          "delta_anomaly_tpr": -0.74,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.5359118885249512,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.74,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.5359118885249512,
+          "reference_threshold_q95_normal": 0.7796265751123428,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.75,
+          "delta_anomaly_tpr": -0.75,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.4194366112926302,
+          "n_anomaly": 100,
+          "n_normal": 60,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.75,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4194366112926302,
+          "reference_threshold_q95_normal": 0.6660779744386672,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.94,
+          "delta_anomaly_tpr": -0.94,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -1.7697296108961211,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.94,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7697296108961211,
+          "reference_threshold_q95_normal": 0.9697570741176605,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.98,
+          "delta_anomaly_tpr": -0.98,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -1.828548997140346,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.98,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.828548997140346,
+          "reference_threshold_q95_normal": 0.5845413833856582,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.95,
+          "delta_anomaly_tpr": -0.95,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -1.7717580068433174,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7717580068433174,
+          "reference_threshold_q95_normal": 0.6566212654113769,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.52,
+          "delta_anomaly_tpr": -0.52,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.3571572809793524,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.52,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3571572809793524,
+          "reference_threshold_q95_normal": 0.7945063263177872,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.31,
+          "delta_anomaly_tpr": -0.31,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.048488722695687,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.31,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.048488722695687,
+          "reference_threshold_q95_normal": 0.7831472098827362,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.8,
+          "delta_anomaly_tpr": -0.8,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.596760250718095,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.8,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.596760250718095,
+          "reference_threshold_q95_normal": 0.6219571650028228,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.43,
+          "delta_anomaly_tpr": -0.43,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.2349731217711284,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.43,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.2349731217711284,
+          "reference_threshold_q95_normal": 0.5888243526220321,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.58,
+          "delta_anomaly_tpr": -0.58,
+          "delta_normal_fpr": -0.04950495049504951,
+          "delta_standardized_margin": -1.287084749885798,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.04950495049504951,
+          "reference_anomaly_tpr": 0.58,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.287084749885798,
+          "reference_threshold_q95_normal": 0.6105405688285828,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.96,
+          "delta_anomaly_tpr": -0.96,
+          "delta_normal_fpr": -0.04950495049504951,
+          "delta_standardized_margin": -1.7653097125955313,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.04950495049504951,
+          "reference_anomaly_tpr": 0.96,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.7653097125955313,
+          "reference_threshold_q95_normal": 0.6017106175422668,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.85,
+          "delta_anomaly_tpr": -0.85,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -1.7083723165909908,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.85,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7083723165909908,
+          "reference_threshold_q95_normal": 0.7681335389614105,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        }
+      },
+      "provenance": {
+        "candle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "bb7a4a85f92ae512d9e89773d01475f26622fb6ecea445d4d5c87de12bbf015c",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/candle__semantic_collapse__seed0.npz",
+          "treatment_sha256": "79b4a966743935f6e495b364634772e303285266d507ed90d3710af61c1a4ec5"
+        },
+        "capsules": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "5b89b1e593e0afc8526bc62dbb4137f7e5d1005de13c258784de54b53835cee9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/capsules__semantic_collapse__seed0.npz",
+          "treatment_sha256": "8cd0de4f5ce4d1406ff0ae2a17a126af85d9bbc677e7f770f57ce6d86719f725"
+        },
+        "cashew": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "f232bf5906037947415d4e385106401c3c2beb96b12ec70f6534ee9e2f06ee7b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/cashew__semantic_collapse__seed0.npz",
+          "treatment_sha256": "7d8f29c592d7d6d88f46a8426885db47657fef79f3cf211c75139db415243c4d"
+        },
+        "chewinggum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "431413675ba341d18b666d86aab125eea5b6e2ce58e07f2486e6bbcba9813f37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/chewinggum__semantic_collapse__seed0.npz",
+          "treatment_sha256": "fa678229c9d9db43203f79a4fd422a01909088f677b322c6a852225d02b54998"
+        },
+        "fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "0714bce7d76a31c4544e6a5d215ae7d36c78de07d6ccbcccf9dcfb7a8a473bf3",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/fryum__semantic_collapse__seed0.npz",
+          "treatment_sha256": "2baccf284ba95be661a178915f47a34d3d6f57bc9f238b152b98a98d90fe458d"
+        },
+        "macaroni1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "1783ff3792d5b80e3a9b61d7e3dde16f4e439e788610a8bb6bff1493483f75f9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/macaroni1__semantic_collapse__seed0.npz",
+          "treatment_sha256": "056a6cbbcee66a91baab5dfd20a9904824c22ea47623abf1e8ba63109d1cfc06"
+        },
+        "macaroni2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "fccf93e3f2c66b4411d3217a37d6a1f9422b6dd43f783827ee7ebb136bec187d",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/macaroni2__semantic_collapse__seed0.npz",
+          "treatment_sha256": "bb4b6da26098eead88da73613ceb5d7500ee56648fb22cb3da7ffd60d0ddce06"
+        },
+        "pcb1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "034606e7a4bcbf8f1f9b5cb416f165672bd8b68d20c9181fde0ef457a57f7456",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/pcb1__semantic_collapse__seed0.npz",
+          "treatment_sha256": "825f3783d3cd08e13f1770fd09b91c40025360075f4256709925e7eb045256ab"
+        },
+        "pcb2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "95a5ce2ab3ae07ef849c173ad77f8fbccc56e7d6218a991b7da9975c76bd58ed",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/pcb2__semantic_collapse__seed0.npz",
+          "treatment_sha256": "2d53633fbf64d82cf8cb7ed6bd6a5be50da73f2b4116af904a62cb910038a30a"
+        },
+        "pcb3": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "5ee254a0ae37b6fda21b237a5af1f969c474874f813f24247f933fa512b0452b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/pcb3__semantic_collapse__seed0.npz",
+          "treatment_sha256": "909591f16730081029d5e8a1ed53ce0a505c81cbf21acc2b84fd5b503be501d5"
+        },
+        "pcb4": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "8e772a6409c4d979085b857861c4b30ceb22397ba1536ae2399f81f5f1158b61",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/pcb4__semantic_collapse__seed0.npz",
+          "treatment_sha256": "e92ec4159c8aedde04f4647dc0cc37256a83187cb9318c40edd8353af2d74a8c"
+        },
+        "pipe_fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "e50a8ab3ae7bf07b393eefa24465c82baf4257acbc28e3a7e3220c56fd8e1980",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_collapse/pipe_fryum__semantic_collapse__seed0.npz",
+          "treatment_sha256": "8eb38f3573042c2db968f511d80dfe589376bb8ea2277cdf88a45b86c8422e89"
+        }
+      }
+    },
+    "semantic_mismatch": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.3383541666666664,
+          "ci95_low": 0.09416666666666668,
+          "macro_mean": 0.20249999999999999
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": 0.1275,
+          "ci95_low": -0.20333333333333328,
+          "macro_mean": -0.025833333333333316
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.22139865236523634,
+          "ci95_low": 0.001828932893289328,
+          "macro_mean": 0.095995599559956
+        },
+        "delta_standardized_margin": {
+          "ci95_high": 0.4122351505039584,
+          "ci95_low": -0.16948755888534411,
+          "macro_mean": 0.08050200882183313
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.2427908415841582,
+          "ci95_low": 0.04101210121012101,
+          "macro_mean": 0.12432893289328935
+        }
+      },
+      "n_categories": 12,
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.26,
+          "delta_anomaly_tpr": 0.26,
+          "delta_normal_fpr": 0.6499999999999999,
+          "delta_standardized_margin": -0.6013458187417445,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.65,
+          "reference_anomaly_tpr": 0.74,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.5359118885249512,
+          "reference_threshold_q95_normal": 0.7796265751123428,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 0.7,
+          "treatment_standardized_margin": 0.9345660697832067
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.08,
+          "delta_anomaly_tpr": 0.06000000000000005,
+          "delta_normal_fpr": 0.08333333333333333,
+          "delta_standardized_margin": -0.05885863570589359,
+          "n_anomaly": 100,
+          "n_normal": 60,
+          "normal_flip_rate": 0.08333333333333333,
+          "reference_anomaly_tpr": 0.75,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4194366112926302,
+          "reference_threshold_q95_normal": 0.6660779744386672,
+          "treatment_anomaly_tpr": 0.81,
+          "treatment_normal_fpr": 0.13333333333333333,
+          "treatment_standardized_margin": 1.3605779755867367
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.78,
+          "delta_anomaly_tpr": -0.7799999999999999,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": 1.6280970146960418,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.94,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7697296108961211,
+          "reference_threshold_q95_normal": 0.9697570741176605,
+          "treatment_anomaly_tpr": 0.16,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 3.3978266255921628
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_tpr": 0.0,
+          "delta_normal_fpr": 0.06,
+          "delta_standardized_margin": -0.07785754436589784,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.98,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.828548997140346,
+          "reference_threshold_q95_normal": 0.5845413833856582,
+          "treatment_anomaly_tpr": 0.98,
+          "treatment_normal_fpr": 0.12,
+          "treatment_standardized_margin": 1.750691452774448
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_tpr": 0.0,
+          "delta_normal_fpr": 0.020000000000000004,
+          "delta_standardized_margin": -0.05809025636755505,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7717580068433174,
+          "reference_threshold_q95_normal": 0.6566212654113769,
+          "treatment_anomaly_tpr": 0.95,
+          "treatment_normal_fpr": 0.08,
+          "treatment_standardized_margin": 1.7136677504757623
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.12,
+          "delta_anomaly_tpr": -0.06,
+          "delta_normal_fpr": -0.010000000000000002,
+          "delta_standardized_margin": -0.01301699688222751,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.01,
+          "reference_anomaly_tpr": 0.52,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3571572809793524,
+          "reference_threshold_q95_normal": 0.7945063263177872,
+          "treatment_anomaly_tpr": 0.46,
+          "treatment_normal_fpr": 0.04,
+          "treatment_standardized_margin": 1.3441402840971248
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.48,
+          "delta_anomaly_tpr": 0.48000000000000004,
+          "delta_normal_fpr": 0.37,
+          "delta_standardized_margin": -0.43387263721649627,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.37,
+          "reference_anomaly_tpr": 0.31,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.048488722695687,
+          "reference_threshold_q95_normal": 0.7831472098827362,
+          "treatment_anomaly_tpr": 0.79,
+          "treatment_normal_fpr": 0.42,
+          "treatment_standardized_margin": 0.6146160854791908
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.28,
+          "delta_anomaly_tpr": -0.28,
+          "delta_normal_fpr": -0.04,
+          "delta_standardized_margin": 0.05324946075525516,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.04,
+          "reference_anomaly_tpr": 0.8,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.596760250718095,
+          "reference_threshold_q95_normal": 0.6219571650028228,
+          "treatment_anomaly_tpr": 0.52,
+          "treatment_normal_fpr": 0.01,
+          "treatment_standardized_margin": 1.65000971147335
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.05,
+          "delta_anomaly_tpr": -0.04999999999999999,
+          "delta_normal_fpr": -0.020000000000000004,
+          "delta_standardized_margin": -0.02743912435864851,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.02,
+          "reference_anomaly_tpr": 0.43,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.2349731217711284,
+          "reference_threshold_q95_normal": 0.5888243526220321,
+          "treatment_anomaly_tpr": 0.38,
+          "treatment_normal_fpr": 0.03,
+          "treatment_standardized_margin": 1.20753399741248
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.19,
+          "delta_anomaly_tpr": 0.19000000000000006,
+          "delta_normal_fpr": 0.099009900990099,
+          "delta_standardized_margin": 0.037037358429682594,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.09900990099009901,
+          "reference_anomaly_tpr": 0.58,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.287084749885798,
+          "reference_threshold_q95_normal": 0.6105405688285828,
+          "treatment_anomaly_tpr": 0.77,
+          "treatment_normal_fpr": 0.1485148514851485,
+          "treatment_standardized_margin": 1.3241221083154808
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.03,
+          "delta_anomaly_tpr": 0.030000000000000027,
+          "delta_normal_fpr": 0.0396039603960396,
+          "delta_standardized_margin": 0.0460307821309712,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.039603960396039604,
+          "reference_anomaly_tpr": 0.96,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.7653097125955313,
+          "reference_threshold_q95_normal": 0.6017106175422668,
+          "treatment_anomaly_tpr": 0.99,
+          "treatment_normal_fpr": 0.0891089108910891,
+          "treatment_standardized_margin": 1.8113404947265026
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.16,
+          "delta_anomaly_tpr": -0.16000000000000003,
+          "delta_normal_fpr": -0.039999999999999994,
+          "delta_standardized_margin": 0.47209050348850995,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.04,
+          "reference_anomaly_tpr": 0.85,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7083723165909908,
+          "reference_threshold_q95_normal": 0.7681335389614105,
+          "treatment_anomaly_tpr": 0.69,
+          "treatment_normal_fpr": 0.02,
+          "treatment_standardized_margin": 2.1804628200795007
+        }
+      },
+      "provenance": {
+        "candle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "bb7a4a85f92ae512d9e89773d01475f26622fb6ecea445d4d5c87de12bbf015c",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/candle__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "55ddd99d9454961b1337433bf0048ea9eb39e62fbc38d6ea10b5cb8b0b25fa2e"
+        },
+        "capsules": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "5b89b1e593e0afc8526bc62dbb4137f7e5d1005de13c258784de54b53835cee9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/capsules__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "d8069d77eaf749e65d8998b68f558443c267842b761c20d55daa4fe3f3736969"
+        },
+        "cashew": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "f232bf5906037947415d4e385106401c3c2beb96b12ec70f6534ee9e2f06ee7b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/cashew__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "1eb62b3404b8a8fc43ada9747f3c717327f15dfdd868cdd00c89595d26c2768a"
+        },
+        "chewinggum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "431413675ba341d18b666d86aab125eea5b6e2ce58e07f2486e6bbcba9813f37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/chewinggum__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "c5a75b3a631d3edb6bb07acc829f3bedf7aa3815e3dd0379c8bd02e7dd5069aa"
+        },
+        "fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "0714bce7d76a31c4544e6a5d215ae7d36c78de07d6ccbcccf9dcfb7a8a473bf3",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/fryum__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "f1ae1cd6be577402520f75b2150972db338d1935bc9138915d5564c0768cd26c"
+        },
+        "macaroni1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "1783ff3792d5b80e3a9b61d7e3dde16f4e439e788610a8bb6bff1493483f75f9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/macaroni1__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "c8e8091b7b4310bcc850171c6e74388046b8401fc64097f450a1bd3d17cd6aa6"
+        },
+        "macaroni2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "fccf93e3f2c66b4411d3217a37d6a1f9422b6dd43f783827ee7ebb136bec187d",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/macaroni2__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "e4e38fb8b780900caae827b84ad9d862f1fb44621a1be72210866ef455ccd095"
+        },
+        "pcb1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "034606e7a4bcbf8f1f9b5cb416f165672bd8b68d20c9181fde0ef457a57f7456",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/pcb1__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "42772d1c5cd0f11d8b86d333019077060dc5888fe7d81d0e45ee69b432fbd878"
+        },
+        "pcb2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "95a5ce2ab3ae07ef849c173ad77f8fbccc56e7d6218a991b7da9975c76bd58ed",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/pcb2__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "95e4727296d5e9cccc708c68f00eafe8f918f5fc465af468951c9d1da65f012c"
+        },
+        "pcb3": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "5ee254a0ae37b6fda21b237a5af1f969c474874f813f24247f933fa512b0452b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/pcb3__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "777bba55ce7a5d5895f0b47ecafc008e169616a9425064bb74ad407887d3df5d"
+        },
+        "pcb4": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "8e772a6409c4d979085b857861c4b30ceb22397ba1536ae2399f81f5f1158b61",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/pcb4__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "91c4044fe5f6a78270e585744e8d54fc46ec600961a657fe5d43d59dd1a01a1c"
+        },
+        "pipe_fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "e50a8ab3ae7bf07b393eefa24465c82baf4257acbc28e3a7e3220c56fd8e1980",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_mismatch/pipe_fryum__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "0fcaa1654b5cc5f11ff9be3ea0a5d710b83a473bd14d42feb6de9abd8ae14b4a"
+        }
+      }
+    },
+    "semantic_swap": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.7316666666666666,
+          "ci95_low": 0.46083333333333326,
+          "macro_mean": 0.5975
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": -0.07999999999999999,
+          "ci95_low": -0.6233333333333334,
+          "macro_mean": -0.3641666666666666
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.7303210946094609,
+          "ci95_low": 0.2100402227722772,
+          "macro_mean": 0.4786936193619362
+        },
+        "delta_standardized_margin": {
+          "ci95_high": -2.1746018048793325,
+          "ci95_low": -3.6821229119138765,
+          "macro_mean": -2.7789595945039376
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.7562761276127613,
+          "ci95_low": 0.2975402227722772,
+          "macro_mean": 0.5320269526952696
+        }
+      },
+      "n_categories": 12,
+      "per_category": {
+        "candle": {
+          "anomaly_flip_rate": 0.74,
+          "delta_anomaly_tpr": -0.74,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -2.3069121350803394,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.74,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.5359118885249512,
+          "reference_threshold_q95_normal": 0.7796265751123428,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -0.7710002465553883
+        },
+        "capsules": {
+          "anomaly_flip_rate": 0.83,
+          "delta_anomaly_tpr": -0.63,
+          "delta_normal_fpr": 0.33333333333333337,
+          "delta_standardized_margin": -2.0060538497337794,
+          "n_anomaly": 100,
+          "n_normal": 60,
+          "normal_flip_rate": 0.43333333333333335,
+          "reference_anomaly_tpr": 0.75,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4194366112926302,
+          "reference_threshold_q95_normal": 0.6660779744386672,
+          "treatment_anomaly_tpr": 0.12,
+          "treatment_normal_fpr": 0.38333333333333336,
+          "treatment_standardized_margin": -0.586617238441149
+        },
+        "cashew": {
+          "anomaly_flip_rate": 0.94,
+          "delta_anomaly_tpr": -0.94,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -7.156381602382008,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.94,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7697296108961211,
+          "reference_threshold_q95_normal": 0.9697570741176605,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -5.386651991485887
+        },
+        "chewinggum": {
+          "anomaly_flip_rate": 0.86,
+          "delta_anomaly_tpr": -0.82,
+          "delta_normal_fpr": 0.94,
+          "delta_standardized_margin": -3.2660434565193968,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.94,
+          "reference_anomaly_tpr": 0.98,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.828548997140346,
+          "reference_threshold_q95_normal": 0.5845413833856582,
+          "treatment_anomaly_tpr": 0.16,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -1.437494459379051
+        },
+        "fryum": {
+          "anomaly_flip_rate": 0.63,
+          "delta_anomaly_tpr": -0.53,
+          "delta_normal_fpr": 0.94,
+          "delta_standardized_margin": -2.878674211491522,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.94,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7717580068433174,
+          "reference_threshold_q95_normal": 0.6566212654113769,
+          "treatment_anomaly_tpr": 0.42,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -1.1069162046482044
+        },
+        "macaroni1": {
+          "anomaly_flip_rate": 0.52,
+          "delta_anomaly_tpr": -0.52,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -2.501904972744431,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.52,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3571572809793524,
+          "reference_threshold_q95_normal": 0.7945063263177872,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.1447476917650787
+        },
+        "macaroni2": {
+          "anomaly_flip_rate": 0.31,
+          "delta_anomaly_tpr": -0.31,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -2.004297358933937,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.31,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.048488722695687,
+          "reference_threshold_q95_normal": 0.7831472098827362,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -0.9558086362382502
+        },
+        "pcb1": {
+          "anomaly_flip_rate": 0.25,
+          "delta_anomaly_tpr": 0.1499999999999999,
+          "delta_normal_fpr": 0.95,
+          "delta_standardized_margin": -2.348581946984544,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_tpr": 0.8,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.596760250718095,
+          "reference_threshold_q95_normal": 0.6219571650028228,
+          "treatment_anomaly_tpr": 0.95,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -0.7518216962664489
+        },
+        "pcb2": {
+          "anomaly_flip_rate": 0.58,
+          "delta_anomaly_tpr": 0.56,
+          "delta_normal_fpr": 0.95,
+          "delta_standardized_margin": -1.6072838120801247,
+          "n_anomaly": 100,
+          "n_normal": 100,
+          "normal_flip_rate": 0.95,
+          "reference_anomaly_tpr": 0.43,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.2349731217711284,
+          "reference_threshold_q95_normal": 0.5888243526220321,
+          "treatment_anomaly_tpr": 0.99,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -0.37231069030899633
+        },
+        "pcb3": {
+          "anomaly_flip_rate": 0.42,
+          "delta_anomaly_tpr": 0.42000000000000004,
+          "delta_normal_fpr": 0.9504950495049505,
+          "delta_standardized_margin": -1.750814566134474,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.9504950495049505,
+          "reference_anomaly_tpr": 0.58,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.287084749885798,
+          "reference_threshold_q95_normal": 0.6105405688285828,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -0.463729816248676
+        },
+        "pcb4": {
+          "anomaly_flip_rate": 0.24,
+          "delta_anomaly_tpr": -0.15999999999999992,
+          "delta_normal_fpr": 0.9504950495049505,
+          "delta_standardized_margin": -2.689583382434722,
+          "n_anomaly": 100,
+          "n_normal": 101,
+          "normal_flip_rate": 0.9504950495049505,
+          "reference_anomaly_tpr": 0.96,
+          "reference_normal_fpr": 0.04950495049504951,
+          "reference_standardized_margin": 1.7653097125955313,
+          "reference_threshold_q95_normal": 0.6017106175422668,
+          "treatment_anomaly_tpr": 0.8,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -0.9242736698391906
+        },
+        "pipe_fryum": {
+          "anomaly_flip_rate": 0.85,
+          "delta_anomaly_tpr": -0.85,
+          "delta_normal_fpr": -0.06,
+          "delta_standardized_margin": -2.8309838395279683,
+          "n_anomaly": 100,
+          "n_normal": 50,
+          "normal_flip_rate": 0.06,
+          "reference_anomaly_tpr": 0.85,
+          "reference_normal_fpr": 0.06,
+          "reference_standardized_margin": 1.7083723165909908,
+          "reference_threshold_q95_normal": 0.7681335389614105,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.1226115229369775
+        }
+      },
+      "provenance": {
+        "candle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/candle__full__seed0.npz",
+          "reference_sha256": "bb7a4a85f92ae512d9e89773d01475f26622fb6ecea445d4d5c87de12bbf015c",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/candle__semantic_swap__seed0.npz",
+          "treatment_sha256": "c0aba504e71ed2089f761c1bd13caa39255af203cfc52adf2aff38e8249d47be"
+        },
+        "capsules": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/capsules__full__seed0.npz",
+          "reference_sha256": "5b89b1e593e0afc8526bc62dbb4137f7e5d1005de13c258784de54b53835cee9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/capsules__semantic_swap__seed0.npz",
+          "treatment_sha256": "9bac8d23977b1998faa061e40d7743e4f7b8641d612589ca4b2859d73e27fd2f"
+        },
+        "cashew": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/cashew__full__seed0.npz",
+          "reference_sha256": "f232bf5906037947415d4e385106401c3c2beb96b12ec70f6534ee9e2f06ee7b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/cashew__semantic_swap__seed0.npz",
+          "treatment_sha256": "9457ec0735ed1db04ace1e8a9ed88d003d72c0f146631c8b96b72d0745fc9002"
+        },
+        "chewinggum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/chewinggum__full__seed0.npz",
+          "reference_sha256": "431413675ba341d18b666d86aab125eea5b6e2ce58e07f2486e6bbcba9813f37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/chewinggum__semantic_swap__seed0.npz",
+          "treatment_sha256": "079006f891272b12ed4599d2261dd05e56bb519925d25488ba9d2222777d2210"
+        },
+        "fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/fryum__full__seed0.npz",
+          "reference_sha256": "0714bce7d76a31c4544e6a5d215ae7d36c78de07d6ccbcccf9dcfb7a8a473bf3",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/fryum__semantic_swap__seed0.npz",
+          "treatment_sha256": "d03ed63f3d01a973eec5c7f805318ef8bb11be72f5e096db32d718e2f890c798"
+        },
+        "macaroni1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni1__full__seed0.npz",
+          "reference_sha256": "1783ff3792d5b80e3a9b61d7e3dde16f4e439e788610a8bb6bff1493483f75f9",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/macaroni1__semantic_swap__seed0.npz",
+          "treatment_sha256": "0cd89265a8bb16ac11dc8aa040f1ce0e833fc7cb24b96f4d592721e5902964ac"
+        },
+        "macaroni2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/macaroni2__full__seed0.npz",
+          "reference_sha256": "fccf93e3f2c66b4411d3217a37d6a1f9422b6dd43f783827ee7ebb136bec187d",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/macaroni2__semantic_swap__seed0.npz",
+          "treatment_sha256": "4979ceef4cf776d9f4e34fe45d6d354f7e8bf1b98bf339bc49916494657e9c4a"
+        },
+        "pcb1": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb1__full__seed0.npz",
+          "reference_sha256": "034606e7a4bcbf8f1f9b5cb416f165672bd8b68d20c9181fde0ef457a57f7456",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/pcb1__semantic_swap__seed0.npz",
+          "treatment_sha256": "40da35c961b61e8fab3d4d20ee290d03831dfc4763e582dc6a52c3d412978429"
+        },
+        "pcb2": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb2__full__seed0.npz",
+          "reference_sha256": "95a5ce2ab3ae07ef849c173ad77f8fbccc56e7d6218a991b7da9975c76bd58ed",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/pcb2__semantic_swap__seed0.npz",
+          "treatment_sha256": "f25ddb0931a3cc58c38394a1c10c4e8e9a6b3ffd5c083fdf4840fcbb17b85623"
+        },
+        "pcb3": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb3__full__seed0.npz",
+          "reference_sha256": "5ee254a0ae37b6fda21b237a5af1f969c474874f813f24247f933fa512b0452b",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/pcb3__semantic_swap__seed0.npz",
+          "treatment_sha256": "92d1ae000a9bc3a8464c534c7adf89ff1278e9d5a121dffb0bbe2f776941aeec"
+        },
+        "pcb4": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pcb4__full__seed0.npz",
+          "reference_sha256": "8e772a6409c4d979085b857861c4b30ceb22397ba1536ae2399f81f5f1158b61",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/pcb4__semantic_swap__seed0.npz",
+          "treatment_sha256": "5488cf1ecb3b44470aa87d1402d29be53fee3a4f7fd594f56e846778927e370b"
+        },
+        "pipe_fryum": {
+          "reference": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/full/pipe_fryum__full__seed0.npz",
+          "reference_sha256": "e50a8ab3ae7bf07b393eefa24465c82baf4257acbc28e3a7e3220c56fd8e1980",
+          "treatment": "private_intermediate_not_redistributed/artifacts_adaclip_seed0_v1/predictions/visa/semantic_swap/pipe_fryum__semantic_swap__seed0.npz",
+          "treatment_sha256": "ffd41eaf9874a0bf52fc27ed17f25304a093e7e8e3ec33b32af6e1a0a34b44d7"
+        }
+      }
+    }
+  }
+}

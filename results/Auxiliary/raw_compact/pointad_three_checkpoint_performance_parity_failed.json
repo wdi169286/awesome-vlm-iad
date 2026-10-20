@@ -1,0 +1,91 @@
+{
+  "difference_pp": {
+    "fusion": {
+      "image_ap": -0.6814814814814696,
+      "image_auroc": -2.2888888888889056,
+      "pixel_aupro": -3.5629629629629562,
+      "pixel_auroc": -1.4888888888888943
+    },
+    "point": {
+      "image_ap": -1.8444444444444485,
+      "image_auroc": -4.292592592592598,
+      "pixel_aupro": -16.3962962962963,
+      "pixel_auroc": -8.870370370370381
+    }
+  },
+  "expected_paper": {
+    "fusion": {
+      "image_ap": 96.1,
+      "image_auroc": 86.9,
+      "pixel_aupro": 90.2,
+      "pixel_auroc": 97.2
+    },
+    "point": {
+      "image_ap": 94.2,
+      "image_auroc": 82.0,
+      "pixel_aupro": 84.4,
+      "pixel_auroc": 95.5
+    }
+  },
+  "observed_three_run_mean": {
+    "fusion": {
+      "image_ap": 95.41851851851852,
+      "image_auroc": 84.6111111111111,
+      "pixel_aupro": 86.63703703703705,
+      "pixel_auroc": 95.71111111111111
+    },
+    "point": {
+      "image_ap": 92.35555555555555,
+      "image_auroc": 77.7074074074074,
+      "pixel_aupro": 68.0037037037037,
+      "pixel_auroc": 86.62962962962962
+    }
+  },
+  "passed": false,
+  "per_run_official_evaluator": {
+    "fusion": {
+      "carrot": {
+        "image_ap": 95.64444444444445,
+        "image_auroc": 85.35555555555555,
+        "pixel_aupro": 89.22222222222223,
+        "pixel_auroc": 96.6111111111111
+      },
+      "cookie": {
+        "image_ap": 95.47777777777779,
+        "image_auroc": 84.7,
+        "pixel_aupro": 87.24444444444445,
+        "pixel_auroc": 96.1
+      },
+      "dowel": {
+        "image_ap": 95.13333333333334,
+        "image_auroc": 83.77777777777777,
+        "pixel_aupro": 83.44444444444444,
+        "pixel_auroc": 94.4222222222222
+      }
+    },
+    "point": {
+      "carrot": {
+        "image_ap": 91.48888888888888,
+        "image_auroc": 76.26666666666667,
+        "pixel_aupro": 72.85555555555555,
+        "pixel_auroc": 89.15555555555555
+      },
+      "cookie": {
+        "image_ap": 92.05555555555556,
+        "image_auroc": 76.36666666666667,
+        "pixel_aupro": 70.28888888888889,
+        "pixel_auroc": 90.07777777777777
+      },
+      "dowel": {
+        "image_ap": 93.52222222222223,
+        "image_auroc": 80.48888888888888,
+        "pixel_aupro": 60.866666666666674,
+        "pixel_auroc": 80.65555555555555
+      }
+    }
+  },
+  "protocol": "MVTec3D-AD one-vs-rest; train on carrot, cookie, and dowel separately; evaluate nine held-out classes per run; average metrics after evaluation",
+  "schema": 1,
+  "source": "Official PointAD repository assets/point_table.png, NeurIPS 2024 paper Tables 1-2",
+  "tolerance_pp": 2.0
+}

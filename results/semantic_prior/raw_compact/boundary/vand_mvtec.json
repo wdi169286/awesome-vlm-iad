@@ -1,0 +1,1104 @@
+{
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "category",
+  "dataset": "mvtec",
+  "method": "VAND",
+  "reference": "full",
+  "schema": 1,
+  "seed": 0,
+  "threshold_policy": "per-category q95 of reference-condition normal scores; frozen for treatment",
+  "treatments": {
+    "semantic_collapse": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.6663465199147991,
+          "ci95_low": 0.3611201289108955,
+          "macro_mean": 0.5172080311811088
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": -0.25179350065707357,
+          "ci95_low": -0.6404701750554901,
+          "macro_mean": -0.45527014639708085
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.3489183907023976,
+          "ci95_low": -0.04852855468013191,
+          "macro_mean": 0.14670027844496614
+        },
+        "delta_standardized_margin": {
+          "ci95_high": -0.9826428259533285,
+          "ci95_low": -1.5064555639533965,
+          "macro_mean": -1.2577808622613476
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.408915329821999,
+          "ci95_low": 0.05299793012750607,
+          "macro_mean": 0.22801504246600696
+        }
+      },
+      "n_categories": 15,
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.7936507936507936,
+          "delta_anomaly_tpr": -0.7936507936507936,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.4841675862586874,
+          "n_anomaly": 63,
+          "n_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.7936507936507936,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4841675862586874,
+          "reference_threshold_q95_normal": 0.811941620707512,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.5978260869565217,
+          "delta_anomaly_tpr": -0.5978260869565217,
+          "delta_normal_fpr": -0.05172413793103448,
+          "delta_standardized_margin": -1.2735898320592882,
+          "n_anomaly": 92,
+          "n_normal": 58,
+          "normal_flip_rate": 0.05172413793103448,
+          "reference_anomaly_tpr": 0.5978260869565217,
+          "reference_normal_fpr": 0.05172413793103448,
+          "reference_standardized_margin": 1.2735898320592882,
+          "reference_threshold_q95_normal": 0.6693979948759079,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.43119266055045874,
+          "delta_anomaly_tpr": 0.4311926605504587,
+          "delta_normal_fpr": 0.9130434782608696,
+          "delta_standardized_margin": -0.89738517134511,
+          "n_anomaly": 109,
+          "n_normal": 23,
+          "normal_flip_rate": 0.9130434782608695,
+          "reference_anomaly_tpr": 0.5688073394495413,
+          "reference_normal_fpr": 0.08695652173913043,
+          "reference_standardized_margin": 0.89738517134511,
+          "reference_threshold_q95_normal": 0.2971444457769394,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.02247191011235955,
+          "delta_anomaly_tpr": 0.022471910112359605,
+          "delta_normal_fpr": 0.9285714285714286,
+          "delta_standardized_margin": -1.7623513434380695,
+          "n_anomaly": 89,
+          "n_normal": 28,
+          "normal_flip_rate": 0.9285714285714286,
+          "reference_anomaly_tpr": 0.9775280898876404,
+          "reference_normal_fpr": 0.07142857142857142,
+          "reference_standardized_margin": 1.7623513434380695,
+          "reference_threshold_q95_normal": 0.489263878762722,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.6491228070175439,
+          "delta_anomaly_tpr": -0.6491228070175439,
+          "delta_normal_fpr": -0.047619047619047616,
+          "delta_standardized_margin": -1.2321737447453909,
+          "n_anomaly": 57,
+          "n_normal": 21,
+          "normal_flip_rate": 0.047619047619047616,
+          "reference_anomaly_tpr": 0.6491228070175439,
+          "reference_normal_fpr": 0.047619047619047616,
+          "reference_standardized_margin": 1.2321737447453909,
+          "reference_threshold_q95_normal": 0.5926666259765625,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.6857142857142857,
+          "delta_anomaly_tpr": -0.6857142857142857,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.3151224602058016,
+          "n_anomaly": 70,
+          "n_normal": 40,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.6857142857142857,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3151224602058016,
+          "reference_threshold_q95_normal": 0.9166723042726517,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.010869565217391304,
+          "delta_anomaly_tpr": 0.010869565217391353,
+          "delta_normal_fpr": 0.96875,
+          "delta_standardized_margin": -2.043749837802626,
+          "n_anomaly": 92,
+          "n_normal": 32,
+          "normal_flip_rate": 0.96875,
+          "reference_anomaly_tpr": 0.9891304347826086,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 2.043749837802626,
+          "reference_threshold_q95_normal": 0.49218812584877014,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.45161290322580644,
+          "delta_anomaly_tpr": -0.45161290322580644,
+          "delta_normal_fpr": -0.045454545454545456,
+          "delta_standardized_margin": -0.6278970701640959,
+          "n_anomaly": 93,
+          "n_normal": 22,
+          "normal_flip_rate": 0.045454545454545456,
+          "reference_anomaly_tpr": 0.45161290322580644,
+          "reference_normal_fpr": 0.045454545454545456,
+          "reference_standardized_margin": 0.6278970701640959,
+          "reference_threshold_q95_normal": 0.7690802216529846,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.6312056737588653,
+          "delta_anomaly_tpr": -0.6312056737588653,
+          "delta_normal_fpr": -0.038461538461538464,
+          "delta_standardized_margin": -0.9235725430319837,
+          "n_anomaly": 141,
+          "n_normal": 26,
+          "normal_flip_rate": 0.038461538461538464,
+          "reference_anomaly_tpr": 0.6312056737588653,
+          "reference_normal_fpr": 0.038461538461538464,
+          "reference_standardized_margin": 0.9235725430319837,
+          "reference_threshold_q95_normal": 0.5,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.46218487394957986,
+          "delta_anomaly_tpr": -0.46218487394957986,
+          "delta_normal_fpr": -0.04878048780487805,
+          "delta_standardized_margin": -1.2170306692240136,
+          "n_anomaly": 119,
+          "n_normal": 41,
+          "normal_flip_rate": 0.04878048780487805,
+          "reference_anomaly_tpr": 0.46218487394957986,
+          "reference_normal_fpr": 0.04878048780487805,
+          "reference_standardized_margin": 1.2170306692240136,
+          "reference_threshold_q95_normal": 0.7634837031364441,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "tile": {
+          "anomaly_flip_rate": 1.0,
+          "delta_anomaly_tpr": -1.0,
+          "delta_normal_fpr": -0.06060606060606061,
+          "delta_standardized_margin": -1.8814698146862927,
+          "n_anomaly": 84,
+          "n_normal": 33,
+          "normal_flip_rate": 0.06060606060606061,
+          "reference_anomaly_tpr": 1.0,
+          "reference_normal_fpr": 0.06060606060606061,
+          "reference_standardized_margin": 1.8814698146862927,
+          "reference_threshold_q95_normal": 0.5366523504257202,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_tpr": 0.0,
+          "delta_normal_fpr": -0.08333333333333333,
+          "delta_standardized_margin": -0.0744770644413084,
+          "n_anomaly": 30,
+          "n_normal": 12,
+          "normal_flip_rate": 0.08333333333333333,
+          "reference_anomaly_tpr": 0.0,
+          "reference_normal_fpr": 0.08333333333333333,
+          "reference_standardized_margin": 0.0744770644413084,
+          "reference_threshold_q95_normal": 0.6742451012134552,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.4,
+          "delta_anomaly_tpr": -0.4,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -0.9716326443062946,
+          "n_anomaly": 40,
+          "n_normal": 60,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.4,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 0.9716326443062946,
+          "reference_threshold_q95_normal": 0.7667081326246261,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.95,
+          "delta_anomaly_tpr": -0.95,
+          "delta_normal_fpr": -0.05263157894736842,
+          "delta_standardized_margin": -1.9163555906184337,
+          "n_anomaly": 60,
+          "n_normal": 19,
+          "normal_flip_rate": 0.05263157894736842,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.05263157894736842,
+          "reference_standardized_margin": 1.9163555906184337,
+          "reference_threshold_q95_normal": 0.6388172268867492,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.6722689075630253,
+          "delta_anomaly_tpr": -0.6722689075630253,
+          "delta_normal_fpr": -0.03125,
+          "delta_standardized_margin": -1.2457375615928132,
+          "n_anomaly": 119,
+          "n_normal": 32,
+          "normal_flip_rate": 0.03125,
+          "reference_anomaly_tpr": 0.6722689075630253,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 1.2457375615928132,
+          "reference_threshold_q95_normal": 0.6442251205444336,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "412896972a056adff2d6eb57621c8a47d1b08eda9a976b3b1b0f85f304c96170",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/bottle__semantic_collapse__seed0.npz",
+          "treatment_sha256": "979361e7d21859683925e701e5d95c9f3e97a910a0e70e5d9d678c89002e37e5"
+        },
+        "cable": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "accd94c1320f3e213df2615bea83ddc5c97979adb6dd1dfce61d75b286bd301e",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/cable__semantic_collapse__seed0.npz",
+          "treatment_sha256": "ad8898fb32307042a3b68bfd8e3204c66ab14b2d9a1ef7a652c37a4cd9fb305a"
+        },
+        "capsule": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "56aa7ec2806afc0a47ff7a632f1dadfdd39dbdff96d63bedb33e6b76492ecc37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/capsule__semantic_collapse__seed0.npz",
+          "treatment_sha256": "7c0c259cef5280fb6306242075f3e640e4aa872bb5817fc6c39a4de4c2838879"
+        },
+        "carpet": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "9a52d4eb6750a4ff8078c355aa30687c22f0657e0f0c751fa5bb251ef64d8761",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/carpet__semantic_collapse__seed0.npz",
+          "treatment_sha256": "04790fca0903d4d5e6e061a25cca3bc1f2776e4c47e568d09611e9e9c6ede22a"
+        },
+        "grid": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "f679118052066ecb72d9eaa142283d351150125d9c3a97a706c85fdbb473ea8f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/grid__semantic_collapse__seed0.npz",
+          "treatment_sha256": "e02bbbd047b2875b4230d9824d943378f85816535aadfb950eaec351038fb200"
+        },
+        "hazelnut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "8c3326e58105ad21d7b2f7511539d6049a88db12a34f615bfe229d55d9d057df",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/hazelnut__semantic_collapse__seed0.npz",
+          "treatment_sha256": "8d10c3464dc904f9bd1d37429f2f780b311fc767a6ba448c43acc5b02d27c672"
+        },
+        "leather": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "5e1269462758661c9c7b5f71a067bc0437cd6f7a983e06b4e68a39ae6c4b7492",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/leather__semantic_collapse__seed0.npz",
+          "treatment_sha256": "8deebfafb1bfe1eb0124ba548ce8b23c8f6d5d8ef8c064a6511ed5b0433943a2"
+        },
+        "metal_nut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "05bc640efb247b0c7826bd7f4c517110310ced2d30be18365aa87527df899b29",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/metal_nut__semantic_collapse__seed0.npz",
+          "treatment_sha256": "9252488ee893bb4b4d7d03decbdd0693e072b05942f78b8d49b07df3ae59136a"
+        },
+        "pill": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "bc3c997da4c9c5ec497b8bc1525fdd9cac2d1faa125a1944b059426a90e7b8d5",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/pill__semantic_collapse__seed0.npz",
+          "treatment_sha256": "41cf289a1b6dec7fd92550887301ce0fee666f86b7b5ed7857b6176edec6b31c"
+        },
+        "screw": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "0144520f354adbb5f9f7c06eaae1ed68bcd4ca6a3db135300f6b683b0707acad",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/screw__semantic_collapse__seed0.npz",
+          "treatment_sha256": "12eb52f95c44dd992ea29eb31451d0050cc93db050917c15019aa98c6f178cb8"
+        },
+        "tile": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "95ccfcee9b126927b3d03a44a1d384c21fa615c5e86b85121eb6040021cfb4bf",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/tile__semantic_collapse__seed0.npz",
+          "treatment_sha256": "0fdf610bd8edd95c3d8175be31647cc06559b8e2573ee4388e2d3aa73f6e30a2"
+        },
+        "toothbrush": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "07917792b19b3523844c0adb7275ac3103f9fed9ca9bf9c165fb8f71b4832aca",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/toothbrush__semantic_collapse__seed0.npz",
+          "treatment_sha256": "eb1ae01aef795269fc94c90a2af900ac37e78210f633c94e174b5ab4d8978ee0"
+        },
+        "transistor": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f109331fddb4325e9f15626e9a126a7e105c805072a6d4fc5dad47f88360d953",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/transistor__semantic_collapse__seed0.npz",
+          "treatment_sha256": "f20d47b53346bf739046b0e75a0d232beb47ef1e105d49d9bcab8b3921e93802"
+        },
+        "wood": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "e834540dd86a007d3f5a9ec21181298b45886b916b3c948a1a6d9e46e8c6fb15",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/wood__semantic_collapse__seed0.npz",
+          "treatment_sha256": "b828c242beeb94272fab63fedb3984b6afc2f64646eb8cfadd27ee729b77a527"
+        },
+        "zipper": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "49016f7e86efa3e9d86bd8eb9b6f16f120f20de09ad4bfe3c4ec74c19034e99f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_collapse/zipper__semantic_collapse__seed0.npz",
+          "treatment_sha256": "97bc690e27750dc30f2dd3c8ff11fbc746716f6e4d5cc295296d0e02cf5d4765"
+        }
+      }
+    },
+    "semantic_mismatch": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.747760468093194,
+          "ci95_low": 0.48261036279123715,
+          "macro_mean": 0.6211465057832185
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": -0.4342095403071457,
+          "ci95_low": -0.7333808232825192,
+          "macro_mean": -0.5915094553888047
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.06417813172863857,
+          "ci95_low": -0.05958936196878166,
+          "macro_mean": -0.01536868707227526
+        },
+        "delta_standardized_margin": {
+          "ci95_high": -0.40640647398619273,
+          "ci95_low": -1.34892091692954,
+          "macro_mean": -0.9280982064022795
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.1567754925200758,
+          "ci95_low": 0.047407616980042956,
+          "macro_mean": 0.0866330548883672
+        }
+      },
+      "n_categories": 15,
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.5238095238095238,
+          "delta_anomaly_tpr": -0.49206349206349204,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": 0.18099676511709498,
+          "n_anomaly": 63,
+          "n_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.7936507936507936,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4841675862586874,
+          "reference_threshold_q95_normal": 0.811941620707512,
+          "treatment_anomaly_tpr": 0.30158730158730157,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 1.6651643513757823
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.4673913043478261,
+          "delta_anomaly_tpr": -0.07608695652173914,
+          "delta_normal_fpr": 0.5172413793103449,
+          "delta_standardized_margin": -1.9861446843878399,
+          "n_anomaly": 92,
+          "n_normal": 58,
+          "normal_flip_rate": 0.5517241379310345,
+          "reference_anomaly_tpr": 0.5978260869565217,
+          "reference_normal_fpr": 0.05172413793103448,
+          "reference_standardized_margin": 1.2735898320592882,
+          "reference_threshold_q95_normal": 0.6693979948759079,
+          "treatment_anomaly_tpr": 0.5217391304347826,
+          "treatment_normal_fpr": 0.5689655172413793,
+          "treatment_standardized_margin": -0.7125548523285515
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.5688073394495413,
+          "delta_anomaly_tpr": -0.5688073394495413,
+          "delta_normal_fpr": -0.08695652173913043,
+          "delta_standardized_margin": -0.8967922354325243,
+          "n_anomaly": 109,
+          "n_normal": 23,
+          "normal_flip_rate": 0.08695652173913043,
+          "reference_anomaly_tpr": 0.5688073394495413,
+          "reference_normal_fpr": 0.08695652173913043,
+          "reference_standardized_margin": 0.89738517134511,
+          "reference_threshold_q95_normal": 0.2971444457769394,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.0005929359125856934
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.9101123595505618,
+          "delta_anomaly_tpr": -0.9101123595505618,
+          "delta_normal_fpr": -0.07142857142857142,
+          "delta_standardized_margin": -0.9848907407733787,
+          "n_anomaly": 89,
+          "n_normal": 28,
+          "normal_flip_rate": 0.07142857142857142,
+          "reference_anomaly_tpr": 0.9775280898876404,
+          "reference_normal_fpr": 0.07142857142857142,
+          "reference_standardized_margin": 1.7623513434380695,
+          "reference_threshold_q95_normal": 0.489263878762722,
+          "treatment_anomaly_tpr": 0.06741573033707865,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.777460602664691
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.6491228070175439,
+          "delta_anomaly_tpr": -0.6491228070175439,
+          "delta_normal_fpr": -0.047619047619047616,
+          "delta_standardized_margin": -1.2214653032168223,
+          "n_anomaly": 57,
+          "n_normal": 21,
+          "normal_flip_rate": 0.047619047619047616,
+          "reference_anomaly_tpr": 0.6491228070175439,
+          "reference_normal_fpr": 0.047619047619047616,
+          "reference_standardized_margin": 1.2321737447453909,
+          "reference_threshold_q95_normal": 0.5926666259765625,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.010708441528568483
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.6857142857142857,
+          "delta_anomaly_tpr": -0.6857142857142857,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.2679384046826676,
+          "n_anomaly": 70,
+          "n_normal": 40,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.6857142857142857,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3151224602058016,
+          "reference_threshold_q95_normal": 0.9166723042726517,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.047184055523134094
+        },
+        "leather": {
+          "anomaly_flip_rate": 0.9891304347826086,
+          "delta_anomaly_tpr": -0.9891304347826086,
+          "delta_normal_fpr": -0.03125,
+          "delta_standardized_margin": -1.8921817557310934,
+          "n_anomaly": 92,
+          "n_normal": 32,
+          "normal_flip_rate": 0.03125,
+          "reference_anomaly_tpr": 0.9891304347826086,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 2.043749837802626,
+          "reference_threshold_q95_normal": 0.49218812584877014,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.15156808207153244
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.41935483870967744,
+          "delta_anomaly_tpr": -0.3978494623655914,
+          "delta_normal_fpr": -0.045454545454545456,
+          "delta_standardized_margin": 1.8182666357922874,
+          "n_anomaly": 93,
+          "n_normal": 22,
+          "normal_flip_rate": 0.045454545454545456,
+          "reference_anomaly_tpr": 0.45161290322580644,
+          "reference_normal_fpr": 0.045454545454545456,
+          "reference_standardized_margin": 0.6278970701640959,
+          "reference_threshold_q95_normal": 0.7690802216529846,
+          "treatment_anomaly_tpr": 0.053763440860215055,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 2.4461637059563834
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.6312056737588653,
+          "delta_anomaly_tpr": -0.6312056737588653,
+          "delta_normal_fpr": -0.038461538461538464,
+          "delta_standardized_margin": -0.9114011787230343,
+          "n_anomaly": 141,
+          "n_normal": 26,
+          "normal_flip_rate": 0.038461538461538464,
+          "reference_anomaly_tpr": 0.6312056737588653,
+          "reference_normal_fpr": 0.038461538461538464,
+          "reference_standardized_margin": 0.9235725430319837,
+          "reference_threshold_q95_normal": 0.5,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.012171364308949523
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.46218487394957986,
+          "delta_anomaly_tpr": -0.46218487394957986,
+          "delta_normal_fpr": -0.04878048780487805,
+          "delta_standardized_margin": -1.2170234323202058,
+          "n_anomaly": 119,
+          "n_normal": 41,
+          "normal_flip_rate": 0.04878048780487805,
+          "reference_anomaly_tpr": 0.46218487394957986,
+          "reference_normal_fpr": 0.04878048780487805,
+          "reference_standardized_margin": 1.2170306692240136,
+          "reference_threshold_q95_normal": 0.7634837031364441,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 7.236903807666547e-06
+        },
+        "tile": {
+          "anomaly_flip_rate": 0.9880952380952381,
+          "delta_anomaly_tpr": -0.9880952380952381,
+          "delta_normal_fpr": -0.06060606060606061,
+          "delta_standardized_margin": -1.5069248915340336,
+          "n_anomaly": 84,
+          "n_normal": 33,
+          "normal_flip_rate": 0.06060606060606061,
+          "reference_anomaly_tpr": 1.0,
+          "reference_normal_fpr": 0.06060606060606061,
+          "reference_standardized_margin": 1.8814698146862927,
+          "reference_threshold_q95_normal": 0.5366523504257202,
+          "treatment_anomaly_tpr": 0.011904761904761904,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.374544923152259
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_tpr": 0.0,
+          "delta_normal_fpr": -0.08333333333333333,
+          "delta_standardized_margin": -0.06647135089240754,
+          "n_anomaly": 30,
+          "n_normal": 12,
+          "normal_flip_rate": 0.08333333333333333,
+          "reference_anomaly_tpr": 0.0,
+          "reference_normal_fpr": 0.08333333333333333,
+          "reference_standardized_margin": 0.0744770644413084,
+          "reference_threshold_q95_normal": 0.6742451012134552,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.008005713548900867
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.4,
+          "delta_anomaly_tpr": -0.4,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -0.8444595680345587,
+          "n_anomaly": 40,
+          "n_normal": 60,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.4,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 0.9716326443062946,
+          "reference_threshold_q95_normal": 0.7667081326246261,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.1271730762717358
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.95,
+          "delta_anomaly_tpr": -0.95,
+          "delta_normal_fpr": -0.05263157894736842,
+          "delta_standardized_margin": -1.8794689226057986,
+          "n_anomaly": 60,
+          "n_normal": 19,
+          "normal_flip_rate": 0.05263157894736842,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.05263157894736842,
+          "reference_standardized_margin": 1.9163555906184337,
+          "reference_threshold_q95_normal": 0.6388172268867492,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.03688666801263515
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.6722689075630253,
+          "delta_anomaly_tpr": -0.6722689075630253,
+          "delta_normal_fpr": -0.03125,
+          "delta_standardized_margin": -1.2455740286092087,
+          "n_anomaly": 119,
+          "n_normal": 32,
+          "normal_flip_rate": 0.03125,
+          "reference_anomaly_tpr": 0.6722689075630253,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 1.2457375615928132,
+          "reference_threshold_q95_normal": 0.6442251205444336,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": 0.00016353298360464845
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "412896972a056adff2d6eb57621c8a47d1b08eda9a976b3b1b0f85f304c96170",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/bottle__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "c34401c262e43f418999311683b97a82aa7e6b4b9aacf0b65bcc735aba2b4767"
+        },
+        "cable": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "accd94c1320f3e213df2615bea83ddc5c97979adb6dd1dfce61d75b286bd301e",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/cable__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "98251f0bae735886a095cd1a496215f2a0c5ae5846d1059c63f1f5e7ecd5939b"
+        },
+        "capsule": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "56aa7ec2806afc0a47ff7a632f1dadfdd39dbdff96d63bedb33e6b76492ecc37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/capsule__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "f9fb830954be1dcd1e5b539d8254b5213ace2c0763a457a72e4c67b104cab347"
+        },
+        "carpet": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "9a52d4eb6750a4ff8078c355aa30687c22f0657e0f0c751fa5bb251ef64d8761",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/carpet__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "b8b5f57eab7b75b962095bdf7c5182ee93490aa1da772561f517fba29dc1d707"
+        },
+        "grid": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "f679118052066ecb72d9eaa142283d351150125d9c3a97a706c85fdbb473ea8f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/grid__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "809301b74474cf7dc2bab36d4d6ae29c1c1d69ad878ab920a5eff402c276d5e8"
+        },
+        "hazelnut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "8c3326e58105ad21d7b2f7511539d6049a88db12a34f615bfe229d55d9d057df",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/hazelnut__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "c7075141b2ed68c09105e18ee09a4375c35acc189557000919c285b0b8c7d9ed"
+        },
+        "leather": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "5e1269462758661c9c7b5f71a067bc0437cd6f7a983e06b4e68a39ae6c4b7492",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/leather__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "8adcaf1ab5d07577021dc286d567c41be2e791a0f24c52090778c8ff73cca5a8"
+        },
+        "metal_nut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "05bc640efb247b0c7826bd7f4c517110310ced2d30be18365aa87527df899b29",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/metal_nut__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "7b233b62b8c1d118fd8c56431325f29c28c08999e85d8a3b84025f665288257f"
+        },
+        "pill": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "bc3c997da4c9c5ec497b8bc1525fdd9cac2d1faa125a1944b059426a90e7b8d5",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/pill__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "aa7b2bc4b242442b92cd5c7df870e1e0ea04404c4716c20fab1d210b9a464cff"
+        },
+        "screw": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "0144520f354adbb5f9f7c06eaae1ed68bcd4ca6a3db135300f6b683b0707acad",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/screw__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "c4bec37763434f528c5bcb8ff36334a994731b6f61690fed797583483e82e525"
+        },
+        "tile": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "95ccfcee9b126927b3d03a44a1d384c21fa615c5e86b85121eb6040021cfb4bf",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/tile__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "4a28c5bf7fa186e7980451ab3d585c419ed5270412362d5f2799abf0f535de2d"
+        },
+        "toothbrush": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "07917792b19b3523844c0adb7275ac3103f9fed9ca9bf9c165fb8f71b4832aca",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/toothbrush__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "5f866fe5c06db3df3ec2632c9c1cf22b1753144616a16bdf92fa8a9e0b85d709"
+        },
+        "transistor": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f109331fddb4325e9f15626e9a126a7e105c805072a6d4fc5dad47f88360d953",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/transistor__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "28b0ccf9f3b39507bf17240e5af5a8b6c4a595c7a99ea5567f1e12777daf3bf1"
+        },
+        "wood": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "e834540dd86a007d3f5a9ec21181298b45886b916b3c948a1a6d9e46e8c6fb15",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/wood__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "3404406cd31670489a294b47c45c1053d1532132003bfd5d3058061537e54d1b"
+        },
+        "zipper": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "49016f7e86efa3e9d86bd8eb9b6f16f120f20de09ad4bfe3c4ec74c19034e99f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_mismatch/zipper__semantic_mismatch__seed0.npz",
+          "treatment_sha256": "a7ba645da0a7f3fa5e682d100a290de4ad77a7c1a957adfecf4aa95c592c1955"
+        }
+      }
+    },
+    "semantic_swap": {
+      "aggregate": {
+        "anomaly_flip_rate": {
+          "ci95_high": 0.807872494050082,
+          "ci95_low": 0.5195441582901761,
+          "macro_mean": 0.6702645712830396
+        },
+        "delta_anomaly_tpr": {
+          "ci95_high": -0.3547131490393447,
+          "ci95_low": -0.742136840892676,
+          "macro_mean": -0.5629366155770259
+        },
+        "delta_normal_fpr": {
+          "ci95_high": 0.4864653021575348,
+          "ci95_low": 0.0688623376129573,
+          "macro_mean": 0.2641973646920524
+        },
+        "delta_standardized_margin": {
+          "ci95_high": -1.9652856024795302,
+          "ci95_low": -3.0129111813543314,
+          "macro_mean": -2.5155617633551137
+        },
+        "normal_flip_rate": {
+          "ci95_high": 0.556667394443226,
+          "ci95_low": 0.16611936083771298,
+          "macro_mean": 0.3496787953797599
+        }
+      },
+      "n_categories": 15,
+      "per_category": {
+        "bottle": {
+          "anomaly_flip_rate": 0.7936507936507936,
+          "delta_anomaly_tpr": -0.7936507936507936,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -2.968335284785267,
+          "n_anomaly": 63,
+          "n_normal": 20,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.7936507936507936,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.4841675862586874,
+          "reference_threshold_q95_normal": 0.811941620707512,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.4841676985265795
+        },
+        "cable": {
+          "anomaly_flip_rate": 0.5978260869565217,
+          "delta_anomaly_tpr": -0.5978260869565217,
+          "delta_normal_fpr": -0.05172413793103448,
+          "delta_standardized_margin": -2.5471797572018784,
+          "n_anomaly": 92,
+          "n_normal": 58,
+          "normal_flip_rate": 0.05172413793103448,
+          "reference_anomaly_tpr": 0.5978260869565217,
+          "reference_normal_fpr": 0.05172413793103448,
+          "reference_standardized_margin": 1.2735898320592882,
+          "reference_threshold_q95_normal": 0.6693979948759079,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.27358992514259
+        },
+        "capsule": {
+          "anomaly_flip_rate": 0.43119266055045874,
+          "delta_anomaly_tpr": 0.4311926605504587,
+          "delta_normal_fpr": 0.9130434782608696,
+          "delta_standardized_margin": -1.7947703600442604,
+          "n_anomaly": 109,
+          "n_normal": 23,
+          "normal_flip_rate": 0.9130434782608695,
+          "reference_anomaly_tpr": 0.5688073394495413,
+          "reference_normal_fpr": 0.08695652173913043,
+          "reference_standardized_margin": 0.89738517134511,
+          "reference_threshold_q95_normal": 0.2971444457769394,
+          "treatment_anomaly_tpr": 1.0,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -0.8973851886991503
+        },
+        "carpet": {
+          "anomaly_flip_rate": 0.9887640449438202,
+          "delta_anomaly_tpr": -0.9438202247191011,
+          "delta_normal_fpr": 0.9285714285714286,
+          "delta_standardized_margin": -3.524702774273008,
+          "n_anomaly": 89,
+          "n_normal": 28,
+          "normal_flip_rate": 0.9285714285714286,
+          "reference_anomaly_tpr": 0.9775280898876404,
+          "reference_normal_fpr": 0.07142857142857142,
+          "reference_standardized_margin": 1.7623513434380695,
+          "reference_threshold_q95_normal": 0.489263878762722,
+          "treatment_anomaly_tpr": 0.033707865168539325,
+          "treatment_normal_fpr": 1.0,
+          "treatment_standardized_margin": -1.7623514308349377
+        },
+        "grid": {
+          "anomaly_flip_rate": 0.6491228070175439,
+          "delta_anomaly_tpr": -0.6491228070175439,
+          "delta_normal_fpr": 0.2857142857142857,
+          "delta_standardized_margin": -2.46434750511885,
+          "n_anomaly": 57,
+          "n_normal": 21,
+          "normal_flip_rate": 0.38095238095238093,
+          "reference_anomaly_tpr": 0.6491228070175439,
+          "reference_normal_fpr": 0.047619047619047616,
+          "reference_standardized_margin": 1.2321737447453909,
+          "reference_threshold_q95_normal": 0.5926666259765625,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.3333333333333333,
+          "treatment_standardized_margin": -1.232173760373459
+        },
+        "hazelnut": {
+          "anomaly_flip_rate": 0.6857142857142857,
+          "delta_anomaly_tpr": -0.6857142857142857,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -2.630245075734271,
+          "n_anomaly": 70,
+          "n_normal": 40,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.6857142857142857,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 1.3151224602058016,
+          "reference_threshold_q95_normal": 0.9166723042726517,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.3151226155284692
+        },
+        "leather": {
+          "anomaly_flip_rate": 1.0,
+          "delta_anomaly_tpr": -0.9782608695652173,
+          "delta_normal_fpr": 0.9375,
+          "delta_standardized_margin": -4.087499714411011,
+          "n_anomaly": 92,
+          "n_normal": 32,
+          "normal_flip_rate": 1.0,
+          "reference_anomaly_tpr": 0.9891304347826086,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 2.043749837802626,
+          "reference_threshold_q95_normal": 0.49218812584877014,
+          "treatment_anomaly_tpr": 0.010869565217391304,
+          "treatment_normal_fpr": 0.96875,
+          "treatment_standardized_margin": -2.0437498766083846
+        },
+        "metal_nut": {
+          "anomaly_flip_rate": 0.45161290322580644,
+          "delta_anomaly_tpr": -0.45161290322580644,
+          "delta_normal_fpr": -0.045454545454545456,
+          "delta_standardized_margin": -1.2557939440440369,
+          "n_anomaly": 93,
+          "n_normal": 22,
+          "normal_flip_rate": 0.045454545454545456,
+          "reference_anomaly_tpr": 0.45161290322580644,
+          "reference_normal_fpr": 0.045454545454545456,
+          "reference_standardized_margin": 0.6278970701640959,
+          "reference_threshold_q95_normal": 0.7690802216529846,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -0.627896873879941
+        },
+        "pill": {
+          "anomaly_flip_rate": 0.9716312056737588,
+          "delta_anomaly_tpr": -0.29078014184397166,
+          "delta_normal_fpr": 0.8461538461538461,
+          "delta_standardized_margin": -1.8471450115785266,
+          "n_anomaly": 141,
+          "n_normal": 26,
+          "normal_flip_rate": 0.9230769230769231,
+          "reference_anomaly_tpr": 0.6312056737588653,
+          "reference_normal_fpr": 0.038461538461538464,
+          "reference_standardized_margin": 0.9235725430319837,
+          "reference_threshold_q95_normal": 0.5,
+          "treatment_anomaly_tpr": 0.3404255319148936,
+          "treatment_normal_fpr": 0.8846153846153846,
+          "treatment_standardized_margin": -0.923572468546543
+        },
+        "screw": {
+          "anomaly_flip_rate": 0.46218487394957986,
+          "delta_anomaly_tpr": -0.46218487394957986,
+          "delta_normal_fpr": -0.04878048780487805,
+          "delta_standardized_margin": -2.4340615893619284,
+          "n_anomaly": 119,
+          "n_normal": 41,
+          "normal_flip_rate": 0.04878048780487805,
+          "reference_anomaly_tpr": 0.46218487394957986,
+          "reference_normal_fpr": 0.04878048780487805,
+          "reference_standardized_margin": 1.2170306692240136,
+          "reference_threshold_q95_normal": 0.7634837031364441,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.2170309201379148
+        },
+        "tile": {
+          "anomaly_flip_rate": 1.0,
+          "delta_anomaly_tpr": -1.0,
+          "delta_normal_fpr": 0.5151515151515151,
+          "delta_standardized_margin": -3.7629397384240737,
+          "n_anomaly": 84,
+          "n_normal": 33,
+          "normal_flip_rate": 0.6363636363636364,
+          "reference_anomaly_tpr": 1.0,
+          "reference_normal_fpr": 0.06060606060606061,
+          "reference_standardized_margin": 1.8814698146862927,
+          "reference_threshold_q95_normal": 0.5366523504257202,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.5757575757575758,
+          "treatment_standardized_margin": -1.8814699237377812
+        },
+        "toothbrush": {
+          "anomaly_flip_rate": 0.0,
+          "delta_anomaly_tpr": 0.0,
+          "delta_normal_fpr": -0.08333333333333333,
+          "delta_standardized_margin": -0.1489537381122333,
+          "n_anomaly": 30,
+          "n_normal": 12,
+          "normal_flip_rate": 0.08333333333333333,
+          "reference_anomaly_tpr": 0.0,
+          "reference_normal_fpr": 0.08333333333333333,
+          "reference_standardized_margin": 0.0744770644413084,
+          "reference_threshold_q95_normal": 0.6742451012134552,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -0.07447667367092489
+        },
+        "transistor": {
+          "anomaly_flip_rate": 0.4,
+          "delta_anomaly_tpr": -0.4,
+          "delta_normal_fpr": -0.05,
+          "delta_standardized_margin": -1.9432655460346688,
+          "n_anomaly": 40,
+          "n_normal": 60,
+          "normal_flip_rate": 0.05,
+          "reference_anomaly_tpr": 0.4,
+          "reference_normal_fpr": 0.05,
+          "reference_standardized_margin": 0.9716326443062946,
+          "reference_threshold_q95_normal": 0.7667081326246261,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -0.9716329017283741
+        },
+        "wood": {
+          "anomaly_flip_rate": 0.95,
+          "delta_anomaly_tpr": -0.95,
+          "delta_normal_fpr": -0.05263157894736842,
+          "delta_standardized_margin": -3.8327112604551234,
+          "n_anomaly": 60,
+          "n_normal": 19,
+          "normal_flip_rate": 0.05263157894736842,
+          "reference_anomaly_tpr": 0.95,
+          "reference_normal_fpr": 0.05263157894736842,
+          "reference_standardized_margin": 1.9163555906184337,
+          "reference_threshold_q95_normal": 0.6388172268867492,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.9163556698366897
+        },
+        "zipper": {
+          "anomaly_flip_rate": 0.6722689075630253,
+          "delta_anomaly_tpr": -0.6722689075630253,
+          "delta_normal_fpr": -0.03125,
+          "delta_standardized_margin": -2.4914751507475663,
+          "n_anomaly": 119,
+          "n_normal": 32,
+          "normal_flip_rate": 0.03125,
+          "reference_anomaly_tpr": 0.6722689075630253,
+          "reference_normal_fpr": 0.03125,
+          "reference_standardized_margin": 1.2457375615928132,
+          "reference_threshold_q95_normal": 0.6442251205444336,
+          "treatment_anomaly_tpr": 0.0,
+          "treatment_normal_fpr": 0.0,
+          "treatment_standardized_margin": -1.2457375891547529
+        }
+      },
+      "provenance": {
+        "bottle": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/bottle__full__seed0.npz",
+          "reference_sha256": "412896972a056adff2d6eb57621c8a47d1b08eda9a976b3b1b0f85f304c96170",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/bottle__semantic_swap__seed0.npz",
+          "treatment_sha256": "26a6f3602955da71437801e3b95d2f9fff3f3de9df68e891d2de273f7702b468"
+        },
+        "cable": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/cable__full__seed0.npz",
+          "reference_sha256": "accd94c1320f3e213df2615bea83ddc5c97979adb6dd1dfce61d75b286bd301e",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/cable__semantic_swap__seed0.npz",
+          "treatment_sha256": "6345762ef55927b83dfc44530f1e4864687e9e4c30d532a3d0537a4ae17152a3"
+        },
+        "capsule": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/capsule__full__seed0.npz",
+          "reference_sha256": "56aa7ec2806afc0a47ff7a632f1dadfdd39dbdff96d63bedb33e6b76492ecc37",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/capsule__semantic_swap__seed0.npz",
+          "treatment_sha256": "9e9bf343002a9add074a59bdce0eaeb461d13f27c80eca02efe904c463fca46c"
+        },
+        "carpet": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/carpet__full__seed0.npz",
+          "reference_sha256": "9a52d4eb6750a4ff8078c355aa30687c22f0657e0f0c751fa5bb251ef64d8761",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/carpet__semantic_swap__seed0.npz",
+          "treatment_sha256": "9906b212e90d9b2d5824a24019a026d6c6d69331c8e043b19d3e4f388f184b75"
+        },
+        "grid": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/grid__full__seed0.npz",
+          "reference_sha256": "f679118052066ecb72d9eaa142283d351150125d9c3a97a706c85fdbb473ea8f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/grid__semantic_swap__seed0.npz",
+          "treatment_sha256": "3fa06dcfd97acef1c63500baf3d7bb4895efe6b58a8e142092350dc2b6f68e51"
+        },
+        "hazelnut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/hazelnut__full__seed0.npz",
+          "reference_sha256": "8c3326e58105ad21d7b2f7511539d6049a88db12a34f615bfe229d55d9d057df",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/hazelnut__semantic_swap__seed0.npz",
+          "treatment_sha256": "22860bbe8975edd72ccad208a72ba0b15a275d26955d53f9a3e74d5c16d40602"
+        },
+        "leather": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/leather__full__seed0.npz",
+          "reference_sha256": "5e1269462758661c9c7b5f71a067bc0437cd6f7a983e06b4e68a39ae6c4b7492",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/leather__semantic_swap__seed0.npz",
+          "treatment_sha256": "f996681f6d681fd24f12ff12eb9ace09c1df07ead416cd88d93f252bc0e33ef0"
+        },
+        "metal_nut": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/metal_nut__full__seed0.npz",
+          "reference_sha256": "05bc640efb247b0c7826bd7f4c517110310ced2d30be18365aa87527df899b29",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/metal_nut__semantic_swap__seed0.npz",
+          "treatment_sha256": "b254bfa4052eeface6ed8672cb50f793baa0a9b390fec1b098cafd692abc45c1"
+        },
+        "pill": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/pill__full__seed0.npz",
+          "reference_sha256": "bc3c997da4c9c5ec497b8bc1525fdd9cac2d1faa125a1944b059426a90e7b8d5",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/pill__semantic_swap__seed0.npz",
+          "treatment_sha256": "06dda3c887e219440f899bef5b45e5f7e9ad72150ffb68be58a93e879dd02c50"
+        },
+        "screw": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/screw__full__seed0.npz",
+          "reference_sha256": "0144520f354adbb5f9f7c06eaae1ed68bcd4ca6a3db135300f6b683b0707acad",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/screw__semantic_swap__seed0.npz",
+          "treatment_sha256": "bfb71d73184c447933a5a49cd2bfe764ba4ca607ab3455a3cc2132a3349a10f6"
+        },
+        "tile": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/tile__full__seed0.npz",
+          "reference_sha256": "95ccfcee9b126927b3d03a44a1d384c21fa615c5e86b85121eb6040021cfb4bf",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/tile__semantic_swap__seed0.npz",
+          "treatment_sha256": "21dc3755a24a4beb7d1fa71ff0c970b6136384cdcc4ced64a9f31c9e135dd9bd"
+        },
+        "toothbrush": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/toothbrush__full__seed0.npz",
+          "reference_sha256": "07917792b19b3523844c0adb7275ac3103f9fed9ca9bf9c165fb8f71b4832aca",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/toothbrush__semantic_swap__seed0.npz",
+          "treatment_sha256": "1d70cf93f2dddb950a74a39424ec31f441571148b41e56234027937780ff6ba1"
+        },
+        "transistor": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/transistor__full__seed0.npz",
+          "reference_sha256": "f109331fddb4325e9f15626e9a126a7e105c805072a6d4fc5dad47f88360d953",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/transistor__semantic_swap__seed0.npz",
+          "treatment_sha256": "6aac63a811ccbd7f8b3d39f46d3e9c694ab54591b04afa1d6a562e44b915dd91"
+        },
+        "wood": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/wood__full__seed0.npz",
+          "reference_sha256": "e834540dd86a007d3f5a9ec21181298b45886b916b3c948a1a6d9e46e8c6fb15",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/wood__semantic_swap__seed0.npz",
+          "treatment_sha256": "31f2b3f1bf22217f9758788ef856b97ff7cd9d8f718636b491906396a469f9b3"
+        },
+        "zipper": {
+          "reference": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/full/zipper__full__seed0.npz",
+          "reference_sha256": "49016f7e86efa3e9d86bd8eb9b6f16f120f20de09ad4bfe3c4ec74c19034e99f",
+          "treatment": "private_intermediate_not_redistributed/artifacts_vand_seed0_v1/predictions/mvtec/semantic_swap/zipper__semantic_swap__seed0.npz",
+          "treatment_sha256": "df0e69a664f0ed62f489f7b4aef74b9f12728bb29317fe2208ed9e7e611f6d52"
+        }
+      }
+    }
+  }
+}
