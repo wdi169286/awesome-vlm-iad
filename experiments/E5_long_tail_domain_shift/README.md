@@ -8,6 +8,6 @@
 
 **Scope.** E5 is a bounded evidence-stability extension, not a cross-method leaderboard. LTAD-MVTec isolates unequal normal-reference access; AeBAD-S isolates named acquisition shifts. Neither dataset is relabeled to manufacture a synthetic long tail or domain definition.
 
-Compact manifests, aggregates, completion audits, and checksums are released under `results/E5/` after all registered configurations pass their completeness and cohort checks. Datasets, model weights, and raw image payloads are excluded.
+Compact manifests, aggregates, completion audits, and checksums are released under [`results/E5/`](../../results/E5/); all registered configurations passed their completeness and cohort checks. Datasets, model weights, and raw image payloads are excluded.
 
 Run `python verify_e5_records.py` from this directory with Python 3 and NumPy to recompute the completion gates, paired-record counts, metadata-only stratum correction, negative control, hierarchical-bootstrap intervals, macro and stratum summaries, domain statistics, and manuscript-facing rounded values from the compact CSV/JSON bundle.

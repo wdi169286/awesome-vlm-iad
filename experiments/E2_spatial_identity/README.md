@@ -10,4 +10,4 @@
 
 **Key control.** The local-value multiset is preserved and inverse recovery or an equivalent mapping check is required. Independent image branches are recorded as fixed rather than treated as additional replicates.
 
-Compact result records and plotting inputs will be added after the manuscript tables are frozen.
+Final compact records are indexed in the [controlled-intervention ledger](../../results/controlled_intervention_ledger.csv) and [artifact index](../../results/ARTIFACT_INDEX.md). These records provide the reported effects and intervals, repeated units, validity gates, and source-artifact paths used by the frozen manuscript tables.

@@ -10,4 +10,4 @@
 
 **Key control.** Query cohorts and support counts remain matched; donor construction is disjoint and leakage checks are applied.
 
-Compact result records and plotting inputs will be added after the manuscript tables are frozen.
+Final compact records are indexed in the [controlled-intervention ledger](../../results/controlled_intervention_ledger.csv) and [artifact index](../../results/ARTIFACT_INDEX.md). These records provide the reported effects and intervals, repeated units, validity gates, and source-artifact paths used by the frozen manuscript tables.

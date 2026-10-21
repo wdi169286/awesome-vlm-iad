@@ -4,6 +4,22 @@
 
 The review covers primary studies published from January 2021 through October 16, 2026 in which a vision--language component contributes to a zero- or few-shot industrial anomaly-inspection output. OpenAlex was the principal discovery source. Candidate discovery was supplemented by the manuscript bibliography, backward and forward citation checking, DOI and publisher verification, and targeted searches in Google Scholar, IEEE Xplore, Scopus, and Web of Science. Licensed exports and provider-native result pages are not redistributed.
 
+### OpenAlex search record
+
+All seven OpenAlex searches covered publications from January 1, 2021 through October 16, 2026 and were executed on October 16, 2026 (America/Chicago). Counts are before cross-query deduplication.
+
+| Query ID | Exact query | Records retrieved |
+| --- | --- | ---: |
+| Q1 | `industrial anomaly detection vision language` | 295 |
+| Q2 | `industrial anomaly detection CLIP` | 214 |
+| Q3 | `industrial defect detection vision language` | 173 |
+| Q4 | `industrial anomaly detection multimodal foundation model` | 54 |
+| Q5 | `zero shot industrial anomaly detection vision language` | 317 |
+| Q6 | `few shot industrial anomaly detection vision language` | 277 |
+| Q7 | `large vision language model industrial anomaly inspection` | 136 |
+
+The searches returned 1,466 query-level records in total. After cross-query merging and integration with the bibliography-based supplementary discovery set, 952 unique candidates entered screening.
+
 ## Record consolidation
 
 Records were merged using DOI, arXiv identifier, and normalized title. Uncertain matches and multiple versions of the same work were inspected manually, with the most complete eligible version retained.

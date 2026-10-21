@@ -10,6 +10,12 @@ This directory contains the frozen screening and evidence-path audit tables for 
 
 - `evidence_path_audit.csv`: records each applicable evidence path for every included method setting (zero- or few-shot). Each row identifies the setting, the affected model output, the matched test used or proposed to examine that path, and the supporting source location.
 
+## Audit-field interpretation
+
+In `evidence_path_audit.csv`, `verified` means that the recorded primary-source material supports the evidence-path assignment at the stated provenance level. It does not indicate independent experimental validation or imply that the source paper reported a corresponding ablation. The `anchor_level` field distinguishes an exact full-text location, a full-text summary, an official primary-source record, and an official abstract.
+
+Exact OpenAlex queries, search dates, and retrieval counts are reported in `review_protocol.md`. Google Scholar, IEEE Xplore, Scopus, and Web of Science were used for supplementary discovery, citation checking, and source verification; provider-native result pages and licensed exports are not redistributed.
+
 ## Snapshot
 
 - Candidate records: 952
