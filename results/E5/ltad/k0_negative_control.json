@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "negative_control": "K=0 has no target-reference input",
+  "official_test_set_unchanged": true,
+  "split_intervention_delta": 0.0,
+  "splits": {
+    "exp200": {
+      "micro_image_auroc": 0.7364362725239411,
+      "micro_image_ap": 0.8831672055707258,
+      "macro_image_auroc": 0.9032360673886333,
+      "head_image_auroc": 0.9606280328310562,
+      "tail_image_auroc": 0.83764524974015,
+      "worst_image_auroc": {
+        "category": "capsule",
+        "value": 0.6868767451136817
+      },
+      "bottom_performance_quartile_image_auroc": 0.7672140652948078,
+      "macro_image_ap": 0.9563471399988495,
+      "head_image_ap": 0.9850188148228882,
+      "tail_image_ap": 0.9235795116285195,
+      "worst_image_ap": {
+        "category": "transistor",
+        "value": 0.848917451792254
+      },
+      "bottom_performance_quartile_image_ap": 0.8823912245190719
+    },
+    "step200": {
+      "micro_image_auroc": 0.7364362725239411,
+      "micro_image_ap": 0.8831672055707258,
+      "macro_image_auroc": 0.9032360673886333,
+      "head_image_auroc": 0.9760352121243816,
+      "tail_image_auroc": 0.8395368157448535,
+      "worst_image_auroc": {
+        "category": "capsule",
+        "value": 0.6868767451136817
+      },
+      "bottom_performance_quartile_image_auroc": 0.7672140652948078,
+      "macro_image_ap": 0.9563471399988495,
+      "head_image_ap": 0.99072507171614,
+      "tail_image_ap": 0.9262664497462202,
+      "worst_image_ap": {
+        "category": "transistor",
+        "value": 0.848917451792254
+      },
+      "bottom_performance_quartile_image_ap": 0.8823912245190719
+    }
+  }
+}

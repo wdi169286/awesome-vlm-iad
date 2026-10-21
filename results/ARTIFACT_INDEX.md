@@ -2,9 +2,9 @@
 
 This index makes every compact artifact referenced by `controlled_intervention_ledger.csv` directly clickable. Paths are relative to the `results/` directory. Multiple ledger rows may share one artifact.
 
-- Ledger rows: 67
-- Unique directly referenced artifacts: 34
-- Additional files referenced by narrative audit records: 8
+- Ledger rows: 71
+- Unique directly referenced artifacts: 36
+- Additional files referenced by narrative audit records: 12
 
 ## Ledger artifacts
 
@@ -18,6 +18,8 @@ This index makes every compact artifact referenced by `controlled_intervention_l
 | [cross-modal/raw_compact/winclip_e2_binding_multidraw_v1/mvtec_ad_crossed_bootstrap.json](cross-modal/raw_compact/winclip_e2_binding_multidraw_v1/mvtec_ad_crossed_bootstrap.json) | 1 |
 | [cross-modal/raw_compact/winclip_e2_binding_multidraw_v1/visa_crossed_bootstrap.json](cross-modal/raw_compact/winclip_e2_binding_multidraw_v1/visa_crossed_bootstrap.json) | 1 |
 | [cross-modal/vand_spatial_cluster_ci.json](cross-modal/vand_spatial_cluster_ci.json) | 2 |
+| [E5/aebad/summary.json](E5/aebad/summary.json) | 2 |
+| [E5/ltad/summary.json](E5/ltad/summary.json) | 2 |
 | [raw_completed_20261019/filo_spatial_binding/aggregate.json](raw_completed_20261019/filo_spatial_binding/aggregate.json) | 4 |
 | [raw_completed_20261019/filo_state_binding/aggregate.json](raw_completed_20261019/filo_state_binding/aggregate.json) | 2 |
 | [raw_completed_20261019/saa_spatial_rebinding_factorial_seed111/mvtec/interaction_analysis.json](raw_completed_20261019/saa_spatial_rebinding_factorial_seed111/mvtec/interaction_analysis.json) | 1 |
@@ -51,6 +53,10 @@ This index makes every compact artifact referenced by `controlled_intervention_l
 | --- |
 | [Auxiliary/raw_compact/pointad_three_checkpoint_performance_parity_failed.json](Auxiliary/raw_compact/pointad_three_checkpoint_performance_parity_failed.json) |
 | [Auxiliary/raw_compact/pointad_three_checkpoint_wrapper_parity.json](Auxiliary/raw_compact/pointad_three_checkpoint_wrapper_parity.json) |
+| [E5/aebad/completion_audit.json](E5/aebad/completion_audit.json) |
+| [E5/aebad/design_audit.json](E5/aebad/design_audit.json) |
+| [E5/ltad/completion_audit.json](E5/ltad/completion_audit.json) |
+| [E5/ltad/stratum_correction_audit.json](E5/ltad/stratum_correction_audit.json) |
 | [semantic_prior/raw_compact/boundary/adaclip_mvtec.json](semantic_prior/raw_compact/boundary/adaclip_mvtec.json) |
 | [semantic_prior/raw_compact/boundary/adaclip_visa.json](semantic_prior/raw_compact/boundary/adaclip_visa.json) |
 | [semantic_prior/raw_compact/boundary/anomalyclip_mvtec.json](semantic_prior/raw_compact/boundary/anomalyclip_mvtec.json) |

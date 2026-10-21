@@ -1,0 +1,238 @@
+{
+  "macro_strata_effects": [
+    {
+      "split": "exp200",
+      "metric": "image_auroc",
+      "limited_macro": 0.9566018012153434,
+      "matched_rich_macro": 0.9628402622405297,
+      "paired_delta": -0.006238461025186102,
+      "ci_low": -0.016810944402211793,
+      "ci_high": -8.31940963519943e-05,
+      "worst_group": {
+        "category": "screw",
+        "value": 0.8149210903873744
+      },
+      "bottom_performance_quartile": 0.877830576229431,
+      "limited_head": 0.9930678177920885,
+      "matched_rich_head": 0.9930678177920885,
+      "limited_tail": 0.9149263536990635,
+      "matched_rich_tail": 0.9282944844673194
+    },
+    {
+      "split": "exp200",
+      "metric": "image_ap",
+      "limited_macro": 0.9779406734670151,
+      "matched_rich_macro": 0.980588397443694,
+      "paired_delta": -0.002647723976678833,
+      "ci_low": -0.007120615650977279,
+      "ci_high": 0.0001624784566532366,
+      "worst_group": {
+        "category": "transistor",
+        "value": 0.8658544897881706
+      },
+      "bottom_performance_quartile": 0.9282170804862158,
+      "limited_head": 0.9973012750576068,
+      "matched_rich_head": 0.9973012750576068,
+      "limited_tail": 0.9558142716491962,
+      "matched_rich_tail": 0.9614879658849365
+    },
+    {
+      "split": "step200",
+      "metric": "image_auroc",
+      "limited_macro": 0.9462680703944636,
+      "matched_rich_macro": 0.9639599299819527,
+      "paired_delta": -0.017691859587488735,
+      "ci_low": -0.033965539466346874,
+      "ci_high": -0.005171222062721652,
+      "worst_group": {
+        "category": "screw",
+        "value": 0.8149210903873744
+      },
+      "bottom_performance_quartile": 0.8610482783292522,
+      "limited_head": 0.9946081056973558,
+      "matched_rich_head": 0.9946081056973558,
+      "limited_tail": 0.9039705395044333,
+      "matched_rich_tail": 0.9371427762309746
+    },
+    {
+      "split": "step200",
+      "metric": "image_ap",
+      "limited_macro": 0.9745729469007637,
+      "matched_rich_macro": 0.9813994544821537,
+      "paired_delta": -0.006826507581389962,
+      "ci_low": -0.01284820154893888,
+      "ci_high": -0.001949666700937229,
+      "worst_group": {
+        "category": "transistor",
+        "value": 0.867166565681131
+      },
+      "bottom_performance_quartile": 0.9234759936655219,
+      "limited_head": 0.9977367639715928,
+      "matched_rich_head": 0.9977367639715928,
+      "limited_tail": 0.9543046069637885,
+      "matched_rich_tail": 0.9671043086788945
+    }
+  ],
+  "micro_by_draw": [
+    {
+      "split": "exp200",
+      "draw": 0,
+      "condition": "limited",
+      "image_auroc": 0.8129180950694995,
+      "image_ap": 0.9255820210067136,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 0,
+      "condition": "matched_rich",
+      "image_auroc": 0.8159615718502227,
+      "image_ap": 0.9250866624937504,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 1,
+      "condition": "limited",
+      "image_auroc": 0.8198254937138928,
+      "image_ap": 0.9293020284650337,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 1,
+      "condition": "matched_rich",
+      "image_auroc": 0.8233149385687488,
+      "image_ap": 0.9294354064701091,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 2,
+      "condition": "limited",
+      "image_auroc": 0.8156636924113938,
+      "image_ap": 0.9270695364854966,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 2,
+      "condition": "matched_rich",
+      "image_auroc": 0.8191888827989093,
+      "image_ap": 0.9268231393066743,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 3,
+      "condition": "limited",
+      "image_auroc": 0.8152790023932485,
+      "image_ap": 0.9270126749800547,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 3,
+      "condition": "matched_rich",
+      "image_auroc": 0.8153453869539019,
+      "image_ap": 0.9252616888951133,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 4,
+      "condition": "limited",
+      "image_auroc": 0.8133810848258511,
+      "image_ap": 0.926179269167575,
+      "sample_count": 1725
+    },
+    {
+      "split": "exp200",
+      "draw": 4,
+      "condition": "matched_rich",
+      "image_auroc": 0.8167803147649475,
+      "image_ap": 0.9260955270326562,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 0,
+      "condition": "limited",
+      "image_auroc": 0.8150355923375194,
+      "image_ap": 0.9258568446802926,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 0,
+      "condition": "matched_rich",
+      "image_auroc": 0.8235617529609217,
+      "image_ap": 0.9295213154513526,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 1,
+      "condition": "limited",
+      "image_auroc": 0.8084941598608307,
+      "image_ap": 0.9227331221494618,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 1,
+      "condition": "matched_rich",
+      "image_auroc": 0.8183497138655219,
+      "image_ap": 0.926036106441883,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 2,
+      "condition": "limited",
+      "image_auroc": 0.8090014059909513,
+      "image_ap": 0.923126576123385,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 2,
+      "condition": "matched_rich",
+      "image_auroc": 0.8226800298219873,
+      "image_ap": 0.9283869679675456,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 3,
+      "condition": "limited",
+      "image_auroc": 0.8147734584313499,
+      "image_ap": 0.9258772590506431,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 3,
+      "condition": "matched_rich",
+      "image_auroc": 0.8229813135972601,
+      "image_ap": 0.9287265043855725,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 4,
+      "condition": "limited",
+      "image_auroc": 0.8151053812346167,
+      "image_ap": 0.9259853630166509,
+      "sample_count": 1725
+    },
+    {
+      "split": "step200",
+      "draw": 4,
+      "condition": "matched_rich",
+      "image_auroc": 0.8252962623790184,
+      "image_ap": 0.9296565285273202,
+      "sample_count": 1725
+    }
+  ]
+}

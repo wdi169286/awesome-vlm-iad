@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "domains": {
+    "same": {
+      "normal_train": 521,
+      "normal_test": 230,
+      "anomalous_test": 459,
+      "defect_counts": {
+        "ablation": 60,
+        "breakdown": 118,
+        "fracture": 161,
+        "groove": 120
+      }
+    },
+    "background": {
+      "normal_train": 521,
+      "normal_test": 93,
+      "anomalous_test": 212,
+      "defect_counts": {
+        "ablation": 38,
+        "breakdown": 60,
+        "fracture": 67,
+        "groove": 47
+      }
+    },
+    "illumination": {
+      "normal_train": 521,
+      "normal_test": 75,
+      "anomalous_test": 198,
+      "defect_counts": {
+        "ablation": 30,
+        "breakdown": 71,
+        "fracture": 60,
+        "groove": 37
+      }
+    },
+    "view": {
+      "normal_train": 521,
+      "normal_test": 92,
+      "anomalous_test": 280,
+      "defect_counts": {
+        "ablation": 41,
+        "breakdown": 80,
+        "fracture": 101,
+        "groove": 58
+      }
+    }
+  },
+  "train_normal_count": 521,
+  "defects": [
+    "ablation",
+    "breakdown",
+    "fracture",
+    "groove"
+  ],
+  "calibration": {
+    "protocol": "fixed normal cohort shared by K0 and every K4 draw",
+    "count": 32,
+    "excluded_union_support_count": 20,
+    "queries": [
+      "background__IMG_7301.png",
+      "background__IMG_7306.png",
+      "background__IMG_7315.png",
+      "background__IMG_7333.png",
+      "background__IMG_7371.png",
+      "background__IMG_7416.png",
+      "background__IMG_7454.png",
+      "background__IMG_7469.png",
+      "background__IMG_7471.png",
+      "background__IMG_7484.png",
+      "background__IMG_7487.png",
+      "background__IMG_7490.png",
+      "background__IMG_7492.png",
+      "background__IMG_7505.png",
+      "background__IMG_7529.png",
+      "background__IMG_7551.png",
+      "background__IMG_7562.png",
+      "background__IMG_7569.png",
+      "background__IMG_7578.png",
+      "illumination__IMG_7144.png",
+      "illumination__IMG_7198.png",
+      "illumination__IMG_7275.png",
+      "view__IMG_6982.png",
+      "view__IMG_7005.png",
+      "view__IMG_7006.png",
+      "view__IMG_7102.png",
+      "view__IMG_7158.png",
+      "view__IMG_7174.png",
+      "view__IMG_7176.png",
+      "view__IMG_7185.png",
+      "view__IMG_7222.png",
+      "view__IMG_7231.png"
+    ]
+  }
+}

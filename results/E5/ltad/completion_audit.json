@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "expected_configurations": 300,
+  "metric_configurations": 300,
+  "compact_configurations": 300,
+  "missing_metrics": [],
+  "missing_compact": [],
+  "duplicates": [],
+  "complete": true
+}

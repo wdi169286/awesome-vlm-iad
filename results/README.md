@@ -6,6 +6,7 @@ This directory contains compact, machine-readable records underlying the control
 | --- | --- |
 | E1--E3 | [Controlled intervention ledger](controlled_intervention_ledger.csv), including estimands, effects, confidence intervals, repeated units, validity gates, scope notes, admission status, and the compact source artifact for every row |
 | E4 | [PointAD factorial and GS-CLIP endpoint-path audits](E4/README.md) |
+| E5 | [Long-tail and domain-shift stability aggregates](E5/README.md) |
 | Artifact navigation | [Clickable artifact index](ARTIFACT_INDEX.md) for all unique ledger targets and supporting audit files |
 
 Every non-empty `source_artifact` entry in the controlled intervention ledger is a path relative to this `results/` directory. The referenced JSON, CSV, or Markdown record is included at that exact path. Several ledger rows may point to the same artifact when one compact record contains multiple endpoints or contrasts.
